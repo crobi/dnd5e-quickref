@@ -1,0 +1,79 @@
+.section-container {
+    border: 2mm solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    font-size: 8pt;
+    width:100%;
+    margin:4px;
+}
+
+.section-content {
+    padding:1em;
+    padding-top:0.5em;
+    padding-bottom:0em;
+    border-radius: 2mm;
+    margin-top:0px;
+    background-color: white;
+    border-color: inherit;
+    font-size: inherit;
+}
+
+.section-title {
+    height: 8mm;
+    padding-left: 2mm;
+    font-family: Lora, 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: inherit;
+    color: white;
+    font-size: 16pt;
+    line-height: 6.5mm;
+}
+
+.section-subtitle {
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 0.5em;
+    font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.section-row:before, .section-row:after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.item-long {
+    width: 50%;
+}
+
+#section-movement, #section-movement /deep/ .icon {
+    background-color: maroon;
+    border-color: maroon;
+}
+#section-movement /deep/ .text {
+    color: maroon;
+}
+
+#section-action, #section-action /deep/ .icon {
+    background-color: black;
+    border-color: black;
+}
+#section-action /deep/ .text {
+    color: black;
+}
+
+#section-bonus-action, #section-bonus-action /deep/ .icon {
+    background-color: indigo;
+    border-color: indigo;
+}
+#section-bonus-action /deep/ .text {
+    color: indigo;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>D&D 5e quick reference</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/page-size.css">
+    <link rel="stylesheet" type="text/css" href="css/page-preview.css">
+    <link rel="stylesheet" type="text/css" href="css/quickref.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+</head>
+<body class="page-background">
+    <page class="page page-preview" size="A4" style="background-color:white">
+
+        <div id="section-movement" class="section-container">
+            <div class="section-title">
+                Movement
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text">
+                    You can move at any time during your turn (before, after, or during actions).
+                </div>
+                <div class="section-row">
+                    <quickref-item data-title="Move" data-icon="run" data-text="Cost: 5ft per 5ft"></quickref-item>
+                    <quickref-item data-title="Crawl" data-icon="backstab" data-text="Cost: 10ft per 5ft"></quickref-item>
+                    <quickref-item data-title="Climb" data-icon="crags" data-text="Cost: 10ft per 5ft|Ability check if difficult"></quickref-item>
+                    <quickref-item data-title="Swim" data-icon="at-sea" data-text="Cost: 10ft per 5ft|Ability check if difficult"></quickref-item>
+                    <quickref-item data-title="Drop prone" data-icon="falling" data-text="Cost: 0ft|Adds prone condition"></quickref-item>
+                    <quickref-item data-title="Stand up" data-icon="orb-direction" data-text="Cost: half movement speed"></quickref-item>
+                    <quickref-item data-title="Difficult terrain" data-icon="stone-pile" data-text="Cost: +5ft per 5ft"></quickref-item>
+                    <quickref-item data-title="Grapple move" data-icon="grab" data-text="Movement speed halved|Unless 2+ sizes larger"></quickref-item>
+                    <quickref-item data-title="High jump" data-icon="wingfoot" data-text="Cost: 5ft per 5ft; max: STR mod + 3 (running) or STR mod (standing)|Extend arms to 1.5x body height" class="item-long"></quickref-item>
+                    <quickref-item data-title="Long jump" data-icon="wingfoot" data-text="Cost: 5ft per 5ft; max: STR (running) or STR / 2 (standing)|Ability check to clear obstacle or land on feet in difficult terrain" class="item-long"></quickref-item>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-action" class="section-container">
+            <div class="section-title">
+                Actions
+            </div>
+            <div class="section-content">
+                <div class="section-subtitle text">
+                    You can perform one action during your turn.
+                </div>
+                <quickref-item data-title="Attack" data-icon="crossed-swords" data-text=""></quickref-item>
+                <quickref-item data-title="Cast a spell" data-icon="magic-swirl" data-text=""></quickref-item>
+                <quickref-item data-title="Dash" data-icon="sprint" data-text="Double movement speed (after modifiers)"></quickref-item>
+                <quickref-item data-title="Disengage" data-icon="dodge" data-text="Movement does not provoke"></quickref-item>
+                <quickref-item data-title="Dodge" data-icon="aura" data-text="Disadv. for attackers|Adv. on DEX saves"></quickref-item>
+                <quickref-item data-title="Escape Grapple" data-icon="manacles" data-text="Athletics or Acrobatics vs. grappler Athletics"></quickref-item>
+                <quickref-item data-title="Help" data-icon="telepathy" data-text="Grant adv. on checks or attacks vs. target within 5ft"></quickref-item>
+                <quickref-item data-title="Hide" data-icon="hood" data-text="Stealth vs. Perception|Target must not see you"></quickref-item>
+                <quickref-item data-title="Ready" data-icon="stopwatch" data-text="Specify trigger and action|Use reaction after trigger"></quickref-item>
+                <quickref-item data-title="Search" data-icon="magnifying-glass" data-text=""></quickref-item>
+                <quickref-item data-title="Use Object" data-icon="snatch" data-text=""></quickref-item>
+                <quickref-item data-title="Improvise" data-icon="juggler" data-text=""></quickref-item>
+            </div>
+        </div>
+
+        <div id="section-bonus-action" class="section-container">
+            <div class="section-title">
+                Bonus actions
+            </div>
+            <div class="section-content">
+                <div class="section-subtitle text">
+                    You can perform at most one bonus action during your turn.
+                </div>
+                <quickref-item data-title="Attack" data-icon="crossed-swords" data-text=""></quickref-item>
+            </div>
+        </div>
+
+    </page>
+
+    <!-- ------------------------------------------------------------------ -->
+    <!--           <quickref-item> template                                 -->
+    <!-- ------------------------------------------------------------------ -->
+    <template id="quickref-item">
+        <style>
+            :host {
+                width: 25%;
+                padding-bottom: 1em;
+                float: left;
+            }
+
+            #icon {
+                float: left;
+                width: 13mm;
+                height: 13mm;
+                background-repeat: no-repeat;
+                background-size: contain;
+                box-sizing: border-box;
+                border-radius: 1mm;
+                display: inline-block;
+                margin-right: 1mm;
+            }
+
+            #content {
+                width: 100%;
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            #title {
+                font-weight: bold;
+                font-size: 10pt;
+            }
+
+            #text {
+                font-style: italic;
+            }
+        </style>
+
+        <div id="content">
+            <div id="icon" class="icon"></div>
+            <div class="text" id="title"></div>
+            <div class="text" id="text"></div>
+        </div>
+
+    </template>
+
+    <script>
+        (function (window, document) {
+            var elemName = 'quickref-item';
+            var thatDoc = document;
+            var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
+
+            var proto = Object.create(HTMLElement.prototype, {
+                createdCallback: {
+                    value: function () {
+                        var template = thisDoc.getElementById(elemName);
+                        var clone = thatDoc.importNode(template.content, true);
+                        var root = this.createShadowRoot().appendChild(clone);
+                    }
+                },
+                attachedCallback: {
+                    value: function () {
+                        var root = this.shadowRoot;
+                        var icon = root.getElementById("icon");
+                        var title = root.getElementById("title");
+                        var text = root.getElementById("text");
+
+                        for (var i = 0; i < this.attributes.length; i++) {
+                            var attribute = this.attributes[i];
+                            var name = attribute.name;
+                            var value = attribute.value;
+                            switch (name) {
+                                case "data-icon":   icon.className += " icon-" + value; break;
+                                case "data-title":  title.innerHTML = value; break;
+                                case "data-text":   text.innerHTML = value.replace("|","<br />"); break;
+                            }
+
+                        }
+
+                    }
+                }
+            });
+            thatDoc.registerElement(elemName, { prototype: proto });
+        })(window, document);
+    </script>
+    <!-- ------------------------------------------------------------------ -->
+    <!--           end of template                                          -->
+    <!-- ------------------------------------------------------------------ -->
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+.page-background {
+  background: rgb(204,204,204); 
+}
+
+body {
+    display: flex;
+    justify-content:center;
+    align-content:center;
+}
+
+.page-preview {
+    background: white;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+@media print {
+  .page-preview {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: 0;
+    background-color: white;
+  }
+  .page-background {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: 0;
+    /* Set the background to gray to visualize the page size in the print preview */
+    background-color: gray;
+  }
+}
