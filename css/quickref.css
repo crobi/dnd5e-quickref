@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    /*font-family: Arial;*/
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
     font-size: 8pt;
     width:100%;
@@ -39,10 +40,7 @@
 
 .section-subtitle {
     display: block;
-    height: 18px;
-    line-height: 18px;
     margin-bottom: 2mm;
-    font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
     font-size: inherit;
     font-style: italic;
 }

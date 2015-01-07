@@ -29,12 +29,10 @@
 .page[size="A4"] {
     width:  210mm; /* full: 210.0mm */
     height: 296mm; /* full: 297.0mm */
-    padding: 10mm;
 }
 
 /* US letter area */
 .page[size="Letter"] {
     width:  8.5in;
     height: 11.0in;
-    padding: 0.5in;
 }
