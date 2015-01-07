@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8" />
     <title>D&D 5e quick reference</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/page-size.css">
@@ -10,13 +11,20 @@
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+    <style>
+        @page {
+            margin: 0;
+            size: A4;
+            -webkit-print-color-adjust: exact;
+        }
+    </style>
 </head>
 <body class="page-background">
     <page class="page page-preview" size="A4" style="background-color:white">
 
         <div id="section-movement" class="section-container">
             <div class="section-title">
-                Movement
+                Movement <span class="float-right">limited by movement speed</span>
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text">
@@ -24,51 +32,86 @@
                 </div>
                 <div class="section-row">
                     <quickref-item data-title="Move" data-icon="run" data-text="Cost: 5ft per 5ft"></quickref-item>
-                    <quickref-item data-title="Crawl" data-icon="backstab" data-text="Cost: 10ft per 5ft"></quickref-item>
-                    <quickref-item data-title="Climb" data-icon="crags" data-text="Cost: 10ft per 5ft|Ability check if difficult"></quickref-item>
-                    <quickref-item data-title="Swim" data-icon="at-sea" data-text="Cost: 10ft per 5ft|Ability check if difficult"></quickref-item>
                     <quickref-item data-title="Drop prone" data-icon="falling" data-text="Cost: 0ft|Adds prone condition"></quickref-item>
                     <quickref-item data-title="Stand up" data-icon="orb-direction" data-text="Cost: half movement speed"></quickref-item>
-                    <quickref-item data-title="Difficult terrain" data-icon="stone-pile" data-text="Cost: +5ft per 5ft"></quickref-item>
-                    <quickref-item data-title="Grapple move" data-icon="grab" data-text="Movement speed halved|Unless 2+ sizes larger"></quickref-item>
-                    <quickref-item data-title="High jump" data-icon="wingfoot" data-text="Cost: 5ft per 5ft; max: STR mod + 3 (running) or STR mod (standing)|Extend arms to 1.5x body height" class="item-long"></quickref-item>
-                    <quickref-item data-title="Long jump" data-icon="wingfoot" data-text="Cost: 5ft per 5ft; max: STR (running) or STR / 2 (standing)|Ability check to clear obstacle or land on feet in difficult terrain" class="item-long"></quickref-item>
+                    <quickref-item data-title="Crawl" data-icon="backstab" data-text="Cost: 10ft per 5ft"></quickref-item>
+                    <quickref-item data-title="Climb" data-icon="crags" data-text="Cost: 10ft per 5ft|Athletics check if difficult"></quickref-item>
+                    <quickref-item data-title="Swim" data-icon="at-sea" data-text="Cost: 10ft per 5ft|Athletics check if difficult"></quickref-item>
+                    <quickref-item data-title="Difficult terrain" data-icon="stone-pile" data-text="|Increased movement cost: +5ft per 5ft"></quickref-item>
+                    <quickref-item data-title="Grapple move" data-icon="grab" data-text="Speed halved unless you are 2+ sizes larger than target."></quickref-item>
+                    <quickref-item data-title="High jump" data-icon="wingfoot" data-text="Cost: 5ft per 5ft. Max: STR mod + 3 (run) or STR mod (stand)."></quickref-item>
+                    <quickref-item data-title="High jump" data-icon="wingfoot" data-text="May extend arms to 1.5x body height."></quickref-item>
+                    <quickref-item data-title="Long jump" data-icon="wingfoot" data-text="Cost: 5ft per 5ft. Max: STR (run) or STR / 2 (stand)."></quickref-item>
+                    <quickref-item data-title="Long jump" data-icon="wingfoot" data-text="Ability check to clear low obstacle or land on feet in difficult terrain."></quickref-item>
                 </div>
             </div>
         </div>
 
         <div id="section-action" class="section-container">
             <div class="section-title">
-                Actions
+                Action <span class="float-right">1/turn</span>
             </div>
             <div class="section-content">
-                <div class="section-subtitle text">
-                    You can perform one action during your turn.
+                <div class="section-row section-subtitle text">
+                    You can also interact with one object or feature of the
+                    environment for free, during either your move or your
+                    action.
                 </div>
-                <quickref-item data-title="Attack" data-icon="crossed-swords" data-text=""></quickref-item>
-                <quickref-item data-title="Cast a spell" data-icon="magic-swirl" data-text=""></quickref-item>
-                <quickref-item data-title="Dash" data-icon="sprint" data-text="Double movement speed (after modifiers)"></quickref-item>
-                <quickref-item data-title="Disengage" data-icon="dodge" data-text="Movement does not provoke"></quickref-item>
-                <quickref-item data-title="Dodge" data-icon="aura" data-text="Disadv. for attackers|Adv. on DEX saves"></quickref-item>
-                <quickref-item data-title="Escape Grapple" data-icon="manacles" data-text="Athletics or Acrobatics vs. grappler Athletics"></quickref-item>
-                <quickref-item data-title="Help" data-icon="telepathy" data-text="Grant adv. on checks or attacks vs. target within 5ft"></quickref-item>
-                <quickref-item data-title="Hide" data-icon="hood" data-text="Stealth vs. Perception|Target must not see you"></quickref-item>
-                <quickref-item data-title="Ready" data-icon="stopwatch" data-text="Specify trigger and action|Use reaction after trigger"></quickref-item>
-                <quickref-item data-title="Search" data-icon="magnifying-glass" data-text=""></quickref-item>
-                <quickref-item data-title="Use Object" data-icon="snatch" data-text=""></quickref-item>
-                <quickref-item data-title="Improvise" data-icon="juggler" data-text=""></quickref-item>
+                <div class="section-row">
+                    <quickref-item data-title="Attack" data-icon="crossed-swords" data-text="May use grapple or shove as part of this action."></quickref-item>
+                    <quickref-item data-title="Cast a spell" data-icon="magic-swirl" data-text="Must have a cast time of 1&nbsp;action. Max. 1 non-cantrip spell per turn."></quickref-item>
+                    <quickref-item data-title="Dash" data-icon="sprint" data-text="Double movement speed (after modifiers)."></quickref-item>
+                    <quickref-item data-title="Disengage" data-icon="dodge" data-text="Your movement does not provoke opportunity attacks."></quickref-item>
+                    <quickref-item data-title="Dodge" data-icon="aura" data-text="Disadvantage for attacks against you, advantage on DEX saves."></quickref-item>
+                    <quickref-item data-title="Escape Grapple" data-icon="manacles" data-text="Your Athletics or Acrobatics vs. grappler Athletics."></quickref-item>
+                    <quickref-item data-title="Help" data-icon="telepathy" data-text="Grant an ally advantage on checks or attacks vs. a target within 5ft."></quickref-item>
+                    <quickref-item data-title="Hide" data-icon="hood" data-text="Stealth vs. Perception. Target must not see you."></quickref-item>
+                    <quickref-item data-title="Ready" data-icon="stopwatch" data-text="Specify trigger and action. Uses your reaction to execute the action."></quickref-item>
+                    <quickref-item data-title="Search" data-icon="magnifying-glass" data-text="Perception or Investigation check."></quickref-item>
+                    <quickref-item data-title="Use Object" data-icon="snatch" data-text="Use special abilities, interact with a second object."></quickref-item>
+                    <quickref-item data-title="Shield" data-icon="round-shield" data-text="Equip or unequip a shield."></quickref-item>
+                    <quickref-item data-title="Use feature" data-icon="embrassed-energy" data-text="Some class features require an action to use."></quickref-item>
+                    <quickref-item data-title="Improvise" data-icon="juggler" data-text="Perform any action not on this list. GM decides on rules."></quickref-item>
+                </div>
             </div>
         </div>
 
         <div id="section-bonus-action" class="section-container">
             <div class="section-title">
-                Bonus actions
+                Bonus action <span class="float-right">1/turn</span>
             </div>
             <div class="section-content">
-                <div class="section-subtitle text">
-                    You can perform at most one bonus action during your turn.
+                <div class="section-row section-subtitle text">
+                    You can take a bonus action only when a special ability, spell, or feature
+                    states that you can do something as a bonus action.
                 </div>
-                <quickref-item data-title="Attack" data-icon="crossed-swords" data-text=""></quickref-item>
+                <div class="section-row">
+                    <quickref-item data-title="Offhand Attack" data-icon="crossed-swords" data-text="Must take the Attack action with a light weapon."></quickref-item>
+                    <quickref-item data-title="Cast a spell" data-icon="magic-swirl" data-text="Must have a cast time of 1&nbsp;bonus action."></quickref-item>
+                    <quickref-item data-title="Use feature" data-icon="embrassed-energy" data-text="Some class features require a bonus action to use."></quickref-item>
+                    <!--
+                    <quickref-item data-title="Cunning Action" data-icon="cloak-dagger" data-text="Rogue feature. Perform actions as bonus actions."></quickref-item>
+                    <quickref-item data-title="Bardic Inspiration" data-icon="lyre" data-text="Bard feature. Grant an ally a bardic inspiration die."></quickref-item>
+                    <quickref-item data-title="Second Wind" data-icon="battle-gear" data-text="Fighter feature. Spend hit die to regain HP."></quickref-item>
+                    <quickref-item data-title="Rage" data-icon="lizardman" data-text="Barbarian feature. Enter a rage to increase damage and resistance."></quickref-item>
+                    <quickref-item data-title="Flurry of Blows" data-icon="punch" data-text="Monk feature. Perform two unarmed strikes."></quickref-item>
+                    -->
+                </div>
+            </div>
+        </div>
+
+        <div id="section-reaction" class="section-container">
+            <div class="section-title">
+                Reaction <span class="float-right">1/round</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text">
+                    A reaction is an instant response to a trigger of some kind, which
+                    can occur on your turn or on someone else's.
+                </div>
+                <quickref-item data-title="Opportunity attack" data-icon="crossed-swords" data-text="Trigger: enemy leaves your reach."></quickref-item>
+                <quickref-item data-title="Ready" data-icon="stopwatch" data-text="Trigger: specified as part of your Ready action."></quickref-item>
+                <quickref-item data-title="Cast a spell" data-icon="magic-swirl" data-text="Trigger: see spell. Must have cast time of 1&nbsp;reaction."></quickref-item>
             </div>
         </div>
 
@@ -80,15 +123,15 @@
     <template id="quickref-item">
         <style>
             :host {
-                width: 25%;
-                padding-bottom: 1em;
+                width: 33%;
+                padding-bottom: 2mm;
                 float: left;
             }
 
             #icon {
                 float: left;
-                width: 13mm;
-                height: 13mm;
+                width: 8mm;
+                height: 8mm;
                 background-repeat: no-repeat;
                 background-size: contain;
                 box-sizing: border-box;
@@ -99,24 +142,38 @@
 
             #content {
                 width: 100%;
+                height: 8mm;
                 vertical-align: top;
                 display: inline-block;
+                font-size: inherit;
             }
 
             #title {
                 font-weight: bold;
-                font-size: 10pt;
+            }
+
+            #title:after{
+                content: ". ";
             }
 
             #text {
                 font-style: italic;
+                font-size: inherit;
             }
+
+            #text-container {
+                padding-right: 1mm;
+                font-size: inherit;
+            }
+
         </style>
 
         <div id="content">
             <div id="icon" class="icon"></div>
-            <div class="text" id="title"></div>
-            <div class="text" id="text"></div>
+            <div id="text-container" class="text">
+                <span id="title"></span>
+                <span id="text"></span>
+            </div>
         </div>
 
     </template>
