@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -38,18 +38,18 @@
         </div>
         <script language="javascript">
             var parent = document.getElementById("basic-movement");
-            add_quickref_item(parent, "Move:", "run", "5ft per 5ft.");
-            add_quickref_item(parent, "Drop prone:", "falling", "0ft.|Adds prone condition");
-            add_quickref_item(parent, "Stand up:", "strong", "half movement speed.");
-            add_quickref_item(parent, "Crawl:", "backstab", "10ft per 5ft.");
-            add_quickref_item(parent, "Climb:", "crags", "10ft per 5ft.|Athletics check if difficult.");
-            add_quickref_item(parent, "Swim:", "at-sea", "10ft per 5ft.|Athletics check if difficult.");
-            add_quickref_item(parent, "High jump:", "wingfoot", "5ft per 5ft.|Height increases with STR.");
-            add_quickref_item(parent, "Long jump:", "wingfoot", "5ft per 5ft.|Distance increases with STR.");
-            add_quickref_item(parent, "", "wingfoot", "Ability check if jump or landing difficult.");
-            add_quickref_item(parent, "Difficult terrain.", "stone-pile", "|Increased cost: +5ft per 5ft");
-            add_quickref_item(parent, "Grapple move.", "grab", "Speed halved unless you are 2+ sizes larger.");
-            add_quickref_item(parent, "Improvise.", "juggler", "Perform any stunt not on this list. GM decides on rules.");
+            add_quickref_item(parent, "Move", "run", "|Cost: 5ft per 5ft");
+            add_quickref_item(parent, "Drop prone", "falling", "|Cost: 0ft");
+            add_quickref_item(parent, "Stand up", "strong", "|Cost: half movement speed");
+            add_quickref_item(parent, "Crawl", "backstab", "|Cost: 10ft per 5ft");
+            add_quickref_item(parent, "Climb", "crags", "|Cost: 10ft per 5ft");
+            add_quickref_item(parent, "Swim", "at-sea", "|Cost: 10ft per 5ft");
+            add_quickref_item(parent, "High jump", "wingfoot", "|Cost: 5ft per 5ft");
+            add_quickref_item(parent, "Long jump", "wingfoot", "|Cost: 5ft per 5ft");
+            add_quickref_item(parent, "Improvise", "juggler", "|Any stunt not on this list");
+            add_quickref_item(parent, "Difficult terrain", "stone-pile", "|Cost modifier: +5ft per 5ft");
+            add_quickref_item(parent, "Grapple move", "grab", "|Modifier: speed halved");
+            
         </script>
 
         <div id="section-action" class="section-container">
@@ -71,20 +71,20 @@
         </div>
         <script language="javascript">
             var parent = document.getElementById("basic-actions");
-            add_quickref_item(parent, "Attack.", "crossed-swords", "May use grapple or shove as part of this action.");
-            add_quickref_item(parent, "Cast a spell", "magic-swirl", "with a cast time of 1&nbsp;action.");
-            add_quickref_item(parent, "Dash.", "sprint", "Double movement speed (after modifiers).");
-            add_quickref_item(parent, "Disengage.", "journey", "Movement does not provoke opportunity attacks.");
-            add_quickref_item(parent, "Dodge.", "aura", "Disadvantage on enemy attacks, advantage on DEX saves.");
-            add_quickref_item(parent, "Escape Grapple.", "manacles", "Your Athletics or Acrobatics vs. grappler Athletics.");
-            add_quickref_item(parent, "Help.", "telepathy", "Grant an ally advantage on checks or attacks vs. a target.");
-            add_quickref_item(parent, "Hide.", "hood", "Stealth vs. Perception. Target must not see you.");
-            add_quickref_item(parent, "Ready.", "stopwatch", "Specify trigger and action. Uses your reaction to execute.");
-            add_quickref_item(parent, "Search.", "magnifying-glass", "Perception or Investigation check.");
-            add_quickref_item(parent, "Use Object.", "snatch", "Use special abilities, interact with a second object.");
-            add_quickref_item(parent, "Shield.", "round-shield", "Equip or unequip a shield.");
-            add_quickref_item(parent, "Use feature.", "embrassed-energy", "Some class features require an action to use.");
-            add_quickref_item(parent, "Improvise.", "juggler", "Perform any action not on this list. GM decides on rules.");
+            add_quickref_item(parent, "Attack", "crossed-swords", "|Melee or ranged attack");
+            add_quickref_item(parent, "Cast a spell", "magic-swirl", "|Cast time of 1 action");
+            add_quickref_item(parent, "Dash", "sprint", "|Double movement speed");
+            add_quickref_item(parent, "Disengage", "journey", "|Prevent opportunity attacks");
+            add_quickref_item(parent, "Dodge", "aura", "|Increase defenses");
+            add_quickref_item(parent, "Escape Grapple", "manacles", "|");
+            add_quickref_item(parent, "Help", "telepathy", "|Grant an ally advantage");
+            add_quickref_item(parent, "Use Object", "snatch", "|Interact or use special abilities");
+            add_quickref_item(parent, "Shield", "round-shield", "|Equip or unequip a shield");
+            add_quickref_item(parent, "Hide", "hood", "|");
+            add_quickref_item(parent, "Search", "magnifying-glass", "|");
+            add_quickref_item(parent, "Ready", "stopwatch", "|Specify trigger and action");
+            add_quickref_item(parent, "Use class feature", "embrassed-energy", "|Some features use actions");
+            add_quickref_item(parent, "Improvise", "juggler", "|Any action not on this list");
         </script>
         <script language="javascript">
             var parent = document.getElementById("custom-actions");
@@ -95,7 +95,7 @@
 
         <div id="section-bonus-action" class="section-container">
             <div class="section-title">
-                Bonus action <span class="float-right">1/turn</span>
+                Bonus action <span class="float-right">max. 1/turn</span>
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text">
@@ -111,9 +111,9 @@
         </div>
         <script language="javascript">
             var parent = document.getElementById("basic-bonus-actions");
-            add_quickref_item(parent, "Offhand Attack.", "crossed-swords", "Must take the Attack action with a light weapon.");
-            add_quickref_item(parent, "Cast a spell", "magic-swirl", "with a cast time of 1&nbsp;bonus action.");
-            add_quickref_item(parent, "Use feature.", "embrassed-energy", "Some class features require a bonus action to use.");
+            add_quickref_item(parent, "Offhand Attack", "crossed-swords", "|Use with the Attack action");
+            add_quickref_item(parent, "Cast a spell", "magic-swirl", "|Cast time of 1&nbsp;bonus action");
+            add_quickref_item(parent, "Use class feature", "embrassed-energy", "|Some features use bonus actions");
         </script>
         <script language="javascript">
             var parent = document.getElementById("custom-bonus-actions");
@@ -127,7 +127,7 @@
 
         <div id="section-reaction" class="section-container">
             <div class="section-title">
-                Reaction <span class="float-right">1/round</span>
+                Reaction <span class="float-right">max. 1/round</span>
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text">
@@ -139,9 +139,9 @@
         </div>
         <script language="javascript">
             var parent = document.getElementById("basic-reactions");
-            add_quickref_item(parent, "Opportunity attack.", "crossed-swords", "Trigger: enemy leaves your reach.");
-            add_quickref_item(parent, "Readied action.", "stopwatch", "Trigger: specified as part of your Ready action.");
-            add_quickref_item(parent, "Cast a spell", "magic-swirl", "with a cast time of 1&nbsp;reaction. Trigger: see spell.");
+            add_quickref_item(parent, "Opportunity attack", "crossed-swords", "|Enemy leaves your reach");
+            add_quickref_item(parent, "Readied action", "stopwatch", "|Part of your Ready action");
+            add_quickref_item(parent, "Cast a spell", "magic-swirl", "|Cast time of 1&nbsp;reaction");
         </script>
 
     </div>
