@@ -2,29 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name=viewport content="width=980, initial-scale=1">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>D&D 5e quick reference</title>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/page-size.css">
-    <link rel="stylesheet" type="text/css" href="css/page-preview.css">
     <link rel="stylesheet" type="text/css" href="css/quickref.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
-
-    <!--
-    <style>
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
+    <!-- Print settings -->
+    <!--<style>
         @page {
             margin: 0;
             size: A4;
             -webkit-print-color-adjust: exact;
         }
-    </style>
-    -->
+    </style>-->
 </head>
 <body class="page-background">
-    <page class="page page-preview" size="A4" style="background-color:white">
+    <div class="page fontsize" data-size="fullscreen">
 
         <div id="section-movement" class="section-container">
             <div class="section-title">
@@ -34,22 +32,25 @@
                 <div class="section-row section-subtitle text">
                     You can move at any time during your turn (before, after, or during actions).
                 </div>
-                <div class="section-row">
-                    <quickref-item data-title="Move:" data-icon="run" data-text="5ft per 5ft."></quickref-item>
-                    <quickref-item data-title="Drop prone:" data-icon="falling" data-text="0ft.|Adds prone condition"></quickref-item>
-                    <quickref-item data-title="Stand up:" data-icon="strong" data-text="half movement speed."></quickref-item>
-                    <quickref-item data-title="Crawl:" data-icon="backstab" data-text="10ft per 5ft."></quickref-item>
-                    <quickref-item data-title="Climb:" data-icon="crags" data-text="10ft per 5ft.|Athletics check if difficult."></quickref-item>
-                    <quickref-item data-title="Swim:" data-icon="at-sea" data-text="10ft per 5ft.|Athletics check if difficult."></quickref-item>
-                    <quickref-item data-title="High jump:" data-icon="wingfoot" data-text="5ft per 5ft.|Max: STRmod+3 (10ft run) or STRmod ft."></quickref-item>
-                    <quickref-item data-title="Long jump:" data-icon="wingfoot" data-text="5ft per 5ft.|Max: STR (10ft run) or STR/2 ft."></quickref-item>
-                    <quickref-item data-icon="wingfoot" data-text="Extend arms to 1.5x body height. Ability check if difficult jump or landing."></quickref-item>
-                    <quickref-item data-title="Difficult terrain." data-icon="stone-pile" data-text="|Increased movement cost: +5ft per 5ft"></quickref-item>
-                    <quickref-item data-title="Grapple move." data-icon="grab" data-text="Speed halved unless you are 2+ sizes larger than target."></quickref-item>
-                    <quickref-item data-title="Improvise." data-icon="juggler" data-text="Perform any stunt not on this list. GM decides on rules."></quickref-item>
+                <div class="section-row" id="basic-movement">
                 </div>
             </div>
         </div>
+        <script language="javascript">
+            var parent = document.getElementById("basic-movement");
+            add_quickref_item(parent, "Move:", "run", "5ft per 5ft.");
+            add_quickref_item(parent, "Drop prone:", "falling", "0ft.|Adds prone condition");
+            add_quickref_item(parent, "Stand up:", "strong", "half movement speed.");
+            add_quickref_item(parent, "Crawl:", "backstab", "10ft per 5ft.");
+            add_quickref_item(parent, "Climb:", "crags", "10ft per 5ft.|Athletics check if difficult.");
+            add_quickref_item(parent, "Swim:", "at-sea", "10ft per 5ft.|Athletics check if difficult.");
+            add_quickref_item(parent, "High jump:", "wingfoot", "5ft per 5ft.|Height increases with STR.");
+            add_quickref_item(parent, "Long jump:", "wingfoot", "5ft per 5ft.|Distance increases with STR.");
+            add_quickref_item(parent, "", "wingfoot", "Ability check if jump or landing difficult.");
+            add_quickref_item(parent, "Difficult terrain.", "stone-pile", "|Increased cost: +5ft per 5ft");
+            add_quickref_item(parent, "Grapple move.", "grab", "Speed halved unless you are 2+ sizes larger.");
+            add_quickref_item(parent, "Improvise.", "juggler", "Perform any stunt not on this list. GM decides on rules.");
+        </script>
 
         <div id="section-action" class="section-container">
             <div class="section-title">
@@ -60,32 +61,37 @@
                     You can also interact with one object or feature of the
                     environment for free.
                 </div>
-                <div class="section-row">
-                    <quickref-item data-title="Attack." data-icon="crossed-swords" data-text="May use grapple or shove as part of this action."></quickref-item>
-                    <quickref-item data-title="Cast a spell" data-icon="magic-swirl" data-text="with a cast time of 1&nbsp;action. Max. 1 non-cantrip spell per turn."></quickref-item>
-                    <quickref-item data-title="Dash." data-icon="sprint" data-text="Double movement speed (after modifiers)."></quickref-item>
-                    <quickref-item data-title="Disengage." data-icon="journey" data-text="Your movement does not provoke opportunity attacks."></quickref-item>
-                    <quickref-item data-title="Dodge." data-icon="aura" data-text="Disadvantage for attacks against you, advantage on DEX saves."></quickref-item>
-                    <quickref-item data-title="Escape Grapple." data-icon="manacles" data-text="Your Athletics or Acrobatics vs. grappler Athletics."></quickref-item>
-                    <quickref-item data-title="Help." data-icon="telepathy" data-text="Grant an ally advantage on checks or attacks vs. a target within 5ft."></quickref-item>
-                    <quickref-item data-title="Hide." data-icon="hood" data-text="Stealth vs. Perception. Target must not see you."></quickref-item>
-                    <quickref-item data-title="Ready." data-icon="stopwatch" data-text="Specify trigger and action. Uses your reaction to execute the action."></quickref-item>
-                    <quickref-item data-title="Search." data-icon="magnifying-glass" data-text="Perception or Investigation check."></quickref-item>
-                    <quickref-item data-title="Use Object." data-icon="snatch" data-text="Use special abilities, interact with a second object."></quickref-item>
-                    <quickref-item data-title="Shield." data-icon="round-shield" data-text="Equip or unequip a shield."></quickref-item>
-                    <quickref-item data-title="Use feature." data-icon="embrassed-energy" data-text="Some class features require an action to use."></quickref-item>
-                    <quickref-item data-title="Improvise." data-icon="juggler" data-text="Perform any action not on this list. GM decides on rules."></quickref-item>
-                </div>
-                <div class="section-row section-subtitle text">
+                <div class="section-row" id="basic-actions"></div>
+
+                <div class="section-row section-subtitle text hidden">
                     Example class features that use actions:
                 </div>
-                <div class="section-row">
-                    <quickref-item data-title="Wild Shape" data-icon="paw" data-text="Druid feature. Assume the shape of a beast."></quickref-item>
-                    <quickref-item data-title="Lay on Hands" data-icon="palm" data-text="Paladin feature. Restore HP."></quickref-item>
-                    <quickref-item data-title="Channel Divinity" data-icon="holy-symbol" data-text="Cleric feature. Choose one effect to create."></quickref-item>
-                </div>
+                <div class="section-row hidden" id="custom-actions"></div>
             </div>
         </div>
+        <script language="javascript">
+            var parent = document.getElementById("basic-actions");
+            add_quickref_item(parent, "Attack.", "crossed-swords", "May use grapple or shove as part of this action.");
+            add_quickref_item(parent, "Cast a spell", "magic-swirl", "with a cast time of 1&nbsp;action.");
+            add_quickref_item(parent, "Dash.", "sprint", "Double movement speed (after modifiers).");
+            add_quickref_item(parent, "Disengage.", "journey", "Movement does not provoke opportunity attacks.");
+            add_quickref_item(parent, "Dodge.", "aura", "Disadvantage on enemy attacks, advantage on DEX saves.");
+            add_quickref_item(parent, "Escape Grapple.", "manacles", "Your Athletics or Acrobatics vs. grappler Athletics.");
+            add_quickref_item(parent, "Help.", "telepathy", "Grant an ally advantage on checks or attacks vs. a target.");
+            add_quickref_item(parent, "Hide.", "hood", "Stealth vs. Perception. Target must not see you.");
+            add_quickref_item(parent, "Ready.", "stopwatch", "Specify trigger and action. Uses your reaction to execute.");
+            add_quickref_item(parent, "Search.", "magnifying-glass", "Perception or Investigation check.");
+            add_quickref_item(parent, "Use Object.", "snatch", "Use special abilities, interact with a second object.");
+            add_quickref_item(parent, "Shield.", "round-shield", "Equip or unequip a shield.");
+            add_quickref_item(parent, "Use feature.", "embrassed-energy", "Some class features require an action to use.");
+            add_quickref_item(parent, "Improvise.", "juggler", "Perform any action not on this list. GM decides on rules.");
+        </script>
+        <script language="javascript">
+            var parent = document.getElementById("custom-actions");
+            add_quickref_item(parent, "Wild Shape", "paw", "Druid feature. Assume the shape of a beast.");
+            add_quickref_item(parent, "Lay on Hands", "palm", "Paladin feature. Restore HP.");
+            add_quickref_item(parent, "Channel Divinity", "holy-symbol", "Cleric feature. Choose one effect to create.");
+        </script>
 
         <div id="section-bonus-action" class="section-container">
             <div class="section-title">
@@ -96,24 +102,28 @@
                     You can take a bonus action only when a special ability, spell, or feature
                     states that you can do something as a bonus action.
                 </div>
-                <div class="section-row">
-                    <quickref-item data-title="Offhand Attack." data-icon="crossed-swords" data-text="Must take the Attack action with a light weapon."></quickref-item>
-                    <quickref-item data-title="Cast a spell" data-icon="magic-swirl" data-text="with a cast time of 1&nbsp;bonus action."></quickref-item>
-                    <quickref-item data-title="Use feature." data-icon="embrassed-energy" data-text="Some class features require a bonus action to use."></quickref-item>
-                </div>
-                <div class="section-row section-subtitle text">
+                <div class="section-row" id="basic-bonus-actions"></div>
+                <div class="section-row section-subtitle text hidden">
                     Example class features that use bonus actions:
                 </div>
-                <div class="section-row">
-                    <quickref-item data-title="Cunning Action" data-icon="cloak-dagger" data-text="Rogue feature. Perform actions as bonus actions."></quickref-item>
-                    <quickref-item data-title="Bardic Inspiration" data-icon="lyre" data-text="Bard feature. Grant an ally a bardic inspiration die."></quickref-item>
-                    <quickref-item data-title="Second Wind" data-icon="battle-gear" data-text="Fighter feature. Spend hit die to regain HP."></quickref-item>
-                    <quickref-item data-title="Rage" data-icon="lizardman" data-text="Barbarian feature. Enter a rage to increase damage and resistance."></quickref-item>
-                    <quickref-item data-title="Flurry of Blows" data-icon="punch" data-text="Monk feature. Perform two unarmed strikes for 1 Ki."></quickref-item>
-                    <quickref-item data-title="Flexible Casting" data-icon="orbital" data-text="Sorcerer feature. Buy and sell spell slots for sorcery points."></quickref-item>
-                </div>
+                <div class="section-row hidden" id="custom-bonus-actions"></div>
             </div>
         </div>
+        <script language="javascript">
+            var parent = document.getElementById("basic-bonus-actions");
+            add_quickref_item(parent, "Offhand Attack.", "crossed-swords", "Must take the Attack action with a light weapon.");
+            add_quickref_item(parent, "Cast a spell", "magic-swirl", "with a cast time of 1&nbsp;bonus action.");
+            add_quickref_item(parent, "Use feature.", "embrassed-energy", "Some class features require a bonus action to use.");
+        </script>
+        <script language="javascript">
+            var parent = document.getElementById("custom-bonus-actions");
+            add_quickref_item(parent, "Cunning Action", "cloak-dagger", "Rogue feature. Perform actions as bonus actions.");
+            add_quickref_item(parent, "Bardic Inspiration", "lyre", "Bard feature. Grant an ally a bardic inspiration die.");
+            add_quickref_item(parent, "Second Wind", "battle-gear", "Fighter feature. Spend hit die to regain HP.");
+            add_quickref_item(parent, "Rage", "lizardman", "Barbarian feature. Enter a rage to increase damage and resistance.");
+            add_quickref_item(parent, "Flurry of Blows", "punch", "Monk feature. Perform two unarmed strikes for 1 Ki.");
+            add_quickref_item(parent, "Flexible Casting", "orbital", "Sorcerer feature. Buy and sell spell slots for sorcery points.");
+        </script>
 
         <div id="section-reaction" class="section-container">
             <div class="section-title">
@@ -124,114 +134,17 @@
                     A reaction is an instant response to a trigger of some kind, which
                     can occur on your turn or on someone else's.
                 </div>
-                <quickref-item data-title="Opportunity attack." data-icon="crossed-swords" data-text="Trigger: enemy leaves your reach."></quickref-item>
-                <quickref-item data-title="Readied action." data-icon="stopwatch" data-text="Trigger: specified as part of your Ready action."></quickref-item>
-                <quickref-item data-title="Cast a spell" data-icon="magic-swirl" data-text="with a cast time of 1&nbsp;reaction. Trigger: see spell."></quickref-item>
+                <div class="section-row" id="basic-reactions"></div>
             </div>
         </div>
+        <script language="javascript">
+            var parent = document.getElementById("basic-reactions");
+            add_quickref_item(parent, "Opportunity attack.", "crossed-swords", "Trigger: enemy leaves your reach.");
+            add_quickref_item(parent, "Readied action.", "stopwatch", "Trigger: specified as part of your Ready action.");
+            add_quickref_item(parent, "Cast a spell", "magic-swirl", "with a cast time of 1&nbsp;reaction. Trigger: see spell.");
+        </script>
 
-    </page>
-
-    <!-- ------------------------------------------------------------------ -->
-    <!--           <quickref-item> template                                 -->
-    <!-- ------------------------------------------------------------------ -->
-    <template id="quickref-item">
-        <style>
-            :host {
-                width: 32%;
-                margin-bottom: 2mm;
-                float: left;
-                display: flex;
-            }
-
-            #icon {
-                float: left;
-                width: 8mm;
-                height: 8mm;
-                background-repeat: no-repeat;
-                background-size: contain;
-                box-sizing: border-box;
-                border-radius: 1mm;
-                display: inline-block;
-                margin-right: 1mm;
-            }
-
-            #content {
-                flex: 1;
-                height: 8mm;
-                vertical-align: top;
-                display: inline-block;
-                font-size: inherit;
-            }
-
-            #title {
-                font-weight: bold;
-            }
-
-            #text {
-                font-style: italic;
-                font-size: inherit;
-            }
-
-            #text-container {
-                padding-right: 1mm;
-                font-size: inherit;
-            }
-
-        </style>
-
-        <div id="content">
-            <div id="icon" class="icon"></div>
-            <div id="text-container" class="text">
-                <span id="title"></span>
-                <span id="text"></span>
-            </div>
-        </div>
-
-    </template>
-
-    <script>
-        (function (window, document) {
-            var elemName = 'quickref-item';
-            var thatDoc = document;
-            var thisDoc = (thatDoc.currentScript || thatDoc._currentScript).ownerDocument;
-
-            var proto = Object.create(HTMLElement.prototype, {
-                createdCallback: {
-                    value: function () {
-                        var template = thisDoc.getElementById(elemName);
-                        var clone = thatDoc.importNode(template.content, true);
-                        var root = this.createShadowRoot().appendChild(clone);
-                    }
-                },
-                attachedCallback: {
-                    value: function () {
-                        var root = this.shadowRoot;
-                        var icon = root.getElementById("icon");
-                        var title = root.getElementById("title");
-                        var text = root.getElementById("text");
-
-                        for (var i = 0; i < this.attributes.length; i++) {
-                            var attribute = this.attributes[i];
-                            var name = attribute.name;
-                            var value = attribute.value;
-                            switch (name) {
-                                case "data-icon":   icon.className += " icon-" + value; break;
-                                case "data-title":  title.innerHTML = value; break;
-                                case "data-text":   text.innerHTML = value.replace("|","<br />"); break;
-                            }
-
-                        }
-
-                    }
-                }
-            });
-            thatDoc.registerElement(elemName, { prototype: proto });
-        })(window, document);
-    </script>
-    <!-- ------------------------------------------------------------------ -->
-    <!--           end of template                                          -->
-    <!-- ------------------------------------------------------------------ -->
+    </div>
 
 </body>
 </html>

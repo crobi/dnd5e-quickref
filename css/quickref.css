@@ -1,37 +1,39 @@
+/* ------------------------------------------------------------------------- */
+/* Sections */
+/* ------------------------------------------------------------------------- */
 .section-container {
-    border: 2mm solid;
-    border-radius: 2mm;
+    border: 8px solid;
+    border-radius: 8px;
     box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
     /*font-family: Arial;*/
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-    font-size: 8pt;
     width:100%;
-    margin-bottom:2mm;
+    margin-bottom:8px;
 }
 
 .section-content {
-    padding:2mm;
-    padding-bottom:0mm;
-    border-radius: 2mm;
-    margin-top:0px;
+    padding:8px;
+    padding-bottom: 0;
+    border-radius: 8px;
+    margin-top: 0;
     background-color: white;
     border-color: inherit;
     font-size: inherit;
 }
 
 .section-title {
-    height: 8mm;
-    padding-left: 2mm;
+    height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
     font-family: Lora, 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
     font-variant: small-caps;
     font-weight: bold;
     background-color: inherit;
     color: white;
-    font-size: 5mm;
-    line-height: 6.5mm;
+    font-size: 16pt;
 }
 
 .float-right {
@@ -40,7 +42,7 @@
 
 .section-subtitle {
     display: block;
-    margin-bottom: 2mm;
+    margin-bottom: 8px;
     font-size: inherit;
     font-style: italic;
 }
@@ -55,34 +57,158 @@
     clear: both;
 }
 
-#section-movement, #section-movement /deep/ .icon {
+/* ------------------------------------------------------------------------- */
+/* Items */
+/* ------------------------------------------------------------------------- */
+
+.item {
+    width: 33%;
+    height: 46px;
+    margin-bottom: 8px;
+    float: left;
+    display: flex;
+    font-size: inherit;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.item-icon {
+    float: left;
+    width: 46px;
+    height: 46px;
+    flex: 0 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.item-title {
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.item-desc {
+    font-style: italic;
+    font-size: inherit;
+}
+
+.item-text-container {
+    flex: 1;
+    padding-right: 4px;
+    font-size: inherit;
+}
+
+
+/* ------------------------------------------------------------------------- */
+/* Colors */
+/* ------------------------------------------------------------------------- */
+#section-movement, #section-movement .item-icon {
     background-color: maroon;
     border-color: maroon;
 }
-#section-movement /deep/ .text {
+#section-movement .text {
     color: maroon;
 }
 
-#section-action, #section-action /deep/ .icon {
+#section-action, #section-action .item-icon {
     background-color: black;
     border-color: black;
 }
-#section-action /deep/ .text {
+#section-action .text {
     color: black;
 }
 
-#section-bonus-action, #section-bonus-action /deep/ .icon {
+#section-bonus-action, #section-bonus-action .item-icon {
     background-color: indigo;
     border-color: indigo;
 }
-#section-bonus-action /deep/ .text {
+#section-bonus-action .text {
     color: indigo;
 }
 
-#section-reaction, #section-reaction /deep/ .icon {
+#section-reaction, #section-reaction .item-icon {
     background-color: DarkOliveGreen ;
     border-color: DarkOliveGreen ;
 }
-#section-reaction /deep/ .text {
+#section-reaction .text {
     color: DarkOliveGreen ;
 }
+
+
+/* ------------------------------------------------------------------------- */
+/* Page container */
+/* ------------------------------------------------------------------------- */
+
+body {
+    display: flex;
+    justify-content:center;
+    align-content:center;
+}
+
+/* Center all content within a page */
+.page {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    page-break-after: always;
+    padding: 0;
+    font-size: inherit;
+}
+
+.page-background {
+  background: rgb(204,204,204); 
+  margin: 0;
+  padding: 0;
+}
+
+@media print {
+  .page-background {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: 0;
+    background-color: white;
+  }
+}
+
+/* A4 paper area */
+/* Chrome has problems with page sizes given in metric units. Make the paper area slightly smaller to work around this. */
+.page[data-size="A4"] {
+    width:  210mm; /* full: 210.0mm */
+    height: 296mm; /* full: 297.0mm */
+}
+
+/* US letter area */
+.page[data-size="Letter"] {
+    width:  8.5in;
+    height: 11.0in;
+}
+
+.page[data-size="fullscreen"] {
+    width:  100%;
+    padding: 8px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Misc */
+/* ------------------------------------------------------------------------- */
+
+.hidden {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Viewport sizes */
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 767px)                         { .fontsize { font-size: 10pt;} }
+@media (min-width: 768px) and (max-width:  991px) { .fontsize { font-size: 11pt;} }
+@media (min-width: 992px) and (max-width: 1199px) { .fontsize { font-size: 12pt;} }
+@media (min-width: 1200px)                        { .fontsize { font-size: 12pt;} }
+@media print {.fontsize { font-size: 9pt;}}
+

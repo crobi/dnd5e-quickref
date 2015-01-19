@@ -26,13 +26,19 @@
 
 /* A4 paper area */
 /* Chrome has problems with page sizes given in metric units. Make the paper area slightly smaller to work around this. */
-.page[size="A4"] {
+.page[data-size="A4"] {
     width:  210mm; /* full: 210.0mm */
     height: 296mm; /* full: 297.0mm */
 }
 
 /* US letter area */
-.page[size="Letter"] {
+.page[data-size="Letter"] {
     width:  8.5in;
     height: 11.0in;
 }
+
+.page[data-size="fullscreen"] {
+    width:  100%;
+    padding: 8px;
+}
+

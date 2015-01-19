@@ -1,5 +1,7 @@
 .page-background {
   background: rgb(204,204,204); 
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -29,6 +31,6 @@ body {
     border: 0;
     box-shadow: 0;
     /* Set the background to gray to visualize the page size in the print preview */
-    background-color: gray;
+    background-color: white;
   }
 }
