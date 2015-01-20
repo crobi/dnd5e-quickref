@@ -1,6 +1,5 @@
-function add_quickref_item(parent, title, icon, text) {
+function add_quickref_item(parent, title, icon, subtitle) {
 
-    text = text.replace("|", "<br />");
 
     var item = document.createElement("div");
     item.className += "item"
@@ -8,11 +7,27 @@ function add_quickref_item(parent, title, icon, text) {
     '\
     <div class="item-icon icon-'+icon+'"></div>\
     <div class="item-text-container text">\
-        <span class="item-title">'+title+'</span>\
-        <span class="item-desc">'+text+'</span>\
+        <span class="item-title">' + title + '</span><br />\
+        <span class="item-desc">' + subtitle + '</span>\
     </div>\
     ';
 
     parent.appendChild(item);
 
 }
+
+function fill_section(data, parentname) {
+    var parent = document.getElementById(parentname);
+    data.forEach(function (item) {
+        add_quickref_item(parent, item.title, item.icon, item.subtitle);
+    });
+}
+
+function fill_items() {
+    fill_section(data_movement, "basic-movement");
+    fill_section(data_action, "basic-actions");
+    fill_section(data_bonusaction, "basic-bonus-actions");
+    fill_section(data_reaction, "basic-reactions");
+}
+
+fill_items();

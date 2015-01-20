@@ -10,20 +10,11 @@
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
-    <!-- Javascript -->
-    <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
-    <!-- Print settings -->
-    <!--<style>
-        @page {
-            margin: 0;
-            size: A4;
-            -webkit-print-color-adjust: exact;
-        }
-    </style>-->
 </head>
 <body class="page-background">
     <div class="page fontsize" data-size="fullscreen">
 
+        <!-- Movement section -->
         <div id="section-movement" class="section-container">
             <div class="section-title">
                 Movement <span class="float-right">limited by movement speed</span>
@@ -36,22 +27,8 @@
                 </div>
             </div>
         </div>
-        <script language="javascript">
-            var parent = document.getElementById("basic-movement");
-            add_quickref_item(parent, "Move", "run", "|Cost: 5ft per 5ft");
-            add_quickref_item(parent, "Drop prone", "falling", "|Cost: 0ft");
-            add_quickref_item(parent, "Stand up", "strong", "|Cost: half movement speed");
-            add_quickref_item(parent, "Crawl", "backstab", "|Cost: 10ft per 5ft");
-            add_quickref_item(parent, "Climb", "crags", "|Cost: 10ft per 5ft");
-            add_quickref_item(parent, "Swim", "at-sea", "|Cost: 10ft per 5ft");
-            add_quickref_item(parent, "High jump", "wingfoot", "|Cost: 5ft per 5ft");
-            add_quickref_item(parent, "Long jump", "wingfoot", "|Cost: 5ft per 5ft");
-            add_quickref_item(parent, "Improvise", "juggler", "|Any stunt not on this list");
-            add_quickref_item(parent, "Difficult terrain", "stone-pile", "|Cost modifier: +5ft per 5ft");
-            add_quickref_item(parent, "Grapple move", "grab", "|Modifier: speed halved");
-            
-        </script>
 
+        <!-- Action section -->
         <div id="section-action" class="section-container">
             <div class="section-title">
                 Action <span class="float-right">1/turn</span>
@@ -62,37 +39,10 @@
                     environment for free.
                 </div>
                 <div class="section-row" id="basic-actions"></div>
-
-                <div class="section-row section-subtitle text hidden">
-                    Example class features that use actions:
-                </div>
-                <div class="section-row hidden" id="custom-actions"></div>
             </div>
         </div>
-        <script language="javascript">
-            var parent = document.getElementById("basic-actions");
-            add_quickref_item(parent, "Attack", "crossed-swords", "|Melee or ranged attack");
-            add_quickref_item(parent, "Cast a spell", "magic-swirl", "|Cast time of 1 action");
-            add_quickref_item(parent, "Dash", "sprint", "|Double movement speed");
-            add_quickref_item(parent, "Disengage", "journey", "|Prevent opportunity attacks");
-            add_quickref_item(parent, "Dodge", "aura", "|Increase defenses");
-            add_quickref_item(parent, "Escape Grapple", "manacles", "|");
-            add_quickref_item(parent, "Help", "telepathy", "|Grant an ally advantage");
-            add_quickref_item(parent, "Use Object", "snatch", "|Interact or use special abilities");
-            add_quickref_item(parent, "Shield", "round-shield", "|Equip or unequip a shield");
-            add_quickref_item(parent, "Hide", "hood", "|");
-            add_quickref_item(parent, "Search", "magnifying-glass", "|");
-            add_quickref_item(parent, "Ready", "stopwatch", "|Specify trigger and action");
-            add_quickref_item(parent, "Use class feature", "embrassed-energy", "|Some features use actions");
-            add_quickref_item(parent, "Improvise", "juggler", "|Any action not on this list");
-        </script>
-        <script language="javascript">
-            var parent = document.getElementById("custom-actions");
-            add_quickref_item(parent, "Wild Shape", "paw", "Druid feature. Assume the shape of a beast.");
-            add_quickref_item(parent, "Lay on Hands", "palm", "Paladin feature. Restore HP.");
-            add_quickref_item(parent, "Channel Divinity", "holy-symbol", "Cleric feature. Choose one effect to create.");
-        </script>
 
+        <!-- Bonus action section -->
         <div id="section-bonus-action" class="section-container">
             <div class="section-title">
                 Bonus action <span class="float-right">max. 1/turn</span>
@@ -103,28 +53,10 @@
                     states that you can do something as a bonus action.
                 </div>
                 <div class="section-row" id="basic-bonus-actions"></div>
-                <div class="section-row section-subtitle text hidden">
-                    Example class features that use bonus actions:
-                </div>
-                <div class="section-row hidden" id="custom-bonus-actions"></div>
             </div>
         </div>
-        <script language="javascript">
-            var parent = document.getElementById("basic-bonus-actions");
-            add_quickref_item(parent, "Offhand Attack", "crossed-swords", "|Use with the Attack action");
-            add_quickref_item(parent, "Cast a spell", "magic-swirl", "|Cast time of 1&nbsp;bonus action");
-            add_quickref_item(parent, "Use class feature", "embrassed-energy", "|Some features use bonus actions");
-        </script>
-        <script language="javascript">
-            var parent = document.getElementById("custom-bonus-actions");
-            add_quickref_item(parent, "Cunning Action", "cloak-dagger", "Rogue feature. Perform actions as bonus actions.");
-            add_quickref_item(parent, "Bardic Inspiration", "lyre", "Bard feature. Grant an ally a bardic inspiration die.");
-            add_quickref_item(parent, "Second Wind", "battle-gear", "Fighter feature. Spend hit die to regain HP.");
-            add_quickref_item(parent, "Rage", "lizardman", "Barbarian feature. Enter a rage to increase damage and resistance.");
-            add_quickref_item(parent, "Flurry of Blows", "punch", "Monk feature. Perform two unarmed strikes for 1 Ki.");
-            add_quickref_item(parent, "Flexible Casting", "orbital", "Sorcerer feature. Buy and sell spell slots for sorcery points.");
-        </script>
 
+        <!-- Reaction section -->
         <div id="section-reaction" class="section-container">
             <div class="section-title">
                 Reaction <span class="float-right">max. 1/round</span>
@@ -137,14 +69,14 @@
                 <div class="section-row" id="basic-reactions"></div>
             </div>
         </div>
-        <script language="javascript">
-            var parent = document.getElementById("basic-reactions");
-            add_quickref_item(parent, "Opportunity attack", "crossed-swords", "|Enemy leaves your reach");
-            add_quickref_item(parent, "Readied action", "stopwatch", "|Part of your Ready action");
-            add_quickref_item(parent, "Cast a spell", "magic-swirl", "|Cast time of 1&nbsp;reaction");
-        </script>
 
     </div>
 
+    <!-- Data -->
+    <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_bonusaction.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
 </body>
 </html>
