@@ -2,10 +2,10 @@ function add_quickref_item(parent, title, icon, subtitle) {
 
 
     var item = document.createElement("div");
-    item.className += "item"
+    item.className += "item itemsize"
     item.innerHTML =
     '\
-    <div class="item-icon icon-'+icon+'"></div>\
+    <div class="item-icon iconsize icon-'+icon+'"></div>\
     <div class="item-text-container text">\
         <span class="item-title">' + title + '</span><br />\
         <span class="item-desc">' + subtitle + '</span>\

@@ -62,8 +62,6 @@
 /* ------------------------------------------------------------------------- */
 
 .item {
-    width: 33%;
-    height: 46px;
     margin-bottom: 8px;
     float: left;
     display: flex;
@@ -74,8 +72,6 @@
 
 .item-icon {
     float: left;
-    width: 46px;
-    height: 46px;
     flex: 0 0 auto;
     background-repeat: no-repeat;
     background-size: contain;
@@ -148,52 +144,6 @@ body {
     align-content:center;
 }
 
-/* Center all content within a page */
-.page {
-    display: flex;
-    align-content: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    page-break-after: always;
-    padding: 0;
-    font-size: inherit;
-}
-
-.page-background {
-  background: rgb(204,204,204); 
-  margin: 0;
-  padding: 0;
-}
-
-@media print {
-  .page-background {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-shadow: 0;
-    background-color: white;
-  }
-}
-
-/* A4 paper area */
-/* Chrome has problems with page sizes given in metric units. Make the paper area slightly smaller to work around this. */
-.page[data-size="A4"] {
-    width:  210mm; /* full: 210.0mm */
-    height: 296mm; /* full: 297.0mm */
-}
-
-/* US letter area */
-.page[data-size="Letter"] {
-    width:  8.5in;
-    height: 11.0in;
-}
-
-.page[data-size="fullscreen"] {
-    width:  100%;
-    padding: 8px;
-}
-
 /* ------------------------------------------------------------------------- */
 /* Misc */
 /* ------------------------------------------------------------------------- */
@@ -206,9 +156,11 @@ body {
 /* Viewport sizes */
 /* ------------------------------------------------------------------------- */
 
-@media (max-width: 767px)                         { .fontsize { font-size: 10pt;} }
-@media (min-width: 768px) and (max-width:  991px) { .fontsize { font-size: 11pt;} }
-@media (min-width: 992px) and (max-width: 1199px) { .fontsize { font-size: 12pt;} }
-@media (min-width: 1200px)                        { .fontsize { font-size: 12pt;} }
-@media print {.fontsize { font-size: 9pt;}}
+@media (min-width:    0px) and (max-width:  399px) { .fontsize { font-size: 12pt; } .iconsize { width: 44px; height: 44px;} .itemsize { height: 44px; width: 100%; } }
+@media (min-width:  400px) and (max-width:  767px) { .fontsize { font-size: 11pt; } .iconsize { width: 40px; height: 40px;} .itemsize { height: 40px; width:  50%; } }
+@media (min-width:  768px) and (max-width:  991px) { .fontsize { font-size: 11pt; } .iconsize { width: 40px; height: 40px;} .itemsize { height: 40px; width:  33%; } }
+@media (min-width:  992px) and (max-width: 1199px) { .fontsize { font-size: 12pt; } .iconsize { width: 44px; height: 44px;} .itemsize { height: 44px; width:  33%; } }
+@media (min-width: 1200px) and (max-width: 1599px) { .fontsize { font-size: 12pt; } .iconsize { width: 44px; height: 44px;} .itemsize { height: 44px; width:  25%; } }
+@media (min-width: 1600px)                         { .fontsize { font-size: 12pt; } .iconsize { width: 44px; height: 44px;} .itemsize { height: 44px; width:  20%; } }
+@media print                                       { .fontsize { font-size: 10pt; } .iconsize { width: 36px; height: 36px;} .itemsize { height: 36px; width:  33%; } }
 
