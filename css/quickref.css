@@ -165,7 +165,7 @@ ul {
 
 .modal-open .modal {
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 .modal {

@@ -33,7 +33,7 @@ function show_modal(data, color, type) {
 
     $("body").addClass("modal-open");
     $("#modal").addClass("modal-visible");
-    $("#modal-backdrop").css("height", screen.height + "px");
+    $("#modal-backdrop").css("height", window.innerHeight + "px");
     $("#modal-container").css("background-color", color).css("border-color", color);
     $("#modal-title").text(title).append("<span class=\"float-right\">" + type + "</span>");
     $("#modal-subtitle").text(subtitle);
