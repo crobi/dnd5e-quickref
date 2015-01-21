@@ -155,6 +155,15 @@ body {
 /* ------------------------------------------------------------------------- */
 /* Modal */
 /* ------------------------------------------------------------------------- */
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -162,9 +171,13 @@ body {
     bottom: 0;
     left: 0;
     z-index: 1040;
-    display: none;
     overflow: hidden;
     outline: 0;
+    display: none;
+}
+
+.modal-visible {
+    display: block;
 }
 
 .modal-dialog {
@@ -173,19 +186,20 @@ body {
     margin: 10px;
 }
 
-.modal-content {
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #888;
+    opacity: .75;
+    overflow: hidden;
 }
 
-.modal-header {
-    min-height: 16.43px;
-    padding: 15px;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.modal-body {
-    position: relative;
-    padding: 15px;
+.modal-container {
+    background-clip: padding-box;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
 }
 
 .modal-footer {
@@ -194,29 +208,6 @@ body {
     border-top: 1px solid #e5e5e5;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4;
-}
-
-.btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
 
 /* ------------------------------------------------------------------------- */
 /* Viewport sizes */

@@ -10,6 +10,8 @@
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/jquery/jquery.min.js" charset="utf-8"></script>
 </head>
 <body class="page-background">
     <div class="page fontsize" data-size="fullscreen">
@@ -70,6 +72,27 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-dialog modalsize">
+            <div class="section-container modal-container" id="modal-container">
+                <div class="section-title" id="modal-title">
+                    Modal title<span class="float-right">Action</span>
+                </div>
+                <div class="section-content">
+                    <div class="section-row section-subtitle text" id="modal-subtitle">
+                        Subtitle
+                    </div>
+                    <div class="section-row text">
+                        <ul id="modal-bullets">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Data -->
