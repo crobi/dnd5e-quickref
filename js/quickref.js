@@ -28,6 +28,7 @@ function show_modal(data, color, type) {
     var title = data.title || "[no title]";
     var subtitle = data.description || data.subtitle || "";
     var bullets = data.bullets || [];
+    var reference = data.reference || "";
     type = type || "";
     color = color || "black"
 
@@ -37,6 +38,7 @@ function show_modal(data, color, type) {
     $("#modal-container").css("background-color", color).css("border-color", color);
     $("#modal-title").text(title).append("<span class=\"float-right\">" + type + "</span>");
     $("#modal-subtitle").text(subtitle);
+    $("#modal-reference").text(reference);
 
     var bullets_html = bullets.map(function (item) { return "<p class=\"fonstsize\">" + item + "</p>"; }).join("\n<hr>\n");
     $("#modal-bullets").html(bullets_html);

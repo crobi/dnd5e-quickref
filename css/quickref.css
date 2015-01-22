@@ -40,7 +40,7 @@
     float: right;
 }
 
-.section-subtitle {
+.section-subtitle, #modal-reference {
     display: block;
     margin-bottom: 8px;
     font-size: inherit;
