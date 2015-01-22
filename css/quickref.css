@@ -12,6 +12,7 @@
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
     width:100%;
     margin-bottom:8px;
+    page-break-inside: avoid;
 }
 
 .section-content {
