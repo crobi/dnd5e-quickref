@@ -38,7 +38,7 @@ function show_modal(data, color, type) {
     $("#modal-title").text(title).append("<span class=\"float-right\">" + type + "</span>");
     $("#modal-subtitle").text(subtitle);
 
-    var bullets_html = bullets.map(function (item) { return "<li>" + item + "</li>"; }).join("\n");
+    var bullets_html = bullets.map(function (item) { return "<p class=\"fonstsize\">" + item + "</p>"; }).join("\n<hr>\n");
     $("#modal-bullets").html(bullets_html);
 }
 

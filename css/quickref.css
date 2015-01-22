@@ -156,6 +156,20 @@ ul {
     padding-left: 20px;
 }
 
+p, hr {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid gray;
+}
+
+p:first-child {
+    margin-top: 1em;
+}
+
 /* ------------------------------------------------------------------------- */
 /* Modal */
 /* ------------------------------------------------------------------------- */
@@ -187,7 +201,7 @@ ul {
 .modal-dialog {
     position: relative;
     width: auto;
-    margin: 10px;
+    margin: 8px;
 }
 
 .modal-backdrop {
