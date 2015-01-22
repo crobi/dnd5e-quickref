@@ -84,17 +84,24 @@
 .item-title {
     font-weight: bold;
     font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .item-desc {
     font-style: italic;
     font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .item-text-container {
     flex: 1;
     padding-right: 4px;
     font-size: inherit;
+    height: 100%;
 }
 
 

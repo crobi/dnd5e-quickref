@@ -9,8 +9,8 @@ function add_quickref_item(parent, data, type) {
     '\
     <div class="item-icon iconsize icon-' + icon + '"></div>\
     <div class="item-text-container text">\
-        <span class="item-title">' + title + '</span><br />\
-        <span class="item-desc">' + subtitle + '</span>\
+        <div class="item-title">' + title + '</div>\
+        <div class="item-desc">' + subtitle + '</div>\
     </div>\
     ';
 
