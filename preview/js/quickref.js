@@ -9,8 +9,8 @@ function add_quickref_item(parent, data, type) {
     '\
     <div class="item-icon iconsize icon-' + icon + '"></div>\
     <div class="item-text-container text">\
-        <span class="item-title">' + title + '</span><br />\
-        <span class="item-desc">' + subtitle + '</span>\
+        <div class="item-title">' + title + '</div>\
+        <div class="item-desc">' + subtitle + '</div>\
     </div>\
     ';
 
@@ -38,7 +38,7 @@ function show_modal(data, color, type) {
     $("#modal-title").text(title).append("<span class=\"float-right\">" + type + "</span>");
     $("#modal-subtitle").text(subtitle);
 
-    var bullets_html = bullets.map(function (item) { return "<li>" + item + "</li>"; }).join("\n");
+    var bullets_html = bullets.map(function (item) { return "<p class=\"fonstsize\">" + item + "</p>"; }).join("\n<hr>\n");
     $("#modal-bullets").html(bullets_html);
 }
 
@@ -59,6 +59,7 @@ function init() {
     fill_section(data_action, "basic-actions", "Action");
     fill_section(data_bonusaction, "basic-bonus-actions", "Bonus action");
     fill_section(data_reaction, "basic-reactions", "Reaction");
+    fill_section(data_condition, "basic-conditions", "Condition");
 
     var modal = document.getElementById("modal");
     modal.onclick = hide_modal;

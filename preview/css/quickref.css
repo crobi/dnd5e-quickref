@@ -12,6 +12,7 @@
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
     width:100%;
     margin-bottom:8px;
+    page-break-inside: avoid;
 }
 
 .section-content {
@@ -84,17 +85,24 @@
 .item-title {
     font-weight: bold;
     font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .item-desc {
     font-style: italic;
     font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .item-text-container {
     flex: 1;
     padding-right: 4px;
     font-size: inherit;
+    height: 100%;
 }
 
 
@@ -133,6 +141,14 @@
     color: DarkOliveGreen ;
 }
 
+#section-condition, #section-condition .item-icon {
+    background-color: FireBrick;
+    border-color: FireBrick;
+}
+#section-condition .text {
+    color: FireBrick;
+}
+
 
 /* ------------------------------------------------------------------------- */
 /* Page container */
@@ -154,6 +170,20 @@ body {
 
 ul {
     padding-left: 20px;
+}
+
+p, hr {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid gray;
+}
+
+p:first-child {
+    margin-top: 1em;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -187,7 +217,7 @@ ul {
 .modal-dialog {
     position: relative;
     width: auto;
-    margin: 10px;
+    margin: 8px;
 }
 
 .modal-backdrop {
@@ -218,7 +248,7 @@ ul {
 /* ------------------------------------------------------------------------- */
 
 /* Smart phone, portrait */
-@media (min-width:    0px) and (max-width:  399px) {
+@media (min-width:    0px) and (max-width:  479px) {
     .fontsize { font-size: 12pt; } 
     .iconsize { width: 44px; height: 44px;} 
     .itemsize { height: 44px; width: 100%; } 
@@ -226,7 +256,7 @@ ul {
 }
 
 /* Smart phone, landscape */
-@media (min-width:  400px) and (max-width:  767px) {
+@media (min-width:  480px) and (max-width:  767px) {
     .fontsize { font-size: 11pt; }
     .iconsize { width: 40px; height: 40px;}
     .itemsize { height: 40px; width:  50%; }

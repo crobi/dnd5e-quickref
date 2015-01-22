@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -22,7 +22,7 @@
                 Movement <span class="float-right">limited by movement speed</span>
             </div>
             <div class="section-content">
-                <div class="section-row section-subtitle text">
+                <div class="section-row section-subtitle text fontsize">
                     You can move at any time during your turn (before, after, or during actions).
                 </div>
                 <div class="section-row" id="basic-movement">
@@ -36,7 +36,7 @@
                 Action <span class="float-right">1/turn</span>
             </div>
             <div class="section-content">
-                <div class="section-row section-subtitle text">
+                <div class="section-row section-subtitle text fontsize">
                     You can also interact with one object or feature of the
                     environment for free.
                 </div>
@@ -50,7 +50,7 @@
                 Bonus action <span class="float-right">max. 1/turn</span>
             </div>
             <div class="section-content">
-                <div class="section-row section-subtitle text">
+                <div class="section-row section-subtitle text fontsize">
                     You can take a bonus action only when a special ability, spell, or feature
                     states that you can do something as a bonus action.
                 </div>
@@ -64,11 +64,24 @@
                 Reaction <span class="float-right">max. 1/round</span>
             </div>
             <div class="section-content">
-                <div class="section-row section-subtitle text">
+                <div class="section-row section-subtitle text fontsize">
                     A reaction is an instant response to a trigger of some kind, which
                     can occur on your turn or on someone else's.
                 </div>
                 <div class="section-row" id="basic-reactions"></div>
+            </div>
+        </div>
+
+        <!-- Condition section -->
+        <div id="section-condition" class="section-container">
+            <div class="section-title">
+                Condition
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect.
+                </div>
+                <div class="section-row" id="basic-conditions"></div>
             </div>
         </div>
 
@@ -87,8 +100,8 @@
                         Subtitle
                     </div>
                     <div class="section-row text">
-                        <ul id="modal-bullets">
-                        </ul>
+                        <div id="modal-bullets">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,6 +113,7 @@
     <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_bonusaction.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
 </body>
 </html>
