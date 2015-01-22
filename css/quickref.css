@@ -247,7 +247,7 @@ p:first-child {
 /* ------------------------------------------------------------------------- */
 
 /* Smart phone, portrait */
-@media (min-width:    0px) and (max-width:  399px) {
+@media (min-width:    0px) and (max-width:  479px) {
     .fontsize { font-size: 12pt; } 
     .iconsize { width: 44px; height: 44px;} 
     .itemsize { height: 44px; width: 100%; } 
@@ -255,7 +255,7 @@ p:first-child {
 }
 
 /* Smart phone, landscape */
-@media (min-width:  400px) and (max-width:  767px) {
+@media (min-width:  480px) and (max-width:  767px) {
     .fontsize { font-size: 11pt; }
     .iconsize { width: 40px; height: 40px;}
     .itemsize { height: 40px; width:  50%; }
