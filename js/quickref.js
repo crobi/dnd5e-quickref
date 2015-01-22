@@ -59,6 +59,7 @@ function init() {
     fill_section(data_action, "basic-actions", "Action");
     fill_section(data_bonusaction, "basic-bonus-actions", "Bonus action");
     fill_section(data_reaction, "basic-reactions", "Reaction");
+    fill_section(data_condition, "basic-conditions", "Condition");
 
     var modal = document.getElementById("modal");
     modal.onclick = hide_modal;
