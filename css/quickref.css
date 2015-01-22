@@ -133,6 +133,14 @@
     color: DarkOliveGreen ;
 }
 
+#section-condition, #section-condition .item-icon {
+    background-color: FireBrick;
+    border-color: FireBrick;
+}
+#section-condition .text {
+    color: FireBrick;
+}
+
 
 /* ------------------------------------------------------------------------- */
 /* Page container */
