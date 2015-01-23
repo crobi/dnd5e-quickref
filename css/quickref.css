@@ -148,6 +148,14 @@
     color: FireBrick;
 }
 
+#section-environment, #section-environment .item-icon {
+    background-color: ForestGreen;
+    border-color: ForestGreen;
+}
+#section-environment .text {
+    color: ForestGreen;
+}
+
 
 /* ------------------------------------------------------------------------- */
 /* Page container */
