@@ -1,8 +1,8 @@
 data_environment = [
     {
-        title: "Light obscurity",
+        title: "Lightly obscured",
         icon: "bleeding-eye",
-        subtitle: "Dim light, patchy fog, moderate foliage.",
+        subtitle: "Dim light, patchy fog, moderate foliage",
         description: "",
         reference: "PHB, pg. 183.",
         bullets: [
@@ -10,9 +10,9 @@ data_environment = [
         ]
     },
     {
-        title: "Heavy obscurity",
+        title: "Heavily obscured",
         icon: "lightning-tear",
-        subtitle: "Darkness, opaque fog, dense foliage.",
+        subtitle: "Darkness, opaque fog, dense foliage",
         description: "",
         reference: "PHB, pg. 183.",
         bullets: [
@@ -22,7 +22,7 @@ data_environment = [
     {
         title: "Darkness",
         icon: "worried-eyes",
-        subtitle: "Heavily obscured.",
+        subtitle: "Heavily obscured",
         description: "Darkness creates a heavily obscured area.",
         reference: "PHB, pg. 183.",
         bullets: [
@@ -32,7 +32,7 @@ data_environment = [
     {
         title: "Dim light",
         icon: "semi-closed-eye",
-        subtitle: "Lightly obscured.",
+        subtitle: "Lightly obscured",
         description: "Dim light, also called shadows, creates a lightly obscured area.",
         reference: "PHB, pg. 183.",
         bullets: [
@@ -43,7 +43,7 @@ data_environment = [
     {
         title: "Bright light",
         icon: "star-pupil",
-        subtitle: "Normal vision.",
+        subtitle: "Normal vision",
         description: "Bright light lets most creatures see normally.",
         reference: "PHB, pg. 183.",
         bullets: [
@@ -53,7 +53,7 @@ data_environment = [
     {
         title: "Blindsight",
         icon: "one-eyed",
-        subtitle: "Perceive without sight.",
+        subtitle: "Perceive without sight",
         description: "Perceive your surroundings without relying on sight, within a certain radius.",
         reference: "PHB, pg. 183.",
         bullets: [
@@ -63,7 +63,7 @@ data_environment = [
     {
         title: "Darkvision",
         icon: "semi-closed-eye",
-        subtitle: "Limited vision in darkness.",
+        subtitle: "Limited vision in darkness",
         description: "A creature with blindsight can perceive its surroundings without relying on sight, within a certain radius.",
         reference: "PHB, pgs. 183-184.",
         bullets: [
@@ -75,7 +75,7 @@ data_environment = [
     {
         title: "Truesight",
         icon: "eye-shield",
-        subtitle: "See in darkness.",
+        subtitle: "See in darkness",
         description: "",
         reference: "PHB, pg. 184.",
         bullets: [
