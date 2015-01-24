@@ -6,7 +6,7 @@ data_environment = [
         description: "",
         reference: "PHB, pg. 183.",
         bullets: [
-            "Creatures have disadvantage on Wisdom (Perception) checks that rely on sight."
+            "Creatures have <b>disadvantage on Wisdom (Perception)</b> checks that rely on sight."
         ]
     },
     {
@@ -16,16 +16,17 @@ data_environment = [
         description: "",
         reference: "PHB, pg. 183.",
         bullets: [
-            "A creature in a heavily obscured area effectively suffers from the blinded condition."
+            "A creature in a heavily obscured area effectively suffers from the <b>blinded condition</b>."
         ]
     },
     {
         title: "Darkness",
         icon: "worried-eyes",
         subtitle: "Heavily obscured",
-        description: "Darkness creates a heavily obscured area.",
+        description: "Darkness creates a heavily obscured area",
         reference: "PHB, pg. 183.",
         bullets: [
+            "Creates a <b>heavily obscured</b> area.",
             "Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness."
         ]
     },
@@ -33,9 +34,10 @@ data_environment = [
         title: "Dim light",
         icon: "semi-closed-eye",
         subtitle: "Lightly obscured",
-        description: "Dim light, also called shadows, creates a lightly obscured area.",
+        description: "Dim light, also called shadows",
         reference: "PHB, pg. 183.",
         bullets: [
+            "Creates a <b>lightly obscured</b> area.",
             "An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness.",
             "The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light."
         ]
@@ -44,7 +46,7 @@ data_environment = [
         title: "Bright light",
         icon: "star-pupil",
         subtitle: "Normal vision",
-        description: "Bright light lets most creatures see normally.",
+        description: "Bright light lets most creatures see normally",
         reference: "PHB, pg. 183.",
         bullets: [
             "Gloomy days still provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius."
@@ -54,7 +56,7 @@ data_environment = [
         title: "Blindsight",
         icon: "one-eyed",
         subtitle: "Perceive without sight",
-        description: "Perceive your surroundings without relying on sight, within a certain radius.",
+        description: "Perceive your surroundings without relying on sight, within a certain radius",
         reference: "PHB, pg. 183.",
         bullets: [
             "Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense."
@@ -64,10 +66,10 @@ data_environment = [
         title: "Darkvision",
         icon: "semi-closed-eye",
         subtitle: "Limited vision in darkness",
-        description: "A creature with blindsight can perceive its surroundings without relying on sight, within a certain radius.",
+        description: "A creature with blindsight can perceive its surroundings without relying on sight, within a certain radius",
         reference: "PHB, pgs. 183-184.",
         bullets: [
-            "Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned.",
+            "Within a specified range, a creature with darkvision can <b>see in darkness as if the darkness were dim light</b>, so areas of darkness are only lightly obscured as far as that creature is concerned.",
             "However, the creature can’t discern color in darkness, only shades of gray.",
             "Many creatures in the worlds of D&D, especially those that dwell underground, have darkvision."
         ]
@@ -91,7 +93,7 @@ data_environment = [
         reference: "PHB, pg. 196.",
         bullets: [
             "The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.",
-            "A target with half cover has a +2 bonus to AC and Dexterity saving throws."
+            "A target with half cover has a <b>+2 bonus to AC and Dexterity saving throws</b>."
         ]
     },
     {
@@ -102,7 +104,7 @@ data_environment = [
         reference: "PHB, pg. 196.",
         bullets: [
             "The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.",
-            "A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws."
+            "A target with three-quarters cover has a <b>+5 bonus to AC and Dexterity saving throws</b>."
         ]
     },
     {
@@ -112,7 +114,7 @@ data_environment = [
         description: "target has total cover if it is completely concealed by an obstacle.",
         reference: "PHB, pg. 196.",
         bullets: [
-            "A target with total cover can’t be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect."
+            "A target with total cover <b>can’t be targeted directly</b> by an attack or a spell, although some spells can reach such a target by including it in an area of effect."
         ]
     }
 ]
