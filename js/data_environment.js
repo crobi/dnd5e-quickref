@@ -1,9 +1,9 @@
-data_environment = [
+data_environment_obscurance = [
     {
         title: "Lightly obscured",
         icon: "bleeding-eye",
-        subtitle: "Dim light, patchy fog, moderate foliage",
-        description: "",
+        subtitle: "Disadvantage on Perception",
+        description: "Dim light, patchy fog, moderate foliage",
         reference: "PHB, pg. 183.",
         bullets: [
             "Creatures have <b>disadvantage on Wisdom (Perception)</b> checks that rely on sight."
@@ -12,22 +12,24 @@ data_environment = [
     {
         title: "Heavily obscured",
         icon: "lightning-tear",
-        subtitle: "Darkness, opaque fog, dense foliage",
-        description: "",
+        subtitle: "Effectively blind",
+        description: "Darkness, opaque fog, dense foliage",
         reference: "PHB, pg. 183.",
         bullets: [
             "A creature in a heavily obscured area effectively suffers from the <b>blinded condition</b>."
         ]
-    },
+    }
+]
+
+data_environment_light = [
     {
-        title: "Darkness",
-        icon: "worried-eyes",
-        subtitle: "Heavily obscured",
-        description: "Darkness creates a heavily obscured area",
+        title: "Bright light",
+        icon: "star-pupil",
+        subtitle: "Normal vision",
+        description: "Bright light lets most creatures see normally",
         reference: "PHB, pg. 183.",
         bullets: [
-            "Creates a <b>heavily obscured</b> area.",
-            "Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness."
+            "Gloomy days still provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius."
         ]
     },
     {
@@ -43,15 +45,19 @@ data_environment = [
         ]
     },
     {
-        title: "Bright light",
-        icon: "star-pupil",
-        subtitle: "Normal vision",
-        description: "Bright light lets most creatures see normally",
+        title: "Darkness",
+        icon: "worried-eyes",
+        subtitle: "Heavily obscured",
+        description: "Darkness creates a heavily obscured area",
         reference: "PHB, pg. 183.",
         bullets: [
-            "Gloomy days still provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius."
+            "Creates a <b>heavily obscured</b> area.",
+            "Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness."
         ]
-    },
+    }
+]
+
+data_environment_vision = [
     {
         title: "Blindsight",
         icon: "one-eyed",
@@ -78,43 +84,49 @@ data_environment = [
         title: "Truesight",
         icon: "eye-shield",
         subtitle: "See in darkness",
-        description: "",
+        description: "A creature with truesight can see everything in its true form, independent of the environment",
         reference: "PHB, pg. 184.",
         bullets: [
             "A creature with truesight can, out to a specific range, see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic.",
             "Furthermore, the creature can see into the Ethereal Plane."
         ]
-    },
+    }
+]
+
+data_environment_cover = [
     {
         title: "Half cover",
         icon: "broken-shield",
-        subtitle: "",
-        description: "A target has half cover if an obstacle blocks at least half of its body.",
+        subtitle: "Low wall, furniture",
+        description: "A target has half cover if an obstacle blocks at least half of its body",
         reference: "PHB, pg. 196.",
         bullets: [
             "The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.",
-            "A target with half cover has a <b>+2 bonus to AC and Dexterity saving throws</b>."
+            "A target with half cover has a <b>+2 bonus to AC and Dexterity saving throws</b>.",
+            " If a target is behind multiple sources of cover, only the most protective degree of cover applies"
         ]
     },
     {
         title: "Three-quarters cover",
         icon: "cracked-shield",
-        subtitle: "",
-        description: "A target has half cover if about three-quarters of it is covered by an obstacle.",
+        subtitle: "Portcullis, arrow slit",
+        description: "A target has half cover if about three-quarters of it is covered by an obstacle",
         reference: "PHB, pg. 196.",
         bullets: [
             "The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.",
-            "A target with three-quarters cover has a <b>+5 bonus to AC and Dexterity saving throws</b>."
+            "A target with three-quarters cover has a <b>+5 bonus to AC and Dexterity saving throws</b>.",
+            " If a target is behind multiple sources of cover, only the most protective degree of cover applies"
         ]
     },
     {
         title: "Full cover",
-        icon: "checked-shield",
-        subtitle: "",
-        description: "target has total cover if it is completely concealed by an obstacle.",
+        icon: "shield",
+        subtitle: "Completely concealed",
+        description: "A target has total cover if it is completely concealed by an obstacle",
         reference: "PHB, pg. 196.",
         bullets: [
-            "A target with total cover <b>can’t be targeted directly</b> by an attack or a spell, although some spells can reach such a target by including it in an area of effect."
+            "A target with total cover <b>can’t be targeted directly</b> by an attack or a spell, although some spells can reach such a target by including it in an area of effect.",
+            "If a target is behind multiple sources of cover, only the most protective degree of cover applies"
         ]
     }
 ]
