@@ -41,7 +41,7 @@
     float: right;
 }
 
-.section-subtitle {
+.section-subtitle, #modal-reference {
     display: block;
     margin-bottom: 8px;
     font-size: inherit;
@@ -147,6 +147,14 @@
 }
 #section-condition .text {
     color: FireBrick;
+}
+
+#section-environment, #section-environment .item-icon {
+    background-color: ForestGreen;
+    border-color: ForestGreen;
+}
+#section-environment .text {
+    color: ForestGreen;
 }
 
 
