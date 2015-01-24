@@ -32,21 +32,23 @@ function show_modal(data, color, type) {
     type = type || "";
     color = color || "black"
 
-    $("body").addClass("modal-open");
-    $("#modal").addClass("modal-visible");
-    $("#modal-backdrop").css("height", window.innerHeight + "px");
-    $("#modal-container").css("background-color", color).css("border-color", color);
-    $("#modal-title").text(title).append("<span class=\"float-right\">" + type + "</span>");
-    $("#modal-subtitle").text(subtitle);
-    $("#modal-reference").text(reference);
+    document.body.classList.add("modal-open");
+    document.getElementById("modal").classList.add("modal-visible");
+    document.getElementById("modal-container").style.backgroundColor = color;
+    document.getElementById("modal-container").style.borderColor = color;
+    document.getElementById("modal-title").innerHTML = title + "<span class=\"float-right\">" + type + "</span>";
+    document.getElementById("modal-subtitle").innerHTML = subtitle;
+    document.getElementById("modal-reference").innerHTML = reference;
 
-    var bullets_html = bullets.map(function (item) { return "<p class=\"fonstsize\">" + item + "</p>"; }).join("\n<hr>\n");
-    $("#modal-bullets").html(bullets_html);
+    var bullets_html = bullets.map(function (item) { return "<p class=\"fontsize\">" + item + "</p>"; }).join("\n<hr>\n");
+    document.getElementById("modal-bullets").innerHTML = bullets_html;
+    
+    document.getElementById("modal-backdrop").style.height = (document.getElementById("modal-container").clientHeight + 32) + "px";
 }
 
 function hide_modal() {
-    $("body").removeClass("modal-open");
-    $("#modal").removeClass("modal-visible");
+    document.body.classList.remove("modal-open");
+    document.getElementById("modal").classList.remove("modal-visible");
 }
 
 function fill_section(data, parentname, type) {
@@ -56,7 +58,7 @@ function fill_section(data, parentname, type) {
     });
 }
 
-function init() {
+window.onload = function() {
     fill_section(data_movement, "basic-movement", "Move");
     fill_section(data_action, "basic-actions", "Action");
     fill_section(data_bonusaction, "basic-bonus-actions", "Bonus action");
@@ -70,5 +72,3 @@ function init() {
     var modal = document.getElementById("modal");
     modal.onclick = hide_modal;
 }
-
-$(window).load(init);
