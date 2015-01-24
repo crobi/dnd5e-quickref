@@ -12,6 +12,7 @@
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
     width:100%;
     margin-bottom:8px;
+    page-break-inside: avoid;
 }
 
 .section-content {
@@ -47,6 +48,10 @@
     font-style: italic;
 }
 
+#modal-reference {
+    margin-top: 1em;
+}
+
 .section-row {
     font-size: inherit;
 }
@@ -55,6 +60,10 @@
     display: table;
     content: " ";
     clear: both;
+}
+
+.section-row + .section-subtitle {
+    margin-top: 1em;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -255,7 +264,7 @@ p:first-child {
 /* ------------------------------------------------------------------------- */
 
 /* Smart phone, portrait */
-@media (min-width:    0px) and (max-width:  399px) {
+@media (min-width:    0px) and (max-width:  479px) {
     .fontsize { font-size: 12pt; } 
     .iconsize { width: 44px; height: 44px;} 
     .itemsize { height: 44px; width: 100%; } 
@@ -263,7 +272,7 @@ p:first-child {
 }
 
 /* Smart phone, landscape */
-@media (min-width:  400px) and (max-width:  767px) {
+@media (min-width:  480px) and (max-width:  767px) {
     .fontsize { font-size: 11pt; }
     .iconsize { width: 40px; height: 40px;}
     .itemsize { height: 40px; width:  50%; }
