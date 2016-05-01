@@ -110,7 +110,7 @@ data_environment_cover = [
         title: "Three-quarters cover",
         icon: "cracked-shield",
         subtitle: "Portcullis, arrow slit",
-        description: "A target has half cover if about three-quarters of it is covered by an obstacle",
+        description: "A target has three-quarters cover if about three-quarters of it is covered by an obstacle",
         reference: "PHB, pg. 196.",
         bullets: [
             "The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.",
