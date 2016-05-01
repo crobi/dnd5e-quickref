@@ -72,7 +72,7 @@ data_environment_vision = [
         title: "Darkvision",
         icon: "semi-closed-eye",
         subtitle: "Limited vision in darkness",
-        description: "A creature with blindsight can perceive its surroundings without relying on sight, within a certain radius",
+        description: "A creature with Darkvision can see better in the dark or low light conditions, within a certain radius",
         reference: "PHB, pgs. 183-184.",
         bullets: [
             "Within a specified range, a creature with darkvision can <b>see in darkness as if the darkness were dim light</b>, so areas of darkness are only lightly obscured as far as that creature is concerned.",
@@ -110,7 +110,7 @@ data_environment_cover = [
         title: "Three-quarters cover",
         icon: "cracked-shield",
         subtitle: "Portcullis, arrow slit",
-        description: "A target has half cover if about three-quarters of it is covered by an obstacle",
+        description: "A target has three-quarters cover if about three-quarters of it is covered by an obstacle",
         reference: "PHB, pg. 196.",
         bullets: [
             "The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.",
