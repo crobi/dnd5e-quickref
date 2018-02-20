@@ -78,6 +78,7 @@
     vertical-align: top;
     box-sizing: border-box;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .item-icon {
@@ -166,6 +167,39 @@
     color: ForestGreen;
 }
 
+/* ------------------------------------------------------------------------- */
+/* Hover Indicators of Clickable Areas */
+/* ------------------------------------------------------------------------- */
+
+#section-movement .item:hover {
+   transition: box-shadow,text-decoration 0.25s ease-in-out;
+   box-shadow: rgba(128,0,0,0.4) -2px 2px 3px 0px;
+}
+
+#section-action .item:hover {
+   transition: box-shadow,text-decoration 0.25s ease-in-out;
+   box-shadow: rgba(0,0,0,0.4) -2px 2px 3px 0px;
+}
+
+#section-bonus-action .item:hover {
+   transition: box-shadow,text-decoration 0.25s ease-in-out;
+   box-shadow: rgba(29,0,51,0.4) -2px 2px 3px 0px;
+}
+
+#section-reaction .item:hover {
+   transition: box-shadow,text-decoration 0.25s ease-in-out;
+   box-shadow: rgba(85,107,47,0.4) -2px 2px 3px 0px;
+}
+
+#section-condition .item:hover {
+   transition: box-shadow,text-decoration 0.25s ease-in-out;
+   box-shadow: rgba(70,13,13,0.4) -2px 2px 3px 0px;
+}
+
+#section-environment .item:hover {
+   transition: box-shadow,text-decoration 0.25s ease-in-out;
+   box-shadow: rgba(13,55,13,0.4) -2px 2px 3px 0px;
+}
 
 /* ------------------------------------------------------------------------- */
 /* Page container */
