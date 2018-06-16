@@ -97,7 +97,7 @@ data_environment_cover = [
     {
         title: "Half cover",
         icon: "broken-shield",
-        subtitle: "Low wall, furniture",
+        subtitle: "Low wall, furniture, creatures",
         description: "A target has half cover if an obstacle blocks at least half of its body",
         reference: "PHB, pg. 196.",
         bullets: [
