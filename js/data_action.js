@@ -175,6 +175,18 @@ data_action = [
         ]
     },
     {
+        title: "Stabilize a creature",
+        icon: "first-aid",
+        subtitle: "Administer first aid to a dying creature",
+        description: "Stop a dying creature from needing to make death saving throws",
+        reference: "PHB, pg. 197.",
+        bullets: [
+            "Make a Wisdom (Medicine) check with DC 10",
+            "On a success, the creature is stable and no longer needs to make death saving throws",
+            "A stable creature regains 1 hit point after 1d4 hours"
+        ]
+    },
+    {
         title: "Improvise",
         icon: "juggler",
         subtitle: "Any action not on this list",
