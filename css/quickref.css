@@ -12,6 +12,7 @@
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
     width:100%;
     margin-bottom:8px;
+    page-break-inside: avoid;
 }
 
 .section-content {
@@ -40,11 +41,15 @@
     float: right;
 }
 
-.section-subtitle {
+.section-subtitle, #modal-reference {
     display: block;
     margin-bottom: 8px;
     font-size: inherit;
     font-style: italic;
+}
+
+#modal-reference {
+    margin-top: 1em;
 }
 
 .section-row {
@@ -55,6 +60,10 @@
     display: table;
     content: " ";
     clear: both;
+}
+
+.section-row + .section-subtitle {
+    margin-top: 1em;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -68,6 +77,7 @@
     font-size: inherit;
     vertical-align: top;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .item-icon {
@@ -84,17 +94,24 @@
 .item-title {
     font-weight: bold;
     font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .item-desc {
     font-style: italic;
     font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .item-text-container {
     flex: 1;
     padding-right: 4px;
     font-size: inherit;
+    height: 100%;
 }
 
 
@@ -139,6 +156,14 @@
 }
 #section-condition .text {
     color: FireBrick;
+}
+
+#section-environment, #section-environment .item-icon {
+    background-color: ForestGreen;
+    border-color: ForestGreen;
+}
+#section-environment .text {
+    color: ForestGreen;
 }
 
 
@@ -240,7 +265,7 @@ p:first-child {
 /* ------------------------------------------------------------------------- */
 
 /* Smart phone, portrait */
-@media (min-width:    0px) and (max-width:  399px) {
+@media (min-width:    0px) and (max-width:  479px) {
     .fontsize { font-size: 12pt; } 
     .iconsize { width: 44px; height: 44px;} 
     .itemsize { height: 44px; width: 100%; } 
@@ -248,7 +273,7 @@ p:first-child {
 }
 
 /* Smart phone, landscape */
-@media (min-width:  400px) and (max-width:  767px) {
+@media (min-width:  480px) and (max-width:  767px) {
     .fontsize { font-size: 11pt; }
     .iconsize { width: 40px; height: 40px;}
     .itemsize { height: 40px; width:  50%; }
