@@ -6,7 +6,7 @@ data_reaction = [
         description: "You can rarely move heedlessly past your foes without putting yourself in danger",
         reference: "PHB, pg. 195.",
         bullets: [
-            "Trigger: enemy creature leaves your reach.",
+            "Trigger: enemy creature you can see leaves your reach.",
             "Make one melee attack against the provoking creature.",
             "The attack interrupts the provoking creature's movement, occurring right before the creature leaves your reach.",
             "Creatures don't provoke an opportunity attack when they teleport or when someone or something moves them without using their movement, action, or reaction."
