@@ -177,5 +177,24 @@ data_condition = [
             "Any attack that hits you is a critical hit if the attacker is within 5 feet of you.",
             "You automatically fail Strength and Dexterity saving throws.",
         ]
+    },
+    {
+        title: "Dying",
+        icon: "dead-head",
+        subtitle: "You are dying",
+        description: "You have been dropped to zero hit points and are dying",
+        reference: "PHB, pg. 197.",
+        bullets: [
+            "If you are reduced to 0 hit points by damage that fails to kill you, you fall unconscious and are dying.",
+            "If you receive any healing you immediately regain consciousness again and no longer dying.",
+            "When dying, at the start of each of your turns you make a death saving throw. Roll a d20 and do not add any modifiers.",
+            "A 10 or higher is a success, 9 or lower is a failure.",
+            "On your third success, you become stable.",
+            "On your third failure, you die.",
+            "Rolling a 1 counts as two failures.",
+            "Rolling a 20 immediately causes you to regain 1 hit point.",
+            "You can also be stabilized by an ally taking the Stabilize action and succeeding on a DC 10 Wisdom (Medicine) check.",
+            "Once stable, you regain 1 hit point after 1d4 hours."
+        ]
     }
 ]
