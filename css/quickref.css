@@ -245,6 +245,8 @@ p:first-child {
     background-color: #888;
     opacity: .75;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 .modal-container {
