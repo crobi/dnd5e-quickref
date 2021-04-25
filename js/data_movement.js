@@ -2,13 +2,13 @@ data_movement = [
     {
         title: "Yurmoq",
         icon: "run",
-        subtitle: "Narxi: xar 5futtga 5futt",
+        subtitle: "Narxi: xar 5futga 5fut",
         description: "Yurish narxi: 5fut yurganga 5fut ketadi",
         reference: "PHB, pg. 190.",
         bullets: [
-            "If you have more than one speed, such as your walking speed and a flying speed, you can switch back and forth between your speeds during your move. Whenever you switch, subtract the distance you've already moved from the new speed.",
-            "You can move through a nonhostile creature's space.",
-            "You can move through a hostile creature's space only if the creature is at least two sizes larger or smaller than you.",
+            "Agarda bir necha tezlikga sohib bo'lsangiz, masalan yurish va uchish tezligiga, u holda harakat davomida shu ikkalasining tezligini almashtirib harakat etishingiz mumkun. Har tezlik almashtirganda kesib o'tkan masofangizni yangi tezlikdan ayirib tashlang.",
+            "Sizga dushman bo'lmagan yaratiqlarning maydonining ichidan harakat etishingiz mumkun.",
+            "Dushman yaratiqning maydonining ichidan o'tish uchun yaratiqning hajmi siznikidan ikki baravariga kattaroq yoki kichikroq bo'lishi kerak.",
             "Another creature's space is difficult terrain for you.",
             "Whether a creature is a friend or an enemy, you can't willingly end your move in its space."
         ]
