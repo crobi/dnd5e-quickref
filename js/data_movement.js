@@ -3,21 +3,21 @@ data_movement = [
         title: "Yurmoq",
         icon: "run",
         subtitle: "Narxi: xar 5futga 5fut",
-        description: "Yurish narxi: 5fut yurganga 5fut ketadi",
+        description: "Harakat narxi: 5fut yurganga 5fut ketadi",
         reference: "PHB, pg. 190.",
         bullets: [
             "Agarda bir necha tezlikga sohib bo'lsangiz, masalan yurish va uchish tezligiga, u holda harakat davomida shu ikkalasining tezligini almashtirib harakat etishingiz mumkun. Har tezlik almashtirganda kesib o'tkan masofangizni yangi tezlikdan ayirib tashlang.",
             "Sizga dushman bo'lmagan yaratiqlarning maydonining ichidan harakat etishingiz mumkun.",
             "Dushman yaratiqning maydonining ichidan o'tish uchun yaratiqning hajmi siznikidan ikki baravariga kattaroq yoki kichikroq bo'lishi kerak.",
-            "Another creature's space is difficult terrain for you.",
-            "Whether a creature is a friend or an enemy, you can't willingly end your move in its space."
+            "Boshqa yaratiqlarning maydoni siz uchun o'tish murakkab bir hudud deb hisoblanadi.",
+            "Yaratiq do'st bo'lsin yoki dushman bo'lsin, siz uning maydonida o'z xohishingiz bilan harakatingizni tugata olmaysiz."
         ]
     },
     {
-        title: "Climb",
+        title: "Tirmanish",
         icon: "crags",
-        subtitle: "Cost: 10ft per 5ft",
-        description: "Movement cost: 10ft per 5ft climbed",
+        subtitle: "Narxi: xar 5futga 10fut",
+        description: "Harakat narxi: 5fut tirmanganga 10fut ketadi",
         reference: "PHB, pg. 182.",
         bullets: [
             "May involve a Strength (Athletics) check if the climb is difficult"
