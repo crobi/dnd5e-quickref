@@ -27,16 +27,20 @@ data_action = [
         ]
     },
     {
-        title: "Shove",
+        title: "Shove / Shove Aside",
         icon: "hand",
         subtitle: "Special melee attack",
-        description: "Shove a creature, either to knock it prone or push it away from you",
-        reference: "PHB, pg. 195.",
+        description: "Shove a creature, either to knock it prone or push it away/aside from you",
+        reference: "PHB, pg. 195. / DMG, page 272",
         bullets: [
             "Using the <i>Attack</i> action, you can make a special melee attack to shove a creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
             "The target of your shove must be no more than one size larger than you, and it must be within your reach.",
             "You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you win the contest, you either knock the target prone or push it 5 feet away from you."
+            "If you win the contest, you either knock the target prone or push it 5 feet away from you.",
+            "(Optional Rule): Shove Aside",
+            "With this option, a creature uses the special shove attack to force a target to the side.",
+            "The attacker has disadvantage on its Strength (Athletics) check when it does so.",
+            "If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
         ]
     },
     {
@@ -187,6 +191,70 @@ data_action = [
         ]
     },
     {
+        title: "Disarm (Optional Rule)",
+        icon: "sword-break",
+        subtitle: "Force a creature to drop a held object",
+        description: "(Optional Rule) A creature can use a weapon attack to knock a weapon or another item from a target's grasp.",
+        reference: "DMG, page 271",
+        bullets: [
+            "The attacker makes an attack roll contested by the target's Strength (Athletics) check or Dexterity (Acrobatics) check.",
+            "If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item.",
+            "The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands.", 
+            "The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller."
+
+        ]
+    },
+    {
+        title: "Overrun (Optional Rule)",
+        icon: "shield-bash",
+        subtitle: "Move through a hostile creature's space",
+        description: "(Optional Rule) When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
+        reference: "DMG, page 272",
+        bullets: [
+            "As an action, the mover makes a Strength (Athletics) check contested by the hostile creature's Strength (Athletics) check.",
+            "The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller.",
+            "If the mover wins the contest, it can move through the hostile creature's space once this turn."
+        ]
+    }, 
+    {
+        title: "Tumble (Optional Rule)",
+        icon: "tumble",
+        subtitle: "Force a creature to drop a held object",
+        description: "(Optional Rule) A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
+        reference: "DMG, page 272",
+        bullets: [
+            "As an action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check.",
+            "If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
+        ]
+    },
+    {
+        title: "Mark (Optional Rule)",
+        icon: "cross-mark",
+        subtitle: "Give Advantage on Opportunity Attacks",
+        description: "(Optional Rule) This option makes it easier for melee combatants to harry each other with opportunity attacks.",
+        reference: "DMG, page 271",
+        bullets: [
+            "(Optional Rule):",
+            "When a creature makes a melee attack, it can also mark its target.",
+            "Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has advantage.",
+            "The opportunity attack doesn't expend the attacker's reaction",
+            "The attacker can't make the attack if anything, such as the incapacitated condition or the shocking grasp spell, is preventing it from taking reactions.",
+            "The attacker is limited to one opportunity attack per turn.",
+        ]
+    },
+    {
+        title: "Climb onto a bigger creature (Optional)",
+        icon: "mountain-climbing",
+        subtitle: "Climb a biger creature",
+        description: "(Optional Rule) If one creature wants to jump onto another creature, it can do so by grappling. A suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb.",
+        reference: "DMG, page 271",
+        bullets: [
+            "After making any ability checks necessary to get into position and onto the larger creature, the smaller creature uses its action to make a Strength (Athletics) or Dexterity (Acrobatics) check contested by the target's Dexterity (Acrobatics) check.",
+            "If it wins the contest, the smaller creature successfully moves into the target creature's space.",
+            "The smaller creature moves with the target and has advantage on attack rolls against it.",
+        ]
+    },   
+    {
         title: "Improvise",
         icon: "juggler",
         subtitle: "Any action not on this list",
@@ -195,5 +263,5 @@ data_action = [
         bullets: [
             "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
         ]
-    }
+    }                      
 ]
