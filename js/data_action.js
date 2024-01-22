@@ -207,7 +207,7 @@ data_action = [
     {
         title: "Overrun (Optional Rule)",
         icon: "shield-bash",
-        subtitle: "Move through a hostile creature's space",
+        subtitle: "Run through a hostile creature's space",
         description: "(Optional Rule) When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
         reference: "DMG, page 272",
         bullets: [
@@ -219,7 +219,7 @@ data_action = [
     {
         title: "Tumble (Optional Rule)",
         icon: "tumble",
-        subtitle: "Force a creature to drop a held object",
+        subtitle: "Tumble through a hostile creature's space",
         description: "(Optional Rule) A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
         reference: "DMG, page 272",
         bullets: [
@@ -245,7 +245,7 @@ data_action = [
     {
         title: "Climb onto a bigger creature (Optional)",
         icon: "mountain-climbing",
-        subtitle: "Climb a biger creature",
+        subtitle: "Climb a bigger creature",
         description: "(Optional Rule) If one creature wants to jump onto another creature, it can do so by grappling. A suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb.",
         reference: "DMG, page 271",
         bullets: [

@@ -36,7 +36,7 @@ data_bonusaction = [
     {
         title: "Overrun (Optional Rule)",
         icon: "shield-bash",
-        subtitle: "Move through a hostile creature's space",
+        subtitle: "Run through a hostile creature's space",
         description: "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
         reference: "DMG, page 272",
         bullets: [
@@ -48,7 +48,7 @@ data_bonusaction = [
     {
         title: "Tumble (Optional Rule)",
         icon: "tumble",
-        subtitle: "Move through a hostile creature's space",
+        subtitle: "Tumble through a hostile creature's space",
         description: "(Optional Rule) A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
         reference: "DMG, page 272",
         bullets: [
