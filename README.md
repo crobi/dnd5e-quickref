@@ -5,7 +5,10 @@ original author https://github.com/crobi/dnd5e-quickref - I only built on top of
 Quick reference sheet for D&amp;D 5e
 
 Quick Reference can be viewed 
-https://mfriik.github.io/dnd5e-quickref/quickref.html
+[https://mfriik.github.io/dnd5e-quickref](https://mfriik.github.io/dnd5e-quickref/)
+or
+[dnd.milobedzki.pl
+](https://dnd.milobedzki.pl/)
 
 Icons
 ==============
