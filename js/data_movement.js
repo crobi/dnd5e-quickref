@@ -69,8 +69,7 @@ data_movement = [
         title: "High jump",
         icon: "wingfoot",
         subtitle: "Cost: 5ft per 5ft",
-        description: "Movement cost: 5ft per 5ft jumped",
-        
+        description: "Movement cost: 5ft per 5ft jumped, must move at least 10 ft immediately before Height: 3 + STR MOD*",
         reference: "PHB, pg. 182.",
         bullets: [
             "You leap into the air a number of feet equal to <b>3 + your Strength modifier</b> if you move at least 10 feet on foot immediately before the jump.",

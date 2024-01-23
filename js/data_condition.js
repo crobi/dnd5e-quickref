@@ -87,7 +87,8 @@ data_condition = [
             "For the purpose of hiding, you are heavily obscured.",
             "You can still be detected by any noise you make or tracks you leave.",
             "You have advantage on attack rolls.",
-            "Attack rolls against you have disadvantage."
+            "Attack rolls against you have disadvantage.",
+            "A target that's invisble can’t be targeted by a spell requiring sight."
         ]
     },
     {
