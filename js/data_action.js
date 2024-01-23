@@ -27,7 +27,7 @@ data_action = [
         ]
     },
     {
-        title: "Shove / Shove Aside",
+        title: "Shove / Shove Aside*",
         icon: "hand",
         subtitle: "Special melee attack",
         description: "Shove a creature, either to knock it prone or push it away/aside from you",
@@ -191,12 +191,23 @@ data_action = [
         ]
     },
     {
-        title: "Disarm (Optional Rule)",
+        title: "Improvise",
+        icon: "juggler",
+        subtitle: "Any action not on this list",
+        description: "Perform any action you can imagine",
+        reference: "PHB, pg. 193.",
+        bullets: [
+            "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
+        ]
+    },     
+    {
+        title: "Disarm*",
         icon: "sword-break",
-        subtitle: "Force a creature to drop a held object",
-        description: "(Optional Rule) A creature can use a weapon attack to knock a weapon or another item from a target's grasp.",
+        subtitle: "Knock weapon or item out of enemy's grasp",
+        description: "A creature can use a weapon attack to knock a weapon or another item from a target's grasp.",
         reference: "DMG, page 271",
         bullets: [
+            "(Optional Rule):",
             "The attacker makes an attack roll contested by the target's Strength (Athletics) check or Dexterity (Acrobatics) check.",
             "If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item.",
             "The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands.", 
@@ -205,33 +216,35 @@ data_action = [
         ]
     },
     {
-        title: "Overrun (Optional Rule)",
+        title: "Overrun*",
         icon: "shield-bash",
         subtitle: "Run through a hostile creature's space",
-        description: "(Optional Rule) When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
+        description: "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
         reference: "DMG, page 272",
         bullets: [
+            "(Optional Rule):",
             "As an action, the mover makes a Strength (Athletics) check contested by the hostile creature's Strength (Athletics) check.",
             "The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller.",
             "If the mover wins the contest, it can move through the hostile creature's space once this turn."
         ]
     }, 
     {
-        title: "Tumble (Optional Rule)",
+        title: "Tumble*",
         icon: "tumble",
         subtitle: "Tumble through a hostile creature's space",
-        description: "(Optional Rule) A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
+        description: "A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
         reference: "DMG, page 272",
         bullets: [
+            "(Optional Rule):",
             "As an action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check.",
             "If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
         ]
     },
     {
-        title: "Mark (Optional Rule)",
+        title: "Mark*",
         icon: "cross-mark",
         subtitle: "Give Advantage on Opportunity Attacks",
-        description: "(Optional Rule) This option makes it easier for melee combatants to harry each other with opportunity attacks.",
+        description: "This option makes it easier for melee combatants to harry each other with opportunity attacks.",
         reference: "DMG, page 271",
         bullets: [
             "(Optional Rule):",
@@ -243,25 +256,16 @@ data_action = [
         ]
     },
     {
-        title: "Climb onto a bigger creature (Optional)",
+        title: "Climb onto a bigger creature*",
         icon: "mountain-climbing",
         subtitle: "Climb a bigger creature",
-        description: "(Optional Rule) If one creature wants to jump onto another creature, it can do so by grappling. A suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb.",
+        description: "If one creature wants to jump onto another creature, it can do so by grappling. A suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb.",
         reference: "DMG, page 271",
         bullets: [
+            "(Optional Rule):",
             "After making any ability checks necessary to get into position and onto the larger creature, the smaller creature uses its action to make a Strength (Athletics) or Dexterity (Acrobatics) check contested by the target's Dexterity (Acrobatics) check.",
             "If it wins the contest, the smaller creature successfully moves into the target creature's space.",
             "The smaller creature moves with the target and has advantage on attack rolls against it.",
         ]
-    },   
-    {
-        title: "Improvise",
-        icon: "juggler",
-        subtitle: "Any action not on this list",
-        description: "Perform any action you can imagine",
-        reference: "PHB, pg. 193.",
-        bullets: [
-            "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
-        ]
-    }                      
+    }                     
 ]

@@ -35,7 +35,7 @@ data_movement = [
     },
     {
         title: "Drop prone",
-        icon: "falling",
+        icon: "lob-arrow",
         subtitle: "Cost: 0ft",
         description: "Movement cost: 0ft (free)",
         reference: "PHB, pgs. 190-191,292.",
@@ -68,7 +68,7 @@ data_movement = [
     {
         title: "High jump",
         icon: "wingfoot",
-        subtitle: "Cost: 5ft per 5ft",
+        subtitle: "Height: 3 + STR MOD",
         description: "Movement cost: 5ft per 5ft jumped, must move at least 10 ft immediately before Height: 3 + STR MOD*",
         reference: "PHB, pg. 182.",
         bullets: [
@@ -81,11 +81,11 @@ data_movement = [
     {
         title: "Long jump",
         icon: "wingfoot",
-        subtitle: "Cost: 5ft per 5ft",
-        description: "Movement cost: 5ft per 5ft jumped",
+        subtitle: "Movement cost: STR score (with run-up), 1/2 (without run-up) ",
+        description: "Cost: 5ft per 5ft",
         reference: "PHB, pg. 182.",
         bullets: [
-            "You cover a number of feet up to your <b>Strength score</b> if you move at least 10 feet on foot immediately before the jump.",
+            "You cover a number of feet up to your <b>Strength score</b> if you move at least 10 feet (run-up) on foot immediately before the jump.",
             "When you make a standing long jump, you can leap only half that distance",
             "May involve a DC 10 Strength (Athletics) check to clear a low obstacle (no taller than a quarter of the jump's distance). You hit the obstacle on a failed check.",
             "May involve a DC 10 Dexterity (Acrobatics) check to land on your feet in difficult terrain. You land prone on a failed check."

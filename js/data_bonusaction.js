@@ -34,26 +34,39 @@ data_bonusaction = [
         ]
     },
     {
-        title: "Overrun (Optional Rule)",
+        title: "Overrun*",
         icon: "shield-bash",
         subtitle: "Run through a hostile creature's space",
         description: "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
         reference: "DMG, page 272",
         bullets: [
+            "(Optional Rule):",
             "As an bonus action, the mover makes a Strength (Athletics) check contested by the hostile creature's Strength (Athletics) check.",
             "The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller.",
             "If the mover wins the contest, it can move through the hostile creature's space once this turn."
         ]
     },
     {
-        title: "Tumble (Optional Rule)",
+        title: "Tumble*",
         icon: "tumble",
         subtitle: "Tumble through a hostile creature's space",
         description: "(Optional Rule) A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
         reference: "DMG, page 272",
         bullets: [
+            "(Optional Rule):",
             "As an bonus action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check.",
             "If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
         ]
-    }     
+    },
+    {
+        title: "Drink a potion*",
+        icon: "potion-ball",
+        subtitle: "Roll for the effect (Optional Rule)",
+        description: "Roll the dice as per the description of the potion",
+        bullets: [
+        "(Optional Rule):",
+        "Normally Drinking potion counts as an <i>Action</i>",
+        "Roll the dice as per the description of the potion"
+        ],
+      },         
 ]
