@@ -8,7 +8,7 @@ data_bonusaction = [
         bullets: [
             "Only usable if you take the <i>Attack</i> action and attack with a light melee weapon that you're holding in one hand.",
             "Perform a single attack with a different light melee weapon that you're holding in the other hand.",
-            "You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.",
+            "You don't add your ability modifier to the damage of the bonus attack unless that modifier is negative.",
             "If either weapon has the thrown property, you can throw the weapon, instead of making a melee attack with it."
         ]
     },
@@ -19,7 +19,7 @@ data_bonusaction = [
         description: "Cast a spell with a casting time of 1 bonus action",
         reference: "PHB, pg. 192.",
         bullets: [
-            "You can't cast a spell with you action and a different spell with your bonus action in the same turn, except if the action is used to cast a cantrip.",
+            "You can't cast a spell with your action and a different spell with your bonus action in the same turn, except if the action is used to cast a cantrip.",
             "For further details, see the <i>Cast a spell</i> action."
         ]
     },
@@ -36,12 +36,12 @@ data_bonusaction = [
     {
         title: "Overrun*",
         icon: "shield-bash",
-        subtitle: "Run through a hostile creature's space",
+        subtitle: "Run through a hostile space",
         description: "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
         reference: "DMG, page 272",
         bullets: [
             "(Optional Rule):",
-            "As an bonus action, the mover makes a Strength (Athletics) check contested by the hostile creature's Strength (Athletics) check.",
+            "As a bonus action, the mover makes a Strength (Athletics) check contested by the hostile creature's Strength (Athletics) check.",
             "The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller.",
             "If the mover wins the contest, it can move through the hostile creature's space once this turn."
         ]
@@ -49,24 +49,24 @@ data_bonusaction = [
     {
         title: "Tumble*",
         icon: "tumble",
-        subtitle: "Tumble through a hostile creature's space",
-        description: "(Optional Rule) A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
+        subtitle: "Tumble through a hostile space",
+        description: "A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
         reference: "DMG, page 272",
         bullets: [
             "(Optional Rule):",
-            "As an bonus action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check.",
+            "As a bonus action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check.",
             "If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
         ]
     },
     {
         title: "Drink a potion*",
         icon: "potion-ball",
-        subtitle: "Roll for the effect (Optional Rule)",
+        subtitle: "Roll for the effect",
         description: "Roll the dice as per the description of the potion",
         bullets: [
         "(Optional Rule):",
-        "Normally Drinking potion counts as an <i>Action</i>",
-        "Roll the dice as per the description of the potion"
+        "Normally Drinking potion counts as an <i>Action</i>.",
+        "Roll the dice as per the description of the potion."
         ],
       },         
 ]

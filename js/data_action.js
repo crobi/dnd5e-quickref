@@ -134,7 +134,7 @@ data_action = [
     {
         title: "Hide",
         icon: "hood",
-        subtitle: "",
+        subtitle: "Attempt to hide",
         description: "Attempt to hide",
         reference: "PHB, pg. 192.",
         bullets: [
@@ -148,7 +148,7 @@ data_action = [
     {
         title: "Search",
         icon: "magnifying-glass",
-        subtitle: "",
+        subtitle: "Attempt to find something",
         description: "Devote your attention to finding something",
         reference: "PHB, pg. 193.",
         bullets: [
@@ -181,7 +181,7 @@ data_action = [
     {
         title: "Stabilize a creature",
         icon: "first-aid",
-        subtitle: "Administer first aid to a dying creature",
+        subtitle: "Aid a dying creature",
         description: "Stop a dying creature from needing to make death saving throws",
         reference: "PHB, pg. 197.",
         bullets: [
@@ -203,7 +203,7 @@ data_action = [
     {
         title: "Disarm*",
         icon: "sword-break",
-        subtitle: "Knock weapon or item out of enemy's grasp",
+        subtitle: "Knock weapon/item out of enemy's grasp",
         description: "A creature can use a weapon attack to knock a weapon or another item from a target's grasp.",
         reference: "DMG, page 271",
         bullets: [
@@ -218,7 +218,7 @@ data_action = [
     {
         title: "Overrun*",
         icon: "shield-bash",
-        subtitle: "Run through a hostile creature's space",
+        subtitle: "Run through a hostile space",
         description: "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
         reference: "DMG, page 272",
         bullets: [
@@ -231,7 +231,7 @@ data_action = [
     {
         title: "Tumble*",
         icon: "tumble",
-        subtitle: "Tumble through a hostile creature's space",
+        subtitle: "Tumble through a hostile space",
         description: "A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
         reference: "DMG, page 272",
         bullets: [
