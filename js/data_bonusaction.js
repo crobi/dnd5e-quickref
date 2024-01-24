@@ -1,6 +1,7 @@
 data_bonusaction = [
     {
         title: "Offhand Attack",
+        optional: false,
         icon: "crossed-swords",
         subtitle: "Use with the Attack action",
         description: "Attack with your off hand",
@@ -14,6 +15,7 @@ data_bonusaction = [
     },
     {
         title: "Cast a spell",
+        optional: false,
         icon: "magic-swirl",
         subtitle: "Cast time of 1 bonus action",
         description: "Cast a spell with a casting time of 1 bonus action",
@@ -25,6 +27,7 @@ data_bonusaction = [
     },
     {
         title: "Use class feature",
+        optional: false,
         icon: "embrassed-energy",
         subtitle: "Some features use bonus actions",
         description: "Use a racial or class feature that uses a bonus action",
@@ -35,6 +38,7 @@ data_bonusaction = [
     },
     {
         title: "Overrun*",
+        optional: true,
         icon: "shield-bash",
         subtitle: "Run through a hostile space",
         description: "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
@@ -48,6 +52,7 @@ data_bonusaction = [
     },
     {
         title: "Tumble*",
+        optional: true,
         icon: "tumble",
         subtitle: "Tumble through a hostile space",
         description: "A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
@@ -60,6 +65,7 @@ data_bonusaction = [
     },
     {
         title: "Drink a potion*",
+        optional: true,
         icon: "potion-ball",
         subtitle: "Roll for the effect",
         description: "Roll the dice as per the description of the potion",
