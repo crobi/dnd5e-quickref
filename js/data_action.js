@@ -203,7 +203,7 @@ data_action = [
     {
         title: "Disarm*",
         icon: "sword-break",
-        subtitle: "Knock weapon/item out of enemy's grasp",
+        subtitle: "Knock item out of enemy's grasp",
         description: "A creature can use a weapon attack to knock a weapon or another item from a target's grasp.",
         reference: "DMG, page 271",
         bullets: [
