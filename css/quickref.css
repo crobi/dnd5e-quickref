@@ -364,11 +364,11 @@ p:first-child {
   }
   
   input:checked + .slider {
-    background-color: #363636;
+    background-color: #0a6106;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #363636;
+    box-shadow: 0 0 1px #0a6106;
   }
   
   input:checked + .slider:before {
