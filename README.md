@@ -1,6 +1,6 @@
 dnd5e-quickref
 ==============
-original author https://github.com/crobi/dnd5e-quickref - I only built on top of his work to customize this repo to my needs and likes.
+original author https://github.com/crobi/dnd5e-quickref - I only built on top of his work to customize this page to my needs and likes.
 
 Quick reference sheet for D&amp;D 5e
 
