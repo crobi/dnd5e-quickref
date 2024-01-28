@@ -1,7 +1,7 @@
 data_action = [
     {
         title: "Attack",
-        optional: false,
+        optional: "Regular rule",
         icon: "crossed-swords",
         subtitle: "Melee or ranged attack",
         description: "Perform a melee or ranged attack with your weapon",
@@ -16,7 +16,7 @@ data_action = [
     },
     {
         title: "Grapple",
-        optional: false,
+        optional: "Regular rule",
         icon: "grab",
         subtitle: "Special melee attack",
         description: "Attempt to grab a creature or wrestle with it",
@@ -30,7 +30,7 @@ data_action = [
     },
     {
         title: "Shove",
-        optional: false,
+        optional: "Regular rule",
         icon: "hand",
         subtitle: "Special melee attack",
         description: "Shove a creature, either to knock it prone or push it away from you",
@@ -44,7 +44,7 @@ data_action = [
     },
     {
         title: "Shove Aside*",
-        optional: true,
+        optional: "Optional rule",
         icon: "hand",
         subtitle: "Special melee attack",
         description: "Shove a creature, either to knock it prone or push it aside from you",
@@ -58,7 +58,7 @@ data_action = [
     },
     {
         title: "Cast a spell",
-        optional: false,
+        optional: "Regular rule",
         icon: "magic-swirl",
         subtitle: "Cast time of 1 action",
         description: "Cast a spell with a casting time of 1 action",
@@ -72,7 +72,7 @@ data_action = [
     },
     {
         title: "Dash",
-        optional: false,
+        optional: "Regular rule",
         icon: "sprint",
         subtitle: "Double movement speed",
         description: "Gain extra movement for the current turn",
@@ -83,7 +83,7 @@ data_action = [
     },
     {
         title: "Disengage",
-        optional: false,
+        optional: "Regular rule",
         icon: "journey",
         subtitle: "Prevent opportunity attacks",
         description: "Your movement doesn't provoke opportunity attacks for the rest of the turn",
@@ -93,7 +93,7 @@ data_action = [
     },
     {
         title: "Dodge",
-        optional: false,
+        optional: "Regular rule",
         icon: "aura",
         subtitle: "Increase defenses",
         description: "Focus entirely on avoiding attacks",
@@ -105,7 +105,7 @@ data_action = [
     },
     {
         title: "Escape",
-        optional: false,
+        optional: "Regular rule",
         icon: "manacles",
         subtitle: "Escape a grapple",
         description: "Escape a grapple",
@@ -117,7 +117,7 @@ data_action = [
     },
     {
         title: "Help",
-        optional: false,
+        optional: "Regular rule",
         icon: "telepathy",
         subtitle: "Grant an ally advantage",
         description: "Grant an ally advantage on an ability check or attack",
@@ -130,7 +130,7 @@ data_action = [
     },
     {
         title: "Use Object",
-        optional: false,
+        optional: "Regular rule",
         icon: "snatch",
         subtitle: "Interact, use special abilities",
         description: "Interact with a second object or use special object abilities",
@@ -142,7 +142,7 @@ data_action = [
     },
     {
         title: "Use shield",
-        optional: false,
+        optional: "Regular rule",
         icon: "round-shield",
         subtitle: "Equip or unequip a shield",
         description: "Equip or unequip a shield",
@@ -154,7 +154,7 @@ data_action = [
     },
     {
         title: "Hide",
-        optional: false,
+        optional: "Regular rule",
         icon: "hood",
         subtitle: "Attempt to hide",
         description: "Attempt to hide",
@@ -169,7 +169,7 @@ data_action = [
     },
     {
         title: "Search",
-        optional: false,
+        optional: "Regular rule",
         icon: "magnifying-glass",
         subtitle: "Attempt to find something",
         description: "Devote your attention to finding something",
@@ -180,7 +180,7 @@ data_action = [
     },
     {
         title: "Ready",
-        optional: false,
+        optional: "Regular rule",
         icon: "stopwatch",
         subtitle: "Choose trigger and action",
         description: "Choose a trigger and a response reaction",
@@ -194,7 +194,7 @@ data_action = [
     },
     {
         title: "Use class feature",
-        optional: false,
+        optional: "Regular rule",
         icon: "embrassed-energy",
         subtitle: "Some features use actions",
         description: "Use a racial or class feature that uses an action",
@@ -205,7 +205,7 @@ data_action = [
     },
     {
         title: "Stabilize a creature",
-        optional: false,
+        optional: "Regular rule",
         icon: "first-aid",
         subtitle: "Aid a dying creature",
         description: "Stop a dying creature from needing to make death saving throws",
@@ -218,7 +218,7 @@ data_action = [
     },
     {
         title: "Improvise",
-        optional: false,
+        optional: "Regular rule",
         icon: "juggler",
         subtitle: "Any action not on this list",
         description: "Perform any action you can imagine",
@@ -229,7 +229,7 @@ data_action = [
     },     
     {
         title: "Disarm*",
-        optional: true,
+        optional: "Optional rule",
         icon: "sword-break",
         subtitle: "Knock item out of enemy's grasp",
         description: "A creature can use a weapon attack to knock a weapon or another item from a target's grasp.",
@@ -245,7 +245,7 @@ data_action = [
     },
     {
         title: "Overrun*",
-        optional: true,
+        optional: "Optional rule",
         icon: "shield-bash",
         subtitle: "Run through a hostile space",
         description: "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
@@ -259,7 +259,7 @@ data_action = [
     }, 
     {
         title: "Tumble*",
-        optional: true,
+        optional: "Optional rule",
         icon: "tumble",
         subtitle: "Tumble through a hostile space",
         description: "A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
@@ -272,7 +272,7 @@ data_action = [
     },
     {
         title: "Mark*",
-        optional: true,
+        optional: "Optional rule",
         icon: "cross-mark",
         subtitle: "Give Advantage on Opportunity Attacks",
         description: "This option makes it easier for melee combatants to harry each other with opportunity attacks.",
@@ -288,7 +288,7 @@ data_action = [
     },
     {
         title: "Climb onto a bigger creature*",
-        optional: true,
+        optional: "Optional rule",
         icon: "mountain-climbing",
         subtitle: "Climb a bigger creature",
         description: "If one creature wants to jump onto another creature, it can do so by grappling. A suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb.",

@@ -165,7 +165,13 @@
 #section-environment .text {
     color: ForestGreen;
 }
-
+#section-settings, #section-section-settings .item-icon {
+    background-color: darkblue;
+    border-color: darkblue;
+}
+#section-environment .text {
+    color: darkblue;
+}
 
 /* ------------------------------------------------------------------------- */
 /* Page container */
@@ -364,11 +370,11 @@ p:first-child {
   }
   
   input:checked + .slider {
-    background-color: #0a6106;
+    background-color: darkblue;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #0a6106;
+    box-shadow: 0 0 1px darkblue;
   }
   
   input:checked + .slider:before {
@@ -384,4 +390,14 @@ p:first-child {
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  /* Settings on bottom of page */
+  .settings {
+    font-weight: bold;
+    font-size: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   }

@@ -1,6 +1,7 @@
 data_reaction = [
     {
         title: "Opportunity attack",
+        optional: "Regular rule",
         icon: "crossed-swords",
         subtitle: "Enemy leaves your reach",
         description: "You can rarely move heedlessly past your foes without putting yourself in danger",
@@ -14,6 +15,7 @@ data_reaction = [
     },
     {
         title: "Readied action",
+        optional: "Regular rule",
         icon: "stopwatch",
         subtitle: "Part of your Ready action",
         description: "Execute the reaction specified by your Ready action",
@@ -24,6 +26,7 @@ data_reaction = [
     },
     {
         title: "Cast a spell",
+        optional: "Regular rule",
         icon: "magic-swirl",
         subtitle: "Cast time of 1 reaction",
         description: "Cast a spell with a casting time of 1 reaction",

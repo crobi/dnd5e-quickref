@@ -3,7 +3,7 @@ function add_quickref_item(parent, data, type) {
     var icon = data.icon || "perspective-dice-six-faces-one";
     var subtitle = data.subtitle || "";
     var title = data.title || "[no title]";
-
+    var optional = data.optional || "false"; // Get the optional property from the data object
     // Create a new 'div' element for the quick reference item
     var item = document.createElement("div");
     // Add classes to the item element
@@ -41,7 +41,8 @@ function add_quickref_item(parent, data, type) {
     item.onclick = function () {
         show_modal(data, color, type);
     }
-
+    // Set the title attribute of the item div to the value of the optional property
+    item.setAttribute("title", optional);
     // Append the created item to the specified parent element
     parent.appendChild(item);
 }
@@ -122,3 +123,35 @@ function init() {
 
 document.addEventListener("DOMContentLoaded", init);
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the checkbox element
+    var checkbox = document.getElementById('optional-switch');
+    
+    // Function to handle checkbox change
+    function handleCheckboxChange() {
+        // Get all items with the class 'item'
+        var items = document.getElementsByClassName('item itemsize');
+        
+        // Iterate through each item
+        for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            // Check if the item has the attribute 'title' with the value 'Optional rule' (indicating it's an optional rule)
+            var isOptional = item.getAttribute('title') === 'Optional rule';
+            // If the checkbox is checked and the item is optional, show the item
+            // If the checkbox is unchecked or the item is not optional, show the item if it's not an optional rule, otherwise hide it
+            if (checkbox.checked && isOptional) {
+                item.style.display = 'block';
+            } else if (!isOptional) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        }
+    }
+    
+    // Add event listener to the checkbox
+    checkbox.addEventListener('change', handleCheckboxChange);
+    
+    // Call the function to initially set the visibility based on the checkbox state
+    handleCheckboxChange();
+});
