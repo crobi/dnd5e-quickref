@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
@@ -8,18 +9,21 @@
     <link rel="stylesheet" type="text/css" href="css/quickref.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
     <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
     <!-- Javascript -->
     <!-- <script type="text/javascript" src="js/jquery/jquery.min.js" charset="utf-8"></script> -->
 </head>
+
 <body class="page-background">
     <div class="page fontsize" data-size="fullscreen">
 
         <!-- Movement section -->
         <div id="section-movement" class="section-container">
             <div class="section-title">
-                Movement <span class="float-right">limited by movement speed</span>
+                Movement
+                <span class="float-right">limited by movement speed</span>
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -33,7 +37,8 @@
         <!-- Action section -->
         <div id="section-action" class="section-container">
             <div class="section-title">
-                Action <span class="float-right">1/turn</span>
+                Action
+                <span class="float-right">1/turn</span>
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -47,7 +52,8 @@
         <!-- Bonus action section -->
         <div id="section-bonus-action" class="section-container">
             <div class="section-title">
-                Bonus action <span class="float-right">max. 1/turn</span>
+                Bonus action
+                <span class="float-right">max. 1/turn</span>
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -61,7 +67,8 @@
         <!-- Reaction section -->
         <div id="section-reaction" class="section-container">
             <div class="section-title">
-                Reaction <span class="float-right">max. 1/round</span>
+                Reaction
+                <span class="float-right">max. 1/round</span>
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -79,12 +86,13 @@
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
-                    Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect.
+                    Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a
+                    class feature, a monster's attack, or other effect.
                 </div>
                 <div class="section-row" id="basic-conditions"></div>
             </div>
         </div>
-        
+
         <!-- Environmental section -->
         <div id="section-environment" class="section-container">
             <div class="section-title">
@@ -109,8 +117,25 @@
                 <div class="section-row" id="environment-cover"></div>
             </div>
         </div>
+        <!-- Settings section -->
+        <div id="section-settings" class="section-container">
+            <div class="section-title">Settings</div>
+            <div class="section-content">
+                <label class="switch">
+                    <input type="checkbox" id="optional-switch" checked>
+                    <span class="slider round"></span>
+                </label>
+                <p class="settings">Include Optional Rules
+                <div class="section-row section-subtitle text fontsize">Toggle to show/hide optional rules from DMG.
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
 
     </div>
+    </div>
+
 
     <!-- Modal -->
     <div class="modal" id="modal" tabindex="-1">
@@ -134,7 +159,6 @@
             </div>
         </div>
     </div>
-
     <!-- Data -->
     <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
@@ -144,4 +168,5 @@
     <script type="text/javascript" src="js/data_environment.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
 </body>
+
 </html>
