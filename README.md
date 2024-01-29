@@ -17,6 +17,7 @@ Icons
 ==============
 
 All icons are provided by http://game-icons.net/
+Favicon comes from https://iconduck.com/icons/21871/dragon
 
 FAQ
 ===
