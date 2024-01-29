@@ -121,22 +121,30 @@
         <div id="section-settings" class="section-container">
             <div class="section-title">Settings</div>
             <div class="section-content">
-                <label class="switch">
-                    <input type="checkbox" id="optional-switch" checked>
-                    <span class="slider round"></span>
-                </label>
-                <p class="settings">Include Optional Rules
-                <div class="section-row section-subtitle text fontsize">Toggle to show/hide optional rules from DMG.
+                <div class="item itemsize" title="Include Optional Rules" style="display: block;">
+                    <div class="item-icon"><label class="switch">
+                            <input type="checkbox" id="optional-switch">
+                            <span class="slider round"></span>
+                        </label></div>
+                    <div class="item-text-container text">
+                        <div class="item-title">Include Optional Rules</div>
+                        <div class="item-desc">Show/hide optional rules from DMG.</div>
+                    </div>
                 </div>
-                </p>
+                <div class="item itemsize" title="Darkmode" style="display: block;">
+                    <div class="item-icon"><label class="switch">
+                            <input type="checkbox" id="darkmode-switch">
+                            <span class="slider round"></span>
+                        </label></div>
+                    <div class="item-text-container text">
+                        <div class="item-title">Darkmode</div>
+                        <div class="item-desc">Enable Darkmode</div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
-
-    </div>
-    </div>
-
-
     <!-- Modal -->
     <div class="modal" id="modal" tabindex="-1">
         <div class="modal-backdrop" id="modal-backdrop"></div>

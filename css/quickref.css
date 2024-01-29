@@ -87,7 +87,6 @@
     background-size: contain;
     box-sizing: border-box;
     border-radius: 4px;
-    display: inline-block;
     margin-right: 4px;
 }
 
@@ -169,7 +168,7 @@
     background-color: darkblue;
     border-color: darkblue;
 }
-#section-environment .text {
+#section-settings .text {
     color: darkblue;
 }
 

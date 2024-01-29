@@ -1,7 +1,7 @@
 data_movement = [
     {
         title: "Move",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "run",
         subtitle: "Cost: 5ft per 5ft",
         description: "Movement cost: 5ft per 5ft moved",
@@ -16,7 +16,7 @@ data_movement = [
     },
     {
         title: "Climb",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "crags",
         subtitle: "Cost: 10ft per 5ft",
         description: "Movement cost: 10ft per 5ft climbed",
@@ -27,7 +27,7 @@ data_movement = [
     },
     {
         title: "Swim",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "at-sea",
         subtitle: "Cost: 10ft per 5ft",
         description: "Movement cost: 10ft per 5ft swum",
@@ -38,7 +38,7 @@ data_movement = [
     },
     {
         title: "Drop prone",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "lob-arrow",
         subtitle: "Cost: 0ft",
         description: "Movement cost: 0ft (free)",
@@ -51,7 +51,7 @@ data_movement = [
     },
     {
         title: "Crawl",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "crawl",
         subtitle: "Cost: 10ft per 5ft",
         description: "Movement cost: 10ft per 5ft crawled",
@@ -62,7 +62,7 @@ data_movement = [
     },
     {
         title: "Stand up",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "strong",
         subtitle: "Cost: half movement speed",
         description: "Movement cost: half of your speed",
@@ -73,7 +73,7 @@ data_movement = [
     },
     {
         title: "High jump",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "wingfoot",
         subtitle: "Height: 3 + STR MOD",
         description: "Height: 3 + STR MOD",
@@ -87,7 +87,7 @@ data_movement = [
     },
     {
         title: "Long jump",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "wingfoot",
         subtitle: "Distance: STR score",
         description: "Cost: 5ft per 5ft",
@@ -101,7 +101,7 @@ data_movement = [
     },
     {
         title: "Improvise",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "juggler",
         subtitle: "Any stunt not on this list",
         description: "Perform any movement or stunt you can imagine",
@@ -111,7 +111,7 @@ data_movement = [
     },
     {
         title: "Difficult terrain",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "stone-pile",
         subtitle: "Cost modifier: +5ft per 5ft",
         reference: "PHB, pg. 182.",
@@ -121,7 +121,7 @@ data_movement = [
     },
     {
         title: "Grapple move",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "grab",
         subtitle: "Modifier: speed halved",
         description: "Drag or carry the grappled creature with you",
