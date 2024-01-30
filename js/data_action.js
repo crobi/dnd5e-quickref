@@ -1,7 +1,7 @@
 data_action = [
     {
         title: "Attack",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "crossed-swords",
         subtitle: "Melee or ranged attack",
         description: "Perform a melee or ranged attack with your weapon",
@@ -16,7 +16,7 @@ data_action = [
     },
     {
         title: "Grapple",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "grab",
         subtitle: "Special melee attack",
         description: "Attempt to grab a creature or wrestle with it",
@@ -30,7 +30,7 @@ data_action = [
     },
     {
         title: "Shove",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "hand",
         subtitle: "Special melee attack",
         description: "Shove a creature, either to knock it prone or push it away from you",
@@ -58,7 +58,7 @@ data_action = [
     },
     {
         title: "Cast a spell",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "magic-swirl",
         subtitle: "Cast time of 1 action",
         description: "Cast a spell with a casting time of 1 action",
@@ -72,7 +72,7 @@ data_action = [
     },
     {
         title: "Dash",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "sprint",
         subtitle: "Double movement speed",
         description: "Gain extra movement for the current turn",
@@ -83,7 +83,7 @@ data_action = [
     },
     {
         title: "Disengage",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "journey",
         subtitle: "Prevent opportunity attacks",
         description: "Your movement doesn't provoke opportunity attacks for the rest of the turn",
@@ -93,7 +93,7 @@ data_action = [
     },
     {
         title: "Dodge",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "aura",
         subtitle: "Increase defenses",
         description: "Focus entirely on avoiding attacks",
@@ -105,7 +105,7 @@ data_action = [
     },
     {
         title: "Escape",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "manacles",
         subtitle: "Escape a grapple",
         description: "Escape a grapple",
@@ -117,7 +117,7 @@ data_action = [
     },
     {
         title: "Help",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "telepathy",
         subtitle: "Grant an ally advantage",
         description: "Grant an ally advantage on an ability check or attack",
@@ -130,7 +130,7 @@ data_action = [
     },
     {
         title: "Use Object",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "snatch",
         subtitle: "Interact, use special abilities",
         description: "Interact with a second object or use special object abilities",
@@ -142,7 +142,7 @@ data_action = [
     },
     {
         title: "Use shield",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "round-shield",
         subtitle: "Equip or unequip a shield",
         description: "Equip or unequip a shield",
@@ -154,7 +154,7 @@ data_action = [
     },
     {
         title: "Hide",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "hood",
         subtitle: "Attempt to hide",
         description: "Attempt to hide",
@@ -169,7 +169,7 @@ data_action = [
     },
     {
         title: "Search",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "magnifying-glass",
         subtitle: "Attempt to find something",
         description: "Devote your attention to finding something",
@@ -180,7 +180,7 @@ data_action = [
     },
     {
         title: "Ready",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "stopwatch",
         subtitle: "Choose trigger and action",
         description: "Choose a trigger and a response reaction",
@@ -194,7 +194,7 @@ data_action = [
     },
     {
         title: "Use class feature",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "embrassed-energy",
         subtitle: "Some features use actions",
         description: "Use a racial or class feature that uses an action",
@@ -205,7 +205,7 @@ data_action = [
     },
     {
         title: "Stabilize a creature",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "first-aid",
         subtitle: "Aid a dying creature",
         description: "Stop a dying creature from needing to make death saving throws",
@@ -218,7 +218,7 @@ data_action = [
     },
     {
         title: "Improvise",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "juggler",
         subtitle: "Any action not on this list",
         description: "Perform any action you can imagine",
@@ -226,7 +226,7 @@ data_action = [
         bullets: [
             "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
         ]
-    },     
+    },
     {
         title: "Disarm*",
         optional: "Optional rule",
@@ -238,7 +238,7 @@ data_action = [
             "(Optional Rule):",
             "The attacker makes an attack roll contested by the target's Strength (Athletics) check or Dexterity (Acrobatics) check.",
             "If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item.",
-            "The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands.", 
+            "The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands.",
             "The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller."
 
         ]
@@ -256,7 +256,7 @@ data_action = [
             "The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller.",
             "If the mover wins the contest, it can move through the hostile creature's space once this turn."
         ]
-    }, 
+    },
     {
         title: "Tumble*",
         optional: "Optional rule",
@@ -299,5 +299,5 @@ data_action = [
             "If it wins the contest, the smaller creature successfully moves into the target creature's space.",
             "The smaller creature moves with the target and has advantage on attack rolls against it.",
         ]
-    }                     
+    }
 ]

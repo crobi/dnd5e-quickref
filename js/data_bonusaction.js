@@ -1,7 +1,7 @@
 data_bonusaction = [
     {
         title: "Offhand Attack",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "crossed-swords",
         subtitle: "Use with the Attack action",
         description: "Attack with your off hand",
@@ -15,7 +15,7 @@ data_bonusaction = [
     },
     {
         title: "Cast a spell",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "magic-swirl",
         subtitle: "Cast time of 1 bonus action",
         description: "Cast a spell with a casting time of 1 bonus action",
@@ -27,7 +27,7 @@ data_bonusaction = [
     },
     {
         title: "Use class feature",
-        optional: "Regular rule",
+        optional: "Standard rule",
         icon: "embrassed-energy",
         subtitle: "Some features use bonus actions",
         description: "Use a racial or class feature that uses a bonus action",
@@ -70,9 +70,9 @@ data_bonusaction = [
         subtitle: "Roll for the effect",
         description: "Roll the dice as per the description of the potion",
         bullets: [
-        "(Optional Rule):",
-        "Normally Drinking potion counts as an <i>Action</i>.",
-        "Roll the dice as per the description of the potion."
+            "(Optional Rule):",
+            "Normally Drinking potion counts as an <i>Action</i>.",
+            "Roll the dice as per the description of the potion."
         ],
-      },         
+    },
 ]

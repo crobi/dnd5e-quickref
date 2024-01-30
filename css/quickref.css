@@ -10,13 +10,13 @@
     flex-direction: column;
     /*font-family: Arial;*/
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-    width:100%;
-    margin-bottom:8px;
+    width: 100%;
+    margin-bottom: 8px;
     page-break-inside: avoid;
 }
 
 .section-content {
-    padding:8px;
+    padding: 8px;
     padding-bottom: 0;
     border-radius: 8px;
     margin-top: 0;
@@ -41,7 +41,8 @@
     float: right;
 }
 
-.section-subtitle, #modal-reference {
+.section-subtitle,
+#modal-reference {
     display: block;
     margin-bottom: 8px;
     font-size: inherit;
@@ -56,13 +57,14 @@
     font-size: inherit;
 }
 
-.section-row:before, .section-row:after{
+.section-row:before,
+.section-row:after {
     display: table;
     content: " ";
     clear: both;
 }
 
-.section-row + .section-subtitle {
+.section-row+.section-subtitle {
     margin-top: 1em;
 }
 
@@ -87,7 +89,6 @@
     background-size: contain;
     box-sizing: border-box;
     border-radius: 4px;
-    display: inline-block;
     margin-right: 4px;
 }
 
@@ -118,58 +119,73 @@
 /* ------------------------------------------------------------------------- */
 /* Colors */
 /* ------------------------------------------------------------------------- */
-#section-movement, #section-movement .item-icon {
+#section-movement,
+#section-movement .item-icon {
     background-color: maroon;
     border-color: maroon;
 }
+
 #section-movement .text {
     color: maroon;
 }
 
-#section-action, #section-action .item-icon {
+#section-action,
+#section-action .item-icon {
     background-color: black;
     border-color: black;
 }
+
 #section-action .text {
     color: black;
 }
 
-#section-bonus-action, #section-bonus-action .item-icon {
+#section-bonus-action,
+#section-bonus-action .item-icon {
     background-color: indigo;
     border-color: indigo;
 }
+
 #section-bonus-action .text {
     color: indigo;
 }
 
-#section-reaction, #section-reaction .item-icon {
-    background-color: DarkOliveGreen ;
-    border-color: DarkOliveGreen ;
-}
-#section-reaction .text {
-    color: DarkOliveGreen ;
+#section-reaction,
+#section-reaction .item-icon {
+    background-color: DarkOliveGreen;
+    border-color: DarkOliveGreen;
 }
 
-#section-condition, #section-condition .item-icon {
+#section-reaction .text {
+    color: DarkOliveGreen;
+}
+
+#section-condition,
+#section-condition .item-icon {
     background-color: FireBrick;
     border-color: FireBrick;
 }
+
 #section-condition .text {
     color: FireBrick;
 }
 
-#section-environment, #section-environment .item-icon {
+#section-environment,
+#section-environment .item-icon {
     background-color: ForestGreen;
     border-color: ForestGreen;
 }
+
 #section-environment .text {
     color: ForestGreen;
 }
-#section-settings, #section-section-settings .item-icon {
+
+#section-settings,
+#section-section-settings .item-icon {
     background-color: darkblue;
     border-color: darkblue;
 }
-#section-environment .text {
+
+#section-settings .text {
     color: darkblue;
 }
 
@@ -179,8 +195,8 @@
 
 body {
     display: flex;
-    justify-content:center;
-    align-content:center;
+    justify-content: center;
+    align-content: center;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -195,7 +211,8 @@ ul {
     padding-left: 20px;
 }
 
-p, hr {
+p,
+hr {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -256,7 +273,7 @@ p:first-child {
 .modal-container {
     background-clip: padding-box;
     outline: 0;
-    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 
 .modal-footer {
@@ -271,58 +288,147 @@ p:first-child {
 /* ------------------------------------------------------------------------- */
 
 /* Smart phone, portrait */
-@media (min-width:    0px) and (max-width:  479px) {
-    .fontsize { font-size: 12pt; } 
-    .iconsize { width: 44px; height: 44px;} 
-    .itemsize { height: 44px; width: 100%; } 
-    .modalsize {} 
+@media (min-width: 0px) and (max-width: 479px) {
+    .fontsize {
+        font-size: 12pt;
+    }
+
+    .iconsize {
+        width: 44px;
+        height: 44px;
+    }
+
+    .itemsize {
+        height: 44px;
+        width: 100%;
+    }
+
+    .modalsize {}
 }
 
 /* Smart phone, landscape */
-@media (min-width:  480px) and (max-width:  767px) {
-    .fontsize { font-size: 11pt; }
-    .iconsize { width: 40px; height: 40px;}
-    .itemsize { height: 40px; width:  50%; }
+@media (min-width: 480px) and (max-width: 767px) {
+    .fontsize {
+        font-size: 11pt;
+    }
+
+    .iconsize {
+        width: 40px;
+        height: 40px;
+    }
+
+    .itemsize {
+        height: 40px;
+        width: 50%;
+    }
+
     .modalsize {}
 }
 
 /* Tablet, portrait */
-@media (min-width:  768px) and (max-width:  991px) {
-    .fontsize { font-size: 11pt; }
-    .iconsize { width: 40px; height: 40px;}
-    .itemsize { height: 40px; width:  33%; }
-    .modalsize { width: 600px; margin: 30px auto; }
+@media (min-width: 768px) and (max-width: 991px) {
+    .fontsize {
+        font-size: 11pt;
+    }
+
+    .iconsize {
+        width: 40px;
+        height: 40px;
+    }
+
+    .itemsize {
+        height: 40px;
+        width: 33%;
+    }
+
+    .modalsize {
+        width: 600px;
+        margin: 30px auto;
+    }
 }
 
 /* Tablet, landscape */
-@media (min-width:  992px) and (max-width: 1199px) {
-    .fontsize { font-size: 12pt; }
-    .iconsize { width: 44px; height: 44px;}
-    .itemsize { height: 44px; width:  33%; }
-    .modalsize { width: 600px; margin: 30px auto; }
+@media (min-width: 992px) and (max-width: 1199px) {
+    .fontsize {
+        font-size: 12pt;
+    }
+
+    .iconsize {
+        width: 44px;
+        height: 44px;
+    }
+
+    .itemsize {
+        height: 44px;
+        width: 33%;
+    }
+
+    .modalsize {
+        width: 600px;
+        margin: 30px auto;
+    }
 }
 
 /* Small desktop screen */
 @media (min-width: 1200px) and (max-width: 1599px) {
-    .fontsize { font-size: 12pt; }
-    .iconsize { width: 44px; height: 44px;}
-    .itemsize { height: 44px; width:  25%; }
-    .modalsize { width: 600px; margin: 30px auto; }
+    .fontsize {
+        font-size: 12pt;
+    }
+
+    .iconsize {
+        width: 44px;
+        height: 44px;
+    }
+
+    .itemsize {
+        height: 44px;
+        width: 25%;
+    }
+
+    .modalsize {
+        width: 600px;
+        margin: 30px auto;
+    }
 }
 
 /* Large desktop screen */
 @media (min-width: 1600px) {
-    .fontsize { font-size: 12pt; }
-    .iconsize { width: 44px; height: 44px;}
-    .itemsize { height: 44px; width:  20%; }
-    .modalsize { width: 600px; margin: 30px auto; }
+    .fontsize {
+        font-size: 12pt;
+    }
+
+    .iconsize {
+        width: 44px;
+        height: 44px;
+    }
+
+    .itemsize {
+        height: 44px;
+        width: 20%;
+    }
+
+    .modalsize {
+        width: 600px;
+        margin: 30px auto;
+    }
 }
 
 /* Print */
 @media print {
-    .fontsize { font-size: 10pt; }
-    .iconsize { width: 36px; height: 36px;}
-    .itemsize { height: 36px; width:  33%; }
+    .fontsize {
+        font-size: 10pt;
+    }
+
+    .iconsize {
+        width: 36px;
+        height: 36px;
+    }
+
+    .itemsize {
+        height: 36px;
+        width: 33%;
+    }
+
     .modalsize {}
 }
 
@@ -335,17 +441,17 @@ p:first-child {
     display: inline-block;
     width: 48px;
     height: 28px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -355,9 +461,9 @@ p:first-child {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 20px;
@@ -367,37 +473,114 @@ p:first-child {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: darkblue;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px darkblue;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 28px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+}
 
-  /* Settings on bottom of page */
-  .settings {
+/* Rounded sliders */
+.slider.round {
+    border-radius: 28px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Settings on bottom of page */
+.settings {
     font-weight: bold;
     font-size: inherit;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* Dark Mode */
+/* ------------------------------------------------------------------------- */
+.dark-mode-active {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode-active .section-container {
+    border-color: #444;
+}
+
+.dark-mode-active .section-content {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode-active .section-row,
+.dark-mode-active .section-subtitle,
+.dark-mode-active #modal-reference {
+    color: #fff;
+}
+
+.dark-mode-active .item {
+    background-color: #333;
+}
+
+.dark-mode-active .item-title,
+.dark-mode-active .item-desc,
+.dark-mode-active .item-text-container {
+    color: #fff;
+}
+
+.dark-mode-active hr {
+    border-top-color: #666;
+}
+
+.dark-mode-active .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dark-mode-active .modal-container {
+    box-shadow: 0 3px 9px rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode-active .modal-footer {
+    border-top-color: #555;
+}
+
+.dark-mode-active #section-movement .text {
+    color: #fff;
+}
+
+.dark-mode-active #section-action .text {
+    color: #fff;
+}
+
+.dark-mode-active #section-bonus-action .text {
+    color: #fff;
+}
+
+.dark-mode-active #section-reaction .text {
+    color: #fff;
+}
+
+.dark-mode-active #section-environment .text {
+    color: #fff;
+}
+
+.dark-mode-active #section-condition .text {
+    color: #fff;
+}
+
+.dark-mode-active #section-settings .text {
+    color: #fff;
+}
