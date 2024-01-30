@@ -17,6 +17,7 @@
 </head>
 
 <body class="page-background">
+    <div class="dark-mode">
     <div class="page fontsize" data-size="fullscreen">
 
         <!-- Movement section -->
@@ -121,7 +122,10 @@
         <div id="section-settings" class="section-container">
             <div class="section-title">Settings</div>
             <div class="section-content">
-                <div class="item itemsize" title="Include Optional Rules" style="display: block;">
+                <div class="section-row section-subtitle text fontsize">
+                    You can change below toggle for settings on this page.
+                </div>
+                <div class="item itemsize" title="Include Optional Rules">
                     <div class="item-icon"><label class="switch">
                             <input type="checkbox" id="optional-switch">
                             <span class="slider round"></span>
@@ -131,7 +135,7 @@
                         <div class="item-desc">Show/hide optional rules from DMG.</div>
                     </div>
                 </div>
-                <div class="item itemsize" title="Darkmode" style="display: block;">
+                <div class="item itemsize" title="Darkmode" hidden>
                     <div class="item-icon"><label class="switch">
                             <input type="checkbox" id="darkmode-switch">
                             <span class="slider round"></span>
@@ -142,7 +146,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- Modal -->
@@ -167,6 +170,7 @@
             </div>
         </div>
     </div>
+</div>
     <!-- Data -->
     <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>

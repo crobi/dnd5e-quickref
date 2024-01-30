@@ -123,15 +123,17 @@ function init() {
 
 document.addEventListener("DOMContentLoaded", init);
 
-document.addEventListener("DOMContentLoaded", function() {
+//Optional Content Switch
+document.addEventListener("DOMContentLoaded", function () {
     // Select the checkbox element
     var checkbox = document.getElementById('optional-switch');
-    
+
     // Function to handle checkbox change
     function handleCheckboxChange() {
+        console.log("Include Optional Rules switch toggled"); // Debugging statement
         // Get all items with the class 'item'
         var items = document.getElementsByClassName('item itemsize');
-        
+
         // Iterate through each item
         for (var i = 0; i < items.length; i++) {
             var item = items[i];
@@ -148,10 +150,25 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
-    
+
     // Add event listener to the checkbox
     checkbox.addEventListener('change', handleCheckboxChange);
-    
+
     // Call the function to initially set the visibility based on the checkbox state
     handleCheckboxChange();
-});
+
+    //Darkmode switch 
+    // Get the checkbox element
+    const darkModeSwitch = document.getElementById('darkmode-switch');
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        console.log("Dark mode switch toggled"); // Debugging statement
+        const darkModeElements = document.querySelectorAll('.dark-mode, .page-background');
+        darkModeElements.forEach(element => {
+            element.classList.toggle('dark-mode-active');
+        });
+    }
+    // Event listener for checkbox change
+    darkModeSwitch.addEventListener('change', toggleDarkMode);
+})
