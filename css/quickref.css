@@ -524,7 +524,8 @@ input:checked+.slider:before {
     background-color: #333;
     color: #fff;
 }
-.dark-mode-active .section-row, 
+
+.dark-mode-active .section-row,
 .dark-mode-active .section-subtitle,
 .dark-mode-active #modal-reference {
     color: #fff;
@@ -559,21 +560,27 @@ input:checked+.slider:before {
 .dark-mode-active #section-movement .text {
     color: #fff;
 }
+
 .dark-mode-active #section-action .text {
     color: #fff;
 }
+
 .dark-mode-active #section-bonus-action .text {
     color: #fff;
 }
+
 .dark-mode-active #section-reaction .text {
     color: #fff;
 }
+
 .dark-mode-active #section-environment .text {
     color: #fff;
 }
+
 .dark-mode-active #section-condition .text {
     color: #fff;
 }
+
 .dark-mode-active #section-settings .text {
     color: #fff;
 }

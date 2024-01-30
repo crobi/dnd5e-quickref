@@ -70,9 +70,9 @@ data_bonusaction = [
         subtitle: "Roll for the effect",
         description: "Roll the dice as per the description of the potion",
         bullets: [
-        "(Optional Rule):",
-        "Normally Drinking potion counts as an <i>Action</i>.",
-        "Roll the dice as per the description of the potion."
+            "(Optional Rule):",
+            "Normally Drinking potion counts as an <i>Action</i>.",
+            "Roll the dice as per the description of the potion."
         ],
-      },         
+    },
 ]

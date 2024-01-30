@@ -226,7 +226,7 @@ data_action = [
         bullets: [
             "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
         ]
-    },     
+    },
     {
         title: "Disarm*",
         optional: "Optional rule",
@@ -238,7 +238,7 @@ data_action = [
             "(Optional Rule):",
             "The attacker makes an attack roll contested by the target's Strength (Athletics) check or Dexterity (Acrobatics) check.",
             "If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item.",
-            "The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands.", 
+            "The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands.",
             "The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller."
 
         ]
@@ -256,7 +256,7 @@ data_action = [
             "The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller.",
             "If the mover wins the contest, it can move through the hostile creature's space once this turn."
         ]
-    }, 
+    },
     {
         title: "Tumble*",
         optional: "Optional rule",
@@ -299,5 +299,5 @@ data_action = [
             "If it wins the contest, the smaller creature successfully moves into the target creature's space.",
             "The smaller creature moves with the target and has advantage on attack rolls against it.",
         ]
-    }                     
+    }
 ]
