@@ -161,22 +161,22 @@
 
 #section-condition,
 #section-condition .item-icon {
-    background-color: FireBrick;
-    border-color: FireBrick;
+    background-color: saddlebrown;
+    border-color: saddlebrown;
 }
 
 #section-condition .text {
-    color: FireBrick;
+    color: saddlebrown;
 }
 
 #section-environment,
 #section-environment .item-icon {
-    background-color: ForestGreen;
-    border-color: ForestGreen;
+    background-color: darkgreen;
+    border-color: darkgreen;
 }
 
 #section-environment .text {
-    color: ForestGreen;
+    color: darkgreen;
 }
 
 #section-settings,
