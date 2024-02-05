@@ -171,12 +171,12 @@
 
 #section-environment,
 #section-environment .item-icon {
-    background-color: darkcyan;
-    border-color: darkcyan;
+    background-color: teal;
+    border-color: teal;
 }
 
 #section-environment .text {
-    color: darkcyan;
+    color: teal;
 }
 
 #section-settings,
@@ -571,8 +571,10 @@ input:checked+.slider:before {
 }
 .dark-mode-active #section-action,
 .dark-mode-active #section-action .item-icon {
-    background-color: black;
-    border-color: black;
+    background-color: #09151A
+    ;
+    border-color: #09151A
+    ;
 }
 .dark-mode-active #section-bonus-action .text {
     color: #fff;
@@ -603,14 +605,21 @@ input:checked+.slider:before {
 }
 .dark-mode-active #section-environment,
 .dark-mode-active #section-environment .item-icon {
-    background-color: teal;
-    border-color: teal;
+    background-color: DarkSlateGrey;
+    border-color: DarkSlateGrey;
 }
 .dark-mode-active #section-settings .text {
     color: #fff;
 }
 .dark-mode-active #section-settings,
 .dark-mode-active #section-section-settings .item-icon {
-    background-color: midnightblue;
-    border-color: midnightblue;
+    background-color: DarkSlateBlue;
+    border-color: DarkSlateBlue;
+}
+.dark-mode-active input:checked+.slider {
+    background-color: DarkSlateBlue;
+}
+
+.dark-mode-active input:focus+.slider {
+    box-shadow: 0 0 1px DarkSlateBlue;
 }
