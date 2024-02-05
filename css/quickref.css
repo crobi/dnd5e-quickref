@@ -151,32 +151,32 @@
 
 #section-reaction,
 #section-reaction .item-icon {
-    background-color: DarkOliveGreen;
-    border-color: DarkOliveGreen;
+    background-color: green;
+    border-color: green;
 }
 
 #section-reaction .text {
-    color: DarkOliveGreen;
+    color: green;
 }
 
 #section-condition,
 #section-condition .item-icon {
-    background-color: saddlebrown;
-    border-color: saddlebrown;
+    background-color: firebrick;
+    border-color: firebrick;
 }
 
 #section-condition .text {
-    color: saddlebrown;
+    color: firebrick;
 }
 
 #section-environment,
 #section-environment .item-icon {
-    background-color: darkgreen;
-    border-color: darkgreen;
+    background-color: teal;
+    border-color: teal;
 }
 
 #section-environment .text {
-    color: darkgreen;
+    color: teal;
 }
 
 #section-settings,
@@ -557,6 +557,12 @@ input:checked+.slider:before {
     border-top-color: #555;
 }
 
+.dark-mode-active #section-movement,
+.dark-mode-active #section-movement .item-icon {
+    background-color: brown;
+    border-color: brown;
+}
+
 .dark-mode-active #section-movement .text {
     color: #fff;
 }
@@ -565,22 +571,66 @@ input:checked+.slider:before {
     color: #fff;
 }
 
+.dark-mode-active #section-action,
+.dark-mode-active #section-action .item-icon {
+    background-color: #09151A;
+    border-color: #09151A;
+}
+
 .dark-mode-active #section-bonus-action .text {
     color: #fff;
+}
+
+.dark-mode-active #section-bonus-action,
+.dark-mode-active #section-bonus-action .item-icon {
+    background-color: indigo;
+    border-color: indigo;
 }
 
 .dark-mode-active #section-reaction .text {
     color: #fff;
 }
 
-.dark-mode-active #section-environment .text {
-    color: #fff;
+.dark-mode-active #section-reaction,
+.dark-mode-active #section-reaction .item-icon {
+    background-color: DarkOliveGreen;
+    border-color: DarkOliveGreen;
 }
 
 .dark-mode-active #section-condition .text {
     color: #fff;
 }
 
+.dark-mode-active #section-condition,
+.dark-mode-active #section-condition .item-icon {
+    background-color: saddlebrown;
+    border-color: saddlebrown;
+}
+
+.dark-mode-active #section-environment .text {
+    color: #fff;
+}
+
+.dark-mode-active #section-environment,
+.dark-mode-active #section-environment .item-icon {
+    background-color: DarkSlateGrey;
+    border-color: DarkSlateGrey;
+}
+
 .dark-mode-active #section-settings .text {
     color: #fff;
+}
+
+.dark-mode-active #section-settings,
+.dark-mode-active #section-section-settings .item-icon {
+    background-color: DarkSlateBlue;
+    border-color: DarkSlateBlue;
+}
+
+.dark-mode-active input:checked+.slider {
+    background-color: DarkSlateBlue;
+}
+
+.dark-mode-active input:focus+.slider {
+    box-shadow: 0 0 1px DarkSlateBlue;
 }
