@@ -161,12 +161,12 @@
 
 #section-condition,
 #section-condition .item-icon {
-    background-color: firebrick;
-    border-color: firebrick;
+    background-color: darkgoldenrod;
+    border-color: darkgoldenrod;
 }
 
 #section-condition .text {
-    color: firebrick;
+    color: darkgoldenrod;
 }
 
 #section-environment,
@@ -559,8 +559,8 @@ input:checked+.slider:before {
 
 .dark-mode-active #section-movement,
 .dark-mode-active #section-movement .item-icon {
-    background-color: brown;
-    border-color: brown;
+    background-color: #8f3838;
+    border-color: #8f3838;
 }
 
 .dark-mode-active #section-movement .text {
@@ -583,8 +583,8 @@ input:checked+.slider:before {
 
 .dark-mode-active #section-bonus-action,
 .dark-mode-active #section-bonus-action .item-icon {
-    background-color: #2d004e;
-    border-color: #2d004e;
+    background-color: #311942;
+    border-color: #311942;
 }
 
 .dark-mode-active #section-reaction .text {
@@ -603,8 +603,8 @@ input:checked+.slider:before {
 
 .dark-mode-active #section-condition,
 .dark-mode-active #section-condition .item-icon {
-    background-color: saddlebrown;
-    border-color: saddlebrown;
+    background-color: #7a4b2a;
+    border-color: #7a4b2a;
 }
 
 .dark-mode-active #section-environment .text {
@@ -613,8 +613,8 @@ input:checked+.slider:before {
 
 .dark-mode-active #section-environment,
 .dark-mode-active #section-environment .item-icon {
-    background-color: DarkSlateGrey;
-    border-color: DarkSlateGrey;
+    background-color: #2f4f4f;
+    border-color: #2f4f4f;
 }
 
 .dark-mode-active #section-settings .text {
@@ -633,4 +633,16 @@ input:checked+.slider:before {
 
 .dark-mode-active input:focus+.slider {
     box-shadow: 0 0 1px DarkSlateBlue;
+}
+
+.dark-mode-active .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.75); /* Dark mode backdrop color */
+}
+
+.dark-mode-active .modal-container {
+    box-shadow: 0 3px 9px rgba(255, 255, 255, 0.5); /* Dark mode modal container shadow */
+}
+
+.dark-mode-active .modal-footer {
+    border-top-color: #555; /* Dark mode modal footer border color */
 }
