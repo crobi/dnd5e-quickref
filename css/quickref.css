@@ -583,8 +583,8 @@ input:checked+.slider:before {
 
 .dark-mode-active #section-bonus-action,
 .dark-mode-active #section-bonus-action .item-icon {
-    background-color: indigo;
-    border-color: indigo;
+    background-color: #2d004e;
+    border-color: #2d004e;
 }
 
 .dark-mode-active #section-reaction .text {
