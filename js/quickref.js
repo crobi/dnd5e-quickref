@@ -171,4 +171,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Event listener for checkbox change
     darkModeSwitch.addEventListener('change', toggleDarkMode);
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the toggle item for optional rules
+    var optionalToggleItem = document.getElementById('optional-toggle-item');
+
+    // Get the optional switch checkbox
+    var optionalSwitch = document.getElementById('optional-switch');
+
+    // Function to handle click on the toggle item for optional rules
+    function handleOptionalToggleClick() {
+        // Toggle the checked state of the optional switch checkbox
+        optionalSwitch.checked = !optionalSwitch.checked;
+        // Dispatch a change event to trigger the optional rules toggle function
+        optionalSwitch.dispatchEvent(new Event('change'));
+    }
+
+    // Add event listener to the toggle item for optional rules
+    optionalToggleItem.addEventListener('click', handleOptionalToggleClick);
+});
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the toggle item
+    var darkModeToggleItem = document.getElementById('darkmode-toggle-item');
+
+    // Get the dark mode switch checkbox
+    var darkModeSwitch = document.getElementById('darkmode-switch');
+
+    // Function to handle click on the toggle item
+    function handleDarkModeToggleClick() {
+        // Toggle the checked state of the dark mode switch checkbox
+        darkModeSwitch.checked = !darkModeSwitch.checked;
+        // Dispatch a change event to trigger the dark mode toggle function
+        darkModeSwitch.dispatchEvent(new Event('change'));
+    }
+
+    // Add event listener to the toggle item
+    darkModeToggleItem.addEventListener('click', handleDarkModeToggleClick);
 })
