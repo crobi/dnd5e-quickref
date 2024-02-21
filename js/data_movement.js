@@ -1,6 +1,7 @@
 data_movement = [
     {
         title: "Move",
+        optional: "Standard rule",
         icon: "run",
         subtitle: "Cost: 5ft per 5ft",
         description: "Movement cost: 5ft per 5ft moved",
@@ -15,6 +16,7 @@ data_movement = [
     },
     {
         title: "Climb",
+        optional: "Standard rule",
         icon: "crags",
         subtitle: "Cost: 10ft per 5ft",
         description: "Movement cost: 10ft per 5ft climbed",
@@ -25,6 +27,7 @@ data_movement = [
     },
     {
         title: "Swim",
+        optional: "Standard rule",
         icon: "at-sea",
         subtitle: "Cost: 10ft per 5ft",
         description: "Movement cost: 10ft per 5ft swum",
@@ -35,7 +38,8 @@ data_movement = [
     },
     {
         title: "Drop prone",
-        icon: "falling",
+        optional: "Standard rule",
+        icon: "lob-arrow",
         subtitle: "Cost: 0ft",
         description: "Movement cost: 0ft (free)",
         reference: "PHB, pgs. 190-191,292.",
@@ -47,6 +51,7 @@ data_movement = [
     },
     {
         title: "Crawl",
+        optional: "Standard rule",
         icon: "crawl",
         subtitle: "Cost: 10ft per 5ft",
         description: "Movement cost: 10ft per 5ft crawled",
@@ -57,6 +62,7 @@ data_movement = [
     },
     {
         title: "Stand up",
+        optional: "Standard rule",
         icon: "strong",
         subtitle: "Cost: half movement speed",
         description: "Movement cost: half of your speed",
@@ -67,10 +73,10 @@ data_movement = [
     },
     {
         title: "High jump",
+        optional: "Standard rule",
         icon: "wingfoot",
-        subtitle: "Cost: 5ft per 5ft",
-        description: "Movement cost: 5ft per 5ft jumped",
-        
+        subtitle: "Height: 3 + STR MOD",
+        description: "Height: 3 + STR MOD",
         reference: "PHB, pg. 182.",
         bullets: [
             "You leap into the air a number of feet equal to <b>3 + your Strength modifier</b> if you move at least 10 feet on foot immediately before the jump.",
@@ -81,12 +87,13 @@ data_movement = [
     },
     {
         title: "Long jump",
+        optional: "Standard rule",
         icon: "wingfoot",
-        subtitle: "Cost: 5ft per 5ft",
-        description: "Movement cost: 5ft per 5ft jumped",
+        subtitle: "Distance: STR score",
+        description: "Cost: 5ft per 5ft",
         reference: "PHB, pg. 182.",
         bullets: [
-            "You cover a number of feet up to your <b>Strength score</b> if you move at least 10 feet on foot immediately before the jump.",
+            "You cover a number of feet up to your <b>Strength score</b> if you move at least 10 feet (run-up) on foot immediately before the jump.",
             "When you make a standing long jump, you can leap only half that distance",
             "May involve a DC 10 Strength (Athletics) check to clear a low obstacle (no taller than a quarter of the jump's distance). You hit the obstacle on a failed check.",
             "May involve a DC 10 Dexterity (Acrobatics) check to land on your feet in difficult terrain. You land prone on a failed check."
@@ -94,6 +101,7 @@ data_movement = [
     },
     {
         title: "Improvise",
+        optional: "Standard rule",
         icon: "juggler",
         subtitle: "Any stunt not on this list",
         description: "Perform any movement or stunt you can imagine",
@@ -103,6 +111,7 @@ data_movement = [
     },
     {
         title: "Difficult terrain",
+        optional: "Standard rule",
         icon: "stone-pile",
         subtitle: "Cost modifier: +5ft per 5ft",
         reference: "PHB, pg. 182.",
@@ -112,6 +121,7 @@ data_movement = [
     },
     {
         title: "Grapple move",
+        optional: "Standard rule",
         icon: "grab",
         subtitle: "Modifier: speed halved",
         description: "Drag or carry the grappled creature with you",

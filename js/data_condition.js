@@ -1,6 +1,7 @@
 data_condition = [
     {
         title: "Blinded",
+        optional: "Standard rule",
         icon: "one-eyed",
         subtitle: "You can't see",
         description: "You can't see",
@@ -13,6 +14,7 @@ data_condition = [
     },
     {
         title: "Charmed",
+        optional: "Standard rule",
         icon: "smitten",
         subtitle: "You are charmed",
         description: "You are charmed by another creature",
@@ -24,6 +26,7 @@ data_condition = [
     },
     {
         title: "Deafened",
+        optional: "Standard rule",
         icon: "elf-ear",
         subtitle: "You can't hear",
         description: "You can't hear",
@@ -34,6 +37,7 @@ data_condition = [
     },
     {
         title: "Exhaustion",
+        optional: "Standard rule",
         icon: "crawl",
         subtitle: "You are exhausted",
         description: "Exhaustion is measured in six levels",
@@ -47,6 +51,7 @@ data_condition = [
     },
     {
         title: "Frightened",
+        optional: "Standard rule",
         icon: "sharp-smile",
         subtitle: "You are frightened",
         description: "You are frightened",
@@ -58,6 +63,7 @@ data_condition = [
     },
     {
         title: "Grappled",
+        optional: "Standard rule",
         icon: "grab",
         subtitle: "You are grappled",
         description: "You are grappled",
@@ -70,6 +76,7 @@ data_condition = [
     },
     {
         title: "Incapacitated",
+        optional: "Standard rule",
         icon: "internal-injury",
         subtitle: "You can't take actions or reactions",
         description: "You can't take actions or reactions",
@@ -79,6 +86,7 @@ data_condition = [
     },
     {
         title: "Invisible",
+        optional: "Standard rule",
         icon: "invisible",
         subtitle: "You can't be seen",
         description: "You can't be seen without the aid of magic or a special sense",
@@ -87,11 +95,13 @@ data_condition = [
             "For the purpose of hiding, you are heavily obscured.",
             "You can still be detected by any noise you make or tracks you leave.",
             "You have advantage on attack rolls.",
-            "Attack rolls against you have disadvantage."
+            "Attack rolls against you have disadvantage.",
+            "A target that's invisble can’t be targeted by a spell requiring sight."
         ]
     },
     {
         title: "Paralyzed",
+        optional: "Standard rule",
         icon: "internal-injury",
         subtitle: "You are paralyzed",
         description: "You can't do anything",
@@ -104,6 +114,7 @@ data_condition = [
     },
     {
         title: "Petrified",
+        optional: "Standard rule",
         icon: "stone-pile",
         subtitle: "You are transformed into stone",
         description: "You are transformed, along with any nonmagical objects you are wearing or carrying, into a solid inanimate substance (usually stone)",
@@ -119,6 +130,7 @@ data_condition = [
     },
     {
         title: "Poisoned",
+        optional: "Standard rule",
         icon: "deathcab",
         subtitle: "You are poisoned",
         description: "You are poisoned",
@@ -129,6 +141,7 @@ data_condition = [
     },
     {
         title: "Prone",
+        optional: "Standard rule",
         icon: "crawl",
         subtitle: "You are prone",
         description: "You are prone",
@@ -141,6 +154,7 @@ data_condition = [
     },
     {
         title: "Restrained",
+        optional: "Standard rule",
         icon: "imprisoned",
         subtitle: "You are restrained",
         description: "You are restrained",
@@ -154,6 +168,7 @@ data_condition = [
     },
     {
         title: "Stunned",
+        optional: "Standard rule",
         icon: "internal-injury",
         subtitle: "You are stunned",
         description: "You are stunned",
@@ -166,6 +181,7 @@ data_condition = [
     },
     {
         title: "Unconscious",
+        optional: "Standard rule",
         icon: "coma",
         subtitle: "You are unconscious",
         description: "You are unconscious",
@@ -180,6 +196,7 @@ data_condition = [
     },
     {
         title: "Dying",
+        optional: "Standard rule",
         icon: "dead-head",
         subtitle: "You are dying",
         description: "You have been dropped to zero hit points and are dying",

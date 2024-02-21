@@ -1,6 +1,7 @@
 data_environment_obscurance = [
     {
         title: "Lightly obscured",
+        optional: "Standard rule",
         icon: "bleeding-eye",
         subtitle: "Disadvantage on Perception",
         description: "Dim light, patchy fog, moderate foliage",
@@ -11,6 +12,7 @@ data_environment_obscurance = [
     },
     {
         title: "Heavily obscured",
+        optional: "Standard rule",
         icon: "lightning-tear",
         subtitle: "Effectively blind",
         description: "Darkness, opaque fog, dense foliage",
@@ -24,6 +26,7 @@ data_environment_obscurance = [
 data_environment_light = [
     {
         title: "Bright light",
+        optional: "Standard rule",
         icon: "star-pupil",
         subtitle: "Normal vision",
         description: "Bright light lets most creatures see normally",
@@ -34,6 +37,7 @@ data_environment_light = [
     },
     {
         title: "Dim light",
+        optional: "Standard rule",
         icon: "semi-closed-eye",
         subtitle: "Lightly obscured",
         description: "Dim light, also called shadows",
@@ -46,6 +50,7 @@ data_environment_light = [
     },
     {
         title: "Darkness",
+        optional: "Standard rule",
         icon: "worried-eyes",
         subtitle: "Heavily obscured",
         description: "Darkness creates a heavily obscured area",
@@ -60,6 +65,7 @@ data_environment_light = [
 data_environment_vision = [
     {
         title: "Blindsight",
+        optional: "Standard rule",
         icon: "one-eyed",
         subtitle: "Perceive without sight",
         description: "Perceive your surroundings without relying on sight, within a certain radius",
@@ -70,6 +76,7 @@ data_environment_vision = [
     },
     {
         title: "Darkvision",
+        optional: "Standard rule",
         icon: "semi-closed-eye",
         subtitle: "Limited vision in darkness",
         description: "A creature with Darkvision can see better in the dark or low light conditions, within a certain radius",
@@ -82,6 +89,7 @@ data_environment_vision = [
     },
     {
         title: "Truesight",
+        optional: "Standard rule",
         icon: "eye-shield",
         subtitle: "See in darkness",
         description: "A creature with truesight can see everything in its true form, independent of the environment",
@@ -96,6 +104,7 @@ data_environment_vision = [
 data_environment_cover = [
     {
         title: "Half cover",
+        optional: "Standard rule",
         icon: "broken-shield",
         subtitle: "Low wall, furniture, creatures",
         description: "A target has half cover if an obstacle blocks at least half of its body",
@@ -108,6 +117,7 @@ data_environment_cover = [
     },
     {
         title: "Three-quarters cover",
+        optional: "Standard rule",
         icon: "cracked-shield",
         subtitle: "Portcullis, arrow slit",
         description: "A target has three-quarters cover if about three-quarters of it is covered by an obstacle",
@@ -120,6 +130,7 @@ data_environment_cover = [
     },
     {
         title: "Full cover",
+        optional: "Standard rule",
         icon: "shield",
         subtitle: "Completely concealed",
         description: "A target has total cover if it is completely concealed by an obstacle",

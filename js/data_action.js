@@ -1,6 +1,7 @@
 data_action = [
     {
         title: "Attack",
+        optional: "Standard rule",
         icon: "crossed-swords",
         subtitle: "Melee or ranged attack",
         description: "Perform a melee or ranged attack with your weapon",
@@ -15,6 +16,7 @@ data_action = [
     },
     {
         title: "Grapple",
+        optional: "Standard rule",
         icon: "grab",
         subtitle: "Special melee attack",
         description: "Attempt to grab a creature or wrestle with it",
@@ -28,19 +30,35 @@ data_action = [
     },
     {
         title: "Shove",
+        optional: "Standard rule",
         icon: "hand",
         subtitle: "Special melee attack",
         description: "Shove a creature, either to knock it prone or push it away from you",
-        reference: "PHB, pg. 195.",
+        reference: "PHB, pg. 195. / DMG, page 272",
         bullets: [
             "Using the <i>Attack</i> action, you can make a special melee attack to shove a creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
             "The target of your shove must be no more than one size larger than you, and it must be within your reach.",
             "You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you win the contest, you either knock the target prone or push it 5 feet away from you."
+            "If you win the contest, you either knock the target prone or push it 5 feet away from you.",
+        ]
+    },
+    {
+        title: "Shove Aside*",
+        optional: "Optional rule",
+        icon: "hand",
+        subtitle: "Special melee attack",
+        description: "Shove a creature, either to knock it prone or push it aside from you",
+        reference: "PHB, pg. 195. / DMG, page 272",
+        bullets: [
+            "(Optional Rule):",
+            "With this option, a creature uses the special shove attack to force a target to the side.",
+            "The attacker has disadvantage on its Strength (Athletics) check when it does so.",
+            "If that check is successful, the attacker moves the target 5 feet to a different space within its reach."
         ]
     },
     {
         title: "Cast a spell",
+        optional: "Standard rule",
         icon: "magic-swirl",
         subtitle: "Cast time of 1 action",
         description: "Cast a spell with a casting time of 1 action",
@@ -54,6 +72,7 @@ data_action = [
     },
     {
         title: "Dash",
+        optional: "Standard rule",
         icon: "sprint",
         subtitle: "Double movement speed",
         description: "Gain extra movement for the current turn",
@@ -64,6 +83,7 @@ data_action = [
     },
     {
         title: "Disengage",
+        optional: "Standard rule",
         icon: "journey",
         subtitle: "Prevent opportunity attacks",
         description: "Your movement doesn't provoke opportunity attacks for the rest of the turn",
@@ -73,6 +93,7 @@ data_action = [
     },
     {
         title: "Dodge",
+        optional: "Standard rule",
         icon: "aura",
         subtitle: "Increase defenses",
         description: "Focus entirely on avoiding attacks",
@@ -84,6 +105,7 @@ data_action = [
     },
     {
         title: "Escape",
+        optional: "Standard rule",
         icon: "manacles",
         subtitle: "Escape a grapple",
         description: "Escape a grapple",
@@ -95,6 +117,7 @@ data_action = [
     },
     {
         title: "Help",
+        optional: "Standard rule",
         icon: "telepathy",
         subtitle: "Grant an ally advantage",
         description: "Grant an ally advantage on an ability check or attack",
@@ -107,6 +130,7 @@ data_action = [
     },
     {
         title: "Use Object",
+        optional: "Standard rule",
         icon: "snatch",
         subtitle: "Interact, use special abilities",
         description: "Interact with a second object or use special object abilities",
@@ -118,6 +142,7 @@ data_action = [
     },
     {
         title: "Use shield",
+        optional: "Standard rule",
         icon: "round-shield",
         subtitle: "Equip or unequip a shield",
         description: "Equip or unequip a shield",
@@ -129,8 +154,9 @@ data_action = [
     },
     {
         title: "Hide",
+        optional: "Standard rule",
         icon: "hood",
-        subtitle: "",
+        subtitle: "Attempt to hide",
         description: "Attempt to hide",
         reference: "PHB, pg. 192.",
         bullets: [
@@ -143,8 +169,9 @@ data_action = [
     },
     {
         title: "Search",
+        optional: "Standard rule",
         icon: "magnifying-glass",
-        subtitle: "",
+        subtitle: "Attempt to find something",
         description: "Devote your attention to finding something",
         reference: "PHB, pg. 193.",
         bullets: [
@@ -153,6 +180,7 @@ data_action = [
     },
     {
         title: "Ready",
+        optional: "Standard rule",
         icon: "stopwatch",
         subtitle: "Choose trigger and action",
         description: "Choose a trigger and a response reaction",
@@ -166,6 +194,7 @@ data_action = [
     },
     {
         title: "Use class feature",
+        optional: "Standard rule",
         icon: "embrassed-energy",
         subtitle: "Some features use actions",
         description: "Use a racial or class feature that uses an action",
@@ -176,8 +205,9 @@ data_action = [
     },
     {
         title: "Stabilize a creature",
+        optional: "Standard rule",
         icon: "first-aid",
-        subtitle: "Administer first aid to a dying creature",
+        subtitle: "Aid a dying creature",
         description: "Stop a dying creature from needing to make death saving throws",
         reference: "PHB, pg. 197.",
         bullets: [
@@ -188,12 +218,86 @@ data_action = [
     },
     {
         title: "Improvise",
+        optional: "Standard rule",
         icon: "juggler",
         subtitle: "Any action not on this list",
         description: "Perform any action you can imagine",
         reference: "PHB, pg. 193.",
         bullets: [
             "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
+        ]
+    },
+    {
+        title: "Disarm*",
+        optional: "Optional rule",
+        icon: "sword-break",
+        subtitle: "Knock item out of enemy's grasp",
+        description: "A creature can use a weapon attack to knock a weapon or another item from a target's grasp.",
+        reference: "DMG, page 271",
+        bullets: [
+            "(Optional Rule):",
+            "The attacker makes an attack roll contested by the target's Strength (Athletics) check or Dexterity (Acrobatics) check.",
+            "If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender drops the item.",
+            "The attacker has disadvantage on its attack roll if the target is holding the item with two or more hands.",
+            "The target has advantage on its ability check if it is larger than the attacking creature, or disadvantage if it is smaller."
+
+        ]
+    },
+    {
+        title: "Overrun*",
+        optional: "Optional rule",
+        icon: "shield-bash",
+        subtitle: "Run through a hostile space",
+        description: "When a creature tries to move through a hostile creature's space, the mover can try to force its way through by overrunning the hostile creature.",
+        reference: "DMG, page 272",
+        bullets: [
+            "(Optional Rule):",
+            "As an action, the mover makes a Strength (Athletics) check contested by the hostile creature's Strength (Athletics) check.",
+            "The creature attempting the overrun has advantage on this check if it is larger than the hostile creature, or disadvantage if it is smaller.",
+            "If the mover wins the contest, it can move through the hostile creature's space once this turn."
+        ]
+    },
+    {
+        title: "Tumble*",
+        optional: "Optional rule",
+        icon: "tumble",
+        subtitle: "Tumble through a hostile space",
+        description: "A creature can try to tumble through a hostile creature's space, ducking and weaving past the opponent.",
+        reference: "DMG, page 272",
+        bullets: [
+            "(Optional Rule):",
+            "As an action, the tumbler makes a Dexterity (Acrobatics) check contested by the hostile creature's Dexterity (Acrobatics) check.",
+            "If the tumbler wins the contest, it can move through the hostile creature's space once this turn."
+        ]
+    },
+    {
+        title: "Mark*",
+        optional: "Optional rule",
+        icon: "cross-mark",
+        subtitle: "Give Advantage on Opportunity Attacks",
+        description: "This option makes it easier for melee combatants to harry each other with opportunity attacks.",
+        reference: "DMG, page 271",
+        bullets: [
+            "(Optional Rule):",
+            "When a creature makes a melee attack, it can also mark its target.",
+            "Until the end of the attacker's next turn, any opportunity attack it makes against the marked target has advantage.",
+            "The opportunity attack doesn't expend the attacker's reaction",
+            "The attacker can't make the attack if anything, such as the incapacitated condition or the shocking grasp spell, is preventing it from taking reactions.",
+            "The attacker is limited to one opportunity attack per turn.",
+        ]
+    },
+    {
+        title: "Climb onto a bigger creature*",
+        optional: "Optional rule",
+        icon: "mountain-climbing",
+        subtitle: "Climb a bigger creature",
+        description: "If one creature wants to jump onto another creature, it can do so by grappling. A suitably large opponent can be treated as terrain for the purpose of jumping onto its back or clinging to a limb.",
+        reference: "DMG, page 271",
+        bullets: [
+            "(Optional Rule):",
+            "After making any ability checks necessary to get into position and onto the larger creature, the smaller creature uses its action to make a Strength (Athletics) or Dexterity (Acrobatics) check contested by the target's Dexterity (Acrobatics) check.",
+            "If it wins the contest, the smaller creature successfully moves into the target creature's space.",
+            "The smaller creature moves with the target and has advantage on attack rolls against it.",
         ]
     }
 ]
