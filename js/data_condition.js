@@ -39,7 +39,7 @@ data_condition = [
         description: "Exhaustion is measured in six levels",
         reference: "PHB, pg. 291.",
         bullets: [
-            "<table><tr><th>Level</th><th></th><th></th><th style='text-align:left'>Effect</th></tr><tr><td>1</td><td></td><td></td><td>Disadvantage on ability checks</td></tr><tr><td>2</td><td></td><td></td><td>Speed halved</td></tr><tr><td>3</td><td></td><td></td><td>Disadvantage on attack rolls and saving throws</td></tr><tr><td>4</td><td></td><td></td><td>Hit point maximum halved</td></tr><tr><td>5</td><td></td><td></td><td>Speed reduced to 0</td></tr><tr><td>6</td><td></td><td></td><td>Death</td></tr></table>",
+            "<style type=\"text/css\">table#exhaustion th { padding: 3px 1ex; text-align: left; } table#exhaustion td { padding: 3px 1ex; } table#exhaustion td:first-child { text-align: center; }</style><table id=\"exhaustion\"><tr><th>Level</th><th>Effect</th></tr><tr><td>1</td><td>Disadvantage on ability checks</td></tr><tr><td>2</td><td>Speed halved</td></tr><tr><td>3</td><td>Disadvantage on attack rolls and saving throws</td></tr><tr><td>4</td><td>Hit point maximum halved</td></tr><tr><td>5</td><td>Speed reduced to 0</td></tr><tr><td>6</td><td>Death</td></tr></table>",
             "You suffer the effect of your current level of exhaustion as well as all lower levels.",
             "Finishing a long rest reduces your exhaustion level by 1, provided that you have also had some food and drink.",
             "Also, being raised from the dead reduces a creature’s exhaustion level by 1."
