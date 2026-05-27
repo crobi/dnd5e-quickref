@@ -1,4 +1,4 @@
-data_action = [
+var data_action_en = [
     {
         title: "Attack",
         icon: "crossed-swords",
@@ -16,40 +16,38 @@ data_action = [
     {
         title: "Grapple",
         icon: "grab",
-        subtitle: "Special melee attack",
+        subtitle: "Unarmed Strike",
         description: "Attempt to grab a creature or wrestle with it",
-        reference: "PHB, pg. 195.",
+        reference: "PHB 2024",
         bullets: [
-            "You can use the <i>Attack</i> action to make a special melee attack, a grapple. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
-            "The target of your grapple must be no more than one size larger than you, and it must be within your reach.",
-            "Using at least one free hand, you try to seize the target by making a grapple check, a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you succeed, you subject the target to the grappled condition (its speed is set to 0)."
+            "As an Unarmed Strike, you can grapple a creature within reach.",
+            "The target must succeed on a Strength or Dexterity saving throw (its choice).",
+            "The DC is 8 + your Strength modifier + your Proficiency Bonus.",
+            "On a failed save, the target is Grappled."
         ]
     },
     {
         title: "Shove",
         icon: "hand",
-        subtitle: "Special melee attack",
+        subtitle: "Unarmed Strike",
         description: "Shove a creature, either to knock it prone or push it away from you",
-        reference: "PHB, pg. 195.",
+        reference: "PHB 2024",
         bullets: [
-            "Using the <i>Attack</i> action, you can make a special melee attack to shove a creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
-            "The target of your shove must be no more than one size larger than you, and it must be within your reach.",
-            "You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you win the contest, you either knock the target prone or push it 5 feet away from you."
+            "As an Unarmed Strike, you can shove a creature within reach.",
+            "The target must succeed on a Strength or Dexterity saving throw (its choice).",
+            "The DC is 8 + your Strength modifier + your Proficiency Bonus.",
+            "On a failed save, the target is knocked Prone or pushed 5 feet (1.5m) away."
         ]
     },
     {
-        title: "Cast a spell",
+        title: "Magic",
         icon: "magic-swirl",
         subtitle: "Cast time of 1 action",
-        description: "Cast a spell with a casting time of 1 action",
-        reference: "PHB, pg. 192.",
+        description: "Cast a spell or use a magic item",
+        reference: "PHB 2024",
         bullets: [
-            "You can't cast a spell with you action and a different spell with your bonus action in the same turn, except if the action is used to cast a cantrip.",
-            "The target of a spell must be within the spell's range. To target something, you must have a clear path to it, so it can't be behind total cover.",
-            "Spells with material components do not consume the material unless explicitly stated. Unless the cost of a material is given, you can assume that the cost is negligible and the material is simply available in a component pouch.",
-            "Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends. You lose concentration on a spell if you cast another spell that requires concentration or when you are incapacitated. Each time you take damage, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher."
+            "Cast a spell with a casting time of an Action.",
+            "Use a magic item that requires an Action to activate."
         ]
     },
     {
@@ -98,47 +96,36 @@ data_action = [
         icon: "telepathy",
         subtitle: "Grant an ally advantage",
         description: "Grant an ally advantage on an ability check or attack",
-        reference: "PHB, pg. 192.",
+            reference: "PHB 2024",
         bullets: [
-            "The target gains advantage on the next ability check it makes to perform the task you are helping with.",
-            "Alternatively, the target gains advantage on the next attack roll against against a creature within 5 feet of you.",
+                "The target gains advantage on the next ability check it makes to perform the task. You must have proficiency in the skill if it requires a skill check without tools.",
+            "Alternatively, the target gains advantage on the next attack roll against against a creature within 5 feet (1.5m) of you.",
             "The advantage lasts until the start of your next turn."
         ]
     },
     {
-        title: "Use Object",
+            title: "Utilize",
         icon: "snatch",
         subtitle: "Interact, use special abilities",
-        description: "Interact with a second object or use special object abilities",
-        reference: "PHB, pg. 193.",
+            description: "Interact with an object",
+            reference: "PHB 2024",
         bullets: [
-            "You can interact with one object for free during your turn (such as drawing a weapon or opening a door). If you want to interact with a second object, use this action.",
-            "When an object requires your action for its use, you also take this action."
-        ]
-    },
-    {
-        title: "Use shield",
-        icon: "round-shield",
-        subtitle: "Equip or unequip a shield",
-        description: "Equip or unequip a shield",
-        reference: "PHB, pgs. 144-146.",
-        bullets: [
-            "A shield always takes an action to equip or unequip.",
-            "Armor takes several minutes to equip or unequip."
+                "You normally interact with an object while doing something else. If you need to dedicate your attention to it (or use a second object), use the Utilize action.",
+            "Equipping or unequipping a shield uses the Utilize action.",
+            "Drinking a potion yourself is a Bonus Action, but administering it to someone else uses the Utilize action."
         ]
     },
     {
         title: "Hide",
         icon: "hood",
         subtitle: "",
-        description: "Attempt to hide",
-        reference: "PHB, pg. 192.",
+            description: "Attempt to conceal yourself",
+            reference: "PHB 2024",
         bullets: [
-            "You can't hide from a creature that can see you. You must have total cover, be in a heavily obscured area, be invisible, or otherwise block the enemy's vision.",
-            "If you make noise (such as shouting a warning or knocking over a vase), you give away your position.",
-            "When you try to hide, make a Dexterity (Stealth) check and note the result. Until you are discovered or you stop hiding, that check's total is contested by the Wisdom (Perception) check of any creature that actively searches for signs of your presence.",
-            "A creature notices you even if it isn't searching unless your Stealth check is higher than its Passive Perception.",
-            "Out of combat, you may also use a Dexterity (Stealth) check for acts like concealing yourself from enemies, slinking past guards, slipping away without being noticed, or sneaking up on someone without being seen or heard."
+                "You must be heavily obscured, or behind Three-Quarters or Total Cover.",
+                "Make a DC 15 Dexterity (Stealth) check.",
+                "On a success, you gain the Invisible condition.",
+                "The condition ends if you make a sound louder than a whisper, an enemy finds you, you make an attack roll, or you cast a spell with a verbal component."
         ]
     },
     {
@@ -146,11 +133,35 @@ data_action = [
         icon: "magnifying-glass",
         subtitle: "",
         description: "Devote your attention to finding something",
-        reference: "PHB, pg. 193.",
+            reference: "PHB 2024",
         bullets: [
-            "Depending on the nature of your search, the DM might have you make a Wisdom (Perception) check or an Intelligence (Investigation) check."
+                "Make a Wisdom (Perception) check to discern a hidden object or creature.",
+                "Make an Intelligence (Investigation) check to deduce the location of a hidden object or creature.",
+                "Make a Wisdom (Survival) check to follow tracks."
         ]
     },
+        {
+            title: "Study",
+            icon: "book-cover-open",
+            subtitle: "Recall information",
+            description: "Study a creature, object, or text",
+            reference: "PHB 2024",
+            bullets: [
+                "Make an Intelligence check to recall information or deduce something.",
+                "Applicable skills: Arcana, History, Nature, Religion."
+            ]
+        },
+        {
+            title: "Influence",
+            icon: "convince",
+            subtitle: "Interact socially",
+            description: "Influence a creature's attitude or actions",
+            reference: "PHB 2024",
+            bullets: [
+                "Make a Charisma check to influence a creature.",
+                "Applicable skills: Animal Handling, Deception, Intimidation, Persuasion."
+            ]
+        },
     {
         title: "Ready",
         icon: "stopwatch",
@@ -197,3 +208,52 @@ data_action = [
         ]
     }
 ]
+
+var data_action_pt = [
+    { title: "Ataque", icon: "crossed-swords", subtitle: "Corpo-a-corpo ou à distância", description: "Ataca com uma arma ou ataque desarmado", reference: "LDJ 2024", bullets: ["Pode substituir um ataque por Agarrar ou Empurrar.", "Pode equipar/desequipar uma arma como parte do ataque."] },
+    { title: "Agarrar", icon: "grab", subtitle: "Ataque Desarmado", description: "Tentar agarrar uma criatura", reference: "LDJ 2024", bullets: ["O alvo faz resistência de For/Des (CD 8 + For + Proficiência).", "Se falhar, fica Agarrado."] },
+    { title: "Empurrar", icon: "hand", subtitle: "Ataque Desarmado", description: "Empurrar ou derrubar", reference: "LDJ 2024", bullets: ["O alvo faz resistência de For/Des (CD 8 + For + Proficiência).", "Se falhar, é derrubado Caído ou empurrado 1,5m (5ft)."] },
+    { title: "Magia", icon: "magic-swirl", subtitle: "Tempo: 1 Ação", description: "Conjurar magia ou usar item mágico", reference: "LDJ 2024", bullets: ["Conjura uma magia de tempo de 1 Ação.", "Ativa um item mágico que exija uma Ação."] },
+    { title: "Disparada", icon: "sprint", subtitle: "Dobro de deslocamento", description: "Ganha deslocamento extra", reference: "LDJ 2024", bullets: ["O aumento é igual ao seu deslocamento."] },
+    { title: "Desengajar", icon: "journey", subtitle: "Sem ataques de oportunidade", description: "Seu movimento não provoca ataques", reference: "LDJ 2024", bullets: [] },
+    { title: "Esquiva", icon: "aura", subtitle: "Aumenta defesas", description: "Foca em evitar ataques", reference: "LDJ 2024", bullets: ["Ataques contra você têm desvantagem.", "Testes de resistência de Destreza têm vantagem."] },
+    { title: "Escapar", icon: "manacles", subtitle: "Escapar de agarre", description: "Escapar de ser agarrado", reference: "LDJ 2024", bullets: ["Faça um teste de Força (Atletismo) ou Destreza (Acrobacia) contra a CD de agarre."] },
+    { title: "Ajuda", icon: "telepathy", subtitle: "Concede vantagem", description: "Ajuda um aliado", reference: "LDJ 2024", bullets: ["O alvo ganha vantagem em seu próximo teste ou ataque.", "Se for um teste de perícia sem ferramentas, você deve ter proficiência na perícia."] },
+    { title: "Utilizar", icon: "snatch", subtitle: "Interagir com objetos", description: "Interagir com objeto", reference: "LDJ 2024", bullets: ["Equipar um escudo ou interagir ativamente com um objeto complexo.", "Beber uma poção é Ação Bônus; dar a alguém requer a Ação Utilizar."] },
+    { title: "Esconder-se", icon: "hood", subtitle: "Ficar Invisível", description: "Ocultar-se de inimigos", reference: "LDJ 2024", bullets: ["Requer Cobertura Três Quartos, Total ou estar Fortemente Obscurecido.", "Faça um teste de Furtividade CD 15. Sucesso = condição Invisível."] },
+    { title: "Procurar", icon: "magnifying-glass", subtitle: "Encontrar algo", description: "Dedicado a achar algo oculto", reference: "LDJ 2024", bullets: ["Use Percepção, Investigação ou Sobrevivência."] },
+    { title: "Estudar", icon: "book-cover-open", subtitle: "Lembrar informações", description: "Estudar alvo ou texto", reference: "LDJ 2024", bullets: ["Testes de Inteligência: Arcanismo, História, Natureza ou Religião."] },
+    { title: "Influenciar", icon: "convince", subtitle: "Interação social", description: "Mudar atitude de criatura", reference: "LDJ 2024", bullets: ["Testes de Carisma: Enganação, Intimidação, Persuasão, ou Adestrar Animais."] },
+    { title: "Preparar", icon: "stopwatch", subtitle: "Ação com gatilho", description: "Prepara uma reação", reference: "LDJ 2024", bullets: ["Escolhe um gatilho e a ação de resposta."] },
+    { title: "Usar hab. classe", icon: "embrassed-energy", subtitle: "Poder da classe", description: "Uso de poder de classe/espécie", reference: "LDJ 2024", bullets: [] },
+    { title: "Estabilizar", icon: "first-aid", subtitle: "Primeiros socorros", description: "Impede morte de criatura", reference: "LDJ 2024", bullets: ["Teste de Medicina CD 10 ou usar Kit de Curandeiro."] },
+    { title: "Improvisar", icon: "juggler", subtitle: "Ações criativas", description: "Fazer o que imaginar", reference: "LDJ 2024", bullets: ["O Mestre decide se é possível e qual teste é necessário."] }
+];
+
+var data_action_es = [
+    { title: "Ataque", icon: "crossed-swords", subtitle: "Cuerpo a cuerpo o distancia", description: "Ataca con un arma o ataque desarmado", reference: "PHB 2024", bullets: ["Puedes sustituir un ataque por Agarrar o Empujar.", "Puedes equipar/desequipar un arma como parte del ataque."] },
+    { title: "Agarrar", icon: "grab", subtitle: "Ataque desarmado", description: "Intentar agarrar", reference: "PHB 2024", bullets: ["El objetivo hace salvación de Fue/Des (CD 8 + Fue + Competencia).", "Si falla, queda Agarrado."] },
+    { title: "Empujar", icon: "hand", subtitle: "Ataque desarmado", description: "Empujar o derribar", reference: "PHB 2024", bullets: ["El objetivo hace salvación de Fue/Des (CD 8 + Fue + Competencia).", "Si falla, cae Derribado o es empujado 5 pies (1,5m)."] },
+    { title: "Magia", icon: "magic-swirl", subtitle: "Tiempo de conjuro: 1 Acción", description: "Lanzar conjuro o usar objeto mágico", reference: "PHB 2024", bullets: ["Lanza un conjuro de 1 Acción.", "Activa un objeto mágico que exija una Acción."] },
+    { title: "Carrera", icon: "sprint", subtitle: "Doble de velocidad", description: "Gana movimiento extra", reference: "PHB 2024", bullets: ["El incremento es igual a tu velocidad."] },
+    { title: "Destrabarse", icon: "journey", subtitle: "Previene ataques de oportunidad", description: "Tu movimiento no provoca ataques", reference: "PHB 2024", bullets: [] },
+    { title: "Esquivar", icon: "aura", subtitle: "Aumenta defensas", description: "Enfócate en evitar ataques", reference: "PHB 2024", bullets: ["Los ataques en tu contra tienen desventaja.", "Tiradas de salvación de Destreza con ventaja."] },
+    { title: "Escapar", icon: "manacles", subtitle: "Escapar de agarre", description: "Escapar de ser agarrado", reference: "PHB 2024", bullets: ["Haz una prueba de Fuerza (Atletismo) o Destreza (Acrobacias) contra la CD del agarre."] },
+    { title: "Ayuda", icon: "telepathy", subtitle: "Otorga ventaja", description: "Ayuda a un aliado", reference: "PHB 2024", bullets: ["El objetivo tiene ventaja en su próxima prueba o ataque.", "Si es una prueba sin herramientas, debes tener competencia."] },
+    { title: "Utilizar", icon: "snatch", subtitle: "Interactuar con objetos", description: "Interactuar con un objeto", reference: "PHB 2024", bullets: ["Equipar un escudo o interactuar activamente con un objeto.", "Beber una poción es Acción Adicional; dársela a otro es Acción Utilizar."] },
+    { title: "Esconderse", icon: "hood", subtitle: "Quedar Invisible", description: "Ocultarte de los enemigos", reference: "PHB 2024", bullets: ["Requiere Cobertura 3/4, Total o estar Fuertemente oscurecido.", "Haz una prueba de Sigilo CD 15. Éxito = Invisible."] },
+    { title: "Buscar", icon: "magnifying-glass", subtitle: "Encontrar algo", description: "Dedicado a buscar algo oculto", reference: "PHB 2024", bullets: ["Usa Percepción, Investigación o Supervivencia."] },
+    { title: "Estudiar", icon: "book-cover-open", subtitle: "Recordar información", description: "Estudiar objetivo o texto", reference: "PHB 2024", bullets: ["Pruebas de Inteligencia: Arcano, Historia, Naturaleza, Religión."] },
+    { title: "Influenciar", icon: "convince", subtitle: "Interacción social", description: "Cambiar actitud de criatura", reference: "PHB 2024", bullets: ["Pruebas de Carisma: Engaño, Intimidación, Persuasión o Trato con animales."] },
+    { title: "Preparar", icon: "stopwatch", subtitle: "Acción con detonante", description: "Prepara una reacción", reference: "PHB 2024", bullets: ["Elige un detonante y la acción de respuesta."] },
+    { title: "Usar hab. clase", icon: "embrassed-energy", subtitle: "Poder de clase", description: "Uso de poder de clase/raza", reference: "PHB 2024", bullets: [] },
+    { title: "Estabilizar", icon: "first-aid", subtitle: "Primeros auxilios", description: "Impide muerte de criatura", reference: "PHB 2024", bullets: ["Prueba de Medicina CD 10 o usa un Kit de Sanador."] },
+    { title: "Improvisar", icon: "juggler", subtitle: "Acciones creativas", description: "Hacer lo que imagines", reference: "PHB 2024", bullets: ["El DM decide si es posible y qué prueba se requiere."] }
+];
+
+if (typeof current_lang === 'undefined') {
+    var lang_override = localStorage.getItem('quickref_lang');
+    var nav_lang = navigator.language ? navigator.language.slice(0, 2) : 'en';
+    var current_lang = lang_override || nav_lang;
+}
+var data_action = current_lang === 'pt' ? data_action_pt : (current_lang === 'es' ? data_action_es : data_action_en);

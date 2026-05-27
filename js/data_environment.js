@@ -1,4 +1,4 @@
-data_environment_obscurance = [
+var data_environment_obscurance_en = [
     {
         title: "Lightly obscured",
         icon: "bleeding-eye",
@@ -21,7 +21,7 @@ data_environment_obscurance = [
     }
 ]
 
-data_environment_light = [
+var data_environment_light_en = [
     {
         title: "Bright light",
         icon: "star-pupil",
@@ -57,7 +57,7 @@ data_environment_light = [
     }
 ]
 
-data_environment_vision = [
+var data_environment_vision_en = [
     {
         title: "Blindsight",
         icon: "one-eyed",
@@ -93,7 +93,7 @@ data_environment_vision = [
     }
 ]
 
-data_environment_cover = [
+var data_environment_cover_en = [
     {
         title: "Half cover",
         icon: "broken-shield",
@@ -130,3 +130,52 @@ data_environment_cover = [
         ]
     }
 ]
+
+var data_environment_obscurance_pt = [
+    { title: "Levemente obscurecido", icon: "bleeding-eye", subtitle: "Desvantagem em Percepção", description: "Penumbra, neblina, folhagem", reference: "LDJ 2024", bullets: ["Desvantagem em testes de Sabedoria (Percepção) que dependem de visão."] },
+    { title: "Fortemente obscurecido", icon: "lightning-tear", subtitle: "Efetivamente cego", description: "Escuridão, neblina opaca", reference: "LDJ 2024", bullets: ["Uma criatura em uma área fortemente obscurecida sofre da condição Cego."] }
+];
+var data_environment_light_pt = [
+    { title: "Luz plena", icon: "star-pupil", subtitle: "Visão normal", description: "A luz plena permite visão normal", reference: "LDJ 2024", bullets: ["Fornecida por dias abertos, fogueiras, tochas e fontes de luz."] },
+    { title: "Penumbra", icon: "semi-closed-eye", subtitle: "Levemente obscurecido", description: "Também chamada de sombras", reference: "LDJ 2024", bullets: ["Cria uma área levemente obscurecida.", "Ocorre no alvorecer ou crepúsculo, ou na fronteira entre luz plena e escuridão."] },
+    { title: "Escuridão", icon: "worried-eyes", subtitle: "Fortemente obscurecido", description: "Cria uma área fortemente obscurecida", reference: "LDJ 2024", bullets: ["Cria uma área fortemente obscurecida.", "Ocorre a noite, em masmorras sem luz, ou áreas de magia negra."] }
+];
+var data_environment_vision_pt = [
+    { title: "Sentido Cego", icon: "one-eyed", subtitle: "Perceber sem visão", description: "Sentir arredores sem visão", reference: "LDJ 2024", bullets: ["Percebe perfeitamente nos arredores em um raio fixo."] },
+    { title: "Visão no Escuro", icon: "semi-closed-eye", subtitle: "Visão noturna", description: "Visão avançada em penumbra ou escuridão", reference: "LDJ 2024", bullets: ["Vê escuridão como se fosse penumbra (tons de cinza).", "Penumbra conta como Luz plena no raio estipulado."] },
+    { title: "Visão Verdadeira", icon: "eye-shield", subtitle: "Enxergar a verdade", description: "Visão total independentemente do ambiente", reference: "LDJ 2024", bullets: ["Vê em escuridão normal ou mágica, nota seres invisíveis, e percebe transmorfo e ilusões na sua forma real.", "Também enxerga o Plano Etéreo."] }
+];
+var data_environment_cover_pt = [
+    { title: "Meia cobertura", icon: "broken-shield", subtitle: "Baixa parede ou criaturas", description: "Metade do corpo escondido", reference: "LDJ 2024", bullets: ["Recebe bônus de +2 na CA e nos testes de resistência de Destreza."] },
+    { title: "Três quartos de cobertura", icon: "cracked-shield", subtitle: "Árvores ou janelas estreitas", description: "3/4 do corpo protegido", reference: "LDJ 2024", bullets: ["Recebe bônus de +5 na CA e nos testes de resistência de Destreza."] },
+    { title: "Cobertura total", icon: "shield", subtitle: "Totalmente oculto", description: "Não pode ser alvejado", reference: "LDJ 2024", bullets: ["Não pode ser o alvo direto de magias ou ataques."] }
+];
+var data_environment_obscurance_es = [
+    { title: "Ligeramente oscurecido", icon: "bleeding-eye", subtitle: "Desventaja en Percepción", description: "Luz tenue, niebla ligera", reference: "PHB 2024", bullets: ["Desventaja en pruebas de Sabiduría (Percepción) basadas en la vista."] },
+    { title: "Fuertemente oscurecido", icon: "lightning-tear", subtitle: "Efectivamente ciego", description: "Oscuridad, niebla espesa", reference: "PHB 2024", bullets: ["Una criatura aquí cuenta con la condición de Ciego."] }
+];
+var data_environment_light_es = [
+    { title: "Luz brillante", icon: "star-pupil", subtitle: "Visión normal", description: "Permite ver todo con normalidad", reference: "PHB 2024", bullets: ["Provista por el día, antorchas y fogatas."] },
+    { title: "Luz tenue", icon: "semi-closed-eye", subtitle: "Ligeramente oscurecido", description: "También llamadas penumbras", reference: "PHB 2024", bullets: ["Crea un área Ligeramente oscurecida.", "Límites entre luces y amaneceres."] },
+    { title: "Oscuridad", icon: "worried-eyes", subtitle: "Fuertemente oscurecido", description: "Total falta de luz", reference: "PHB 2024", bullets: ["Crea un área Fuertemente oscurecida.", "Noches de exteriores, calabozos sin iluminación."] }
+];
+var data_environment_vision_es = [
+    { title: "Sentido Ciego", icon: "one-eyed", subtitle: "Percibir sin visión", description: "Sentir todo sin usar los ojos", reference: "PHB 2024", bullets: ["Ignoras efectos de luz si están a tu rango de Sentido Ciego."] },
+    { title: "Visión Oscuridad", icon: "semi-closed-eye", subtitle: "Visión nocturna", description: "Ver mejor en lo oscuro", reference: "PHB 2024", bullets: ["Puedes ver en Oscuridad como Luz tenue (en grises).", "La Luz tenue cuenta como Luz brillante."] },
+    { title: "Visión Verdadera", icon: "eye-shield", subtitle: "Ver la verdad", description: "Visión sin engaños", reference: "PHB 2024", bullets: ["Ves a los invisibles, en oscuridad mágica, ilusiones y a través de transformaciones mágicas.", "Además ves en el Plano Etéreo."] }
+];
+var data_environment_cover_es = [
+    { title: "Media cobertura", icon: "broken-shield", subtitle: "Paredes bajas o personas", description: "Muro que tapa a la mitad", reference: "PHB 2024", bullets: ["Bono de +2 a tu CA y salvaciones de Destreza."] },
+    { title: "Tres cuartos de cobertura", icon: "cracked-shield", subtitle: "Árboles o murallas grandes", description: "Te tapa el 75% del cuerpo", reference: "PHB 2024", bullets: ["Bono de +5 a tu CA y salvaciones de Destreza."] },
+    { title: "Cobertura total", icon: "shield", subtitle: "Oculto completamente", description: "No pueden verte", reference: "PHB 2024", bullets: ["No puedes ser objetivo directo de un ataque o conjuro."] }
+];
+
+if (typeof current_lang === 'undefined') {
+    var lang_override = localStorage.getItem('quickref_lang');
+    var nav_lang = navigator.language ? navigator.language.slice(0, 2) : 'en';
+    var current_lang = lang_override || nav_lang;
+}
+var data_environment_obscurance = current_lang === 'pt' ? data_environment_obscurance_pt : (current_lang === 'es' ? data_environment_obscurance_es : data_environment_obscurance_en);
+var data_environment_light = current_lang === 'pt' ? data_environment_light_pt : (current_lang === 'es' ? data_environment_light_es : data_environment_light_en);
+var data_environment_vision = current_lang === 'pt' ? data_environment_vision_pt : (current_lang === 'es' ? data_environment_vision_es : data_environment_vision_en);
+var data_environment_cover = current_lang === 'pt' ? data_environment_cover_pt : (current_lang === 'es' ? data_environment_cover_es : data_environment_cover_en);

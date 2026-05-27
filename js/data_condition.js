@@ -1,4 +1,4 @@
-data_condition = [
+var data_condition_en = [
     {
         title: "Blinded",
         icon: "one-eyed",
@@ -35,14 +35,14 @@ data_condition = [
     {
         title: "Exhaustion",
         icon: "crawl",
-        subtitle: "You are exhausted",
-        description: "Exhaustion is measured in six levels",
-        reference: "PHB, pg. 291.",
+            subtitle: "Cumulative penalties",
+            description: "Exhaustion is measured in 6 levels",
+            reference: "PHB 2024",
         bullets: [
-            "<table><tr><th>Level</th><th></th><th></th><th style='text-align:left'>Effect</th></tr><tr><td>1</td><td></td><td></td><td>Disadvantage on ability checks</td></tr><tr><td>2</td><td></td><td></td><td>Speed halved</td></tr><tr><td>3</td><td></td><td></td><td>Disadvantage on attack rolls and saving throws</td></tr><tr><td>4</td><td></td><td></td><td>Hit point maximum halved</td></tr><tr><td>5</td><td></td><td></td><td>Speed reduced to 0</td></tr><tr><td>6</td><td></td><td></td><td>Death</td></tr></table>",
-            "You suffer the effect of your current level of exhaustion as well as all lower levels.",
-            "Finishing a long rest reduces your exhaustion level by 1, provided that you have also had some food and drink.",
-            "Also, being raised from the dead reduces a creature’s exhaustion level by 1."
+                "Levels 1-5: You suffer a penalty to your d20 Tests (ability checks, attack rolls, saving throws) and Spell Save DCs equal to -2 times your exhaustion level.",
+                "Your Speed is reduced by 5 feet (1.5m) times your exhaustion level.",
+                "Level 6: You die.",
+                "Finishing a Long Rest reduces your exhaustion level by 1."
         ]
     },
     {
@@ -63,9 +63,9 @@ data_condition = [
         description: "You are grappled",
         reference: "PHB, pg. 290.",
         bullets: [
-            "Your speed becomes 0, and you can't benefit from any bonus to your speed.",
-            "The condition ends if your grappler is incapacitated.",
-            "The condition also ends if you are removed from the reach of your grappler."
+                "Your speed is 0.",
+                "You have disadvantage on attack rolls against any target other than the grappler.",
+                "The condition ends if your grappler is incapacitated, or if you are moved out of their reach."
         ]
     },
     {
@@ -73,8 +73,12 @@ data_condition = [
         icon: "internal-injury",
         subtitle: "You can't take actions or reactions",
         description: "You can't take actions or reactions",
-        reference: "PHB, pg. 290.",
+        reference: "PHB 2024",
         bullets: [
+                "You can't take any actions, bonus actions, or reactions.",
+                "Your concentration is broken.",
+                "You automatically fail Strength and Dexterity saving throws.",
+                "You can't speak."
         ]
     },
     {
@@ -84,10 +88,10 @@ data_condition = [
         description: "You can't be seen without the aid of magic or a special sense",
         reference: "PHB, pg. 291.",
         bullets: [
-            "For the purpose of hiding, you are heavily obscured.",
-            "You can still be detected by any noise you make or tracks you leave.",
+                "You aren't visible, so you are Heavily Obscured.",
             "You have advantage on attack rolls.",
-            "Attack rolls against you have disadvantage."
+                "Attack rolls against you have disadvantage.",
+                "You can still be detected by noise or tracks."
         ]
     },
     {
@@ -98,7 +102,7 @@ data_condition = [
         bullets: [
             "You are incapacitated and can't move or speak.",
             "Attack rolls against you have advantage.",
-            "Any attack that hits you is a critical hit if the attacker is within 5 feet of you.",
+            "Any attack that hits you is a critical hit if the attacker is within 5 feet (1.5m) of you.",
             "You automatically fail Strength and Dexterity saving throws."
         ]
     },
@@ -134,9 +138,9 @@ data_condition = [
         description: "You are prone",
         reference: "PHB, pg. 292.",
         bullets: [
-            "Your only movement option is to crawl, unless you stand up.",
+                "Your only movement options are to crawl or stand up.",
             "You have disadvantage on attack rolls.",
-            "Attack rolls against you have advantage if the attacker is within 5 feet of you, otherwise the attack roll has disadvantage."
+                "Attack rolls against you have advantage if the attacker is within 5 feet (1.5m) of you, otherwise they have disadvantage."
         ]
     },
     {
@@ -171,11 +175,11 @@ data_condition = [
         description: "You are unconscious",
         reference: "PHB, pg. 292.",
         bullets: [
-            "You are incapacitated, can't move or speak, and are unaware of your surroundings.",
+                "You have the Incapacitated condition and are unaware of your surroundings.",
             "You drop whatever you're holding and fall prone.",
             "Attack rolls against you have advantage.",
-            "Any attack that hits you is a critical hit if the attacker is within 5 feet of you.",
-            "You automatically fail Strength and Dexterity saving throws.",
+            "Any attack that hits you is a critical hit if the attacker is within 5 feet (1.5m) of you.",
+                "You automatically fail Strength and Dexterity saving throws."
         ]
     },
     {
@@ -198,3 +202,48 @@ data_condition = [
         ]
     }
 ]
+
+var data_condition_pt = [
+    { title: "Cego", icon: "one-eyed", subtitle: "Não pode ver", description: "Você não consegue ver nada", reference: "LDJ 2024", bullets: ["Falha automática em testes que exigem visão.", "Desvantagem em ataques. Ataques contra você têm Vantagem."] },
+    { title: "Enfeitiçado", icon: "smitten", subtitle: "Controlado ou cativado", description: "Você foi enfeitiçado", reference: "LDJ 2024", bullets: ["Não pode atacar ou alvejar o encantador.", "Encantador tem Vantagem em interações sociais com você."] },
+    { title: "Surdo", icon: "elf-ear", subtitle: "Não pode ouvir", description: "Você não consegue ouvir", reference: "LDJ 2024", bullets: ["Falha automática em testes que exigem audição."] },
+    { title: "Exaustão", icon: "crawl", subtitle: "Penalidades cumulativas", description: "Fadiga dividida em 6 níveis", reference: "LDJ 2024", bullets: ["Níveis 1-5: Penalidade em testes de d20 e CD de Magias igual a -2 vezes o seu nível.", "Deslocamento reduz em 1,5m (5ft) vezes o nível.", "Nível 6: Você morre.", "Descanso Longo reduz o nível em 1."] },
+    { title: "Amedrontado", icon: "sharp-smile", subtitle: "Cheio de medo", description: "Assustado pela fonte de medo", reference: "LDJ 2024", bullets: ["Desvantagem em testes e ataques enquanto ver a fonte.", "Não pode se mover voluntariamente na direção da fonte."] },
+    { title: "Agarrado", icon: "grab", subtitle: "Preso no lugar", description: "Alguém ou algo te agarrou", reference: "LDJ 2024", bullets: ["Deslocamento cai para 0.", "Desvantagem em ataques contra outros que não quem o agarrou.", "Termina se quem agarra ficar incapacitado ou você sair do alcance."] },
+    { title: "Incapacitado", icon: "internal-injury", subtitle: "Sem ações ou reações", description: "Não pode agir", reference: "LDJ 2024", bullets: ["Não pode usar ações ou reações.", "Concentração é quebrada.", "Falha em testes de resistência de For e Des.", "Você não pode falar."] },
+    { title: "Invisível", icon: "invisible", subtitle: "Você não pode ser visto", description: "Você não pode ser visto", reference: "LDJ 2024", bullets: ["Considerado Fortemente Obscurecido.", "Vantagem em ataques. Ataques contra você têm Desvantagem."] },
+    { title: "Paralisado", icon: "internal-injury", subtitle: "Paralisado fisicamente", description: "Não pode se mover ou agir", reference: "LDJ 2024", bullets: ["Incapacitado, não fala ou anda.", "Ataques contra você têm Vantagem.", "Acertos num raio de 1,5m (5ft) são Críticos.", "Falha For/Des."] },
+    { title: "Petrificado", icon: "stone-pile", subtitle: "Transformado em pedra", description: "Transformado em pedra/sólido", reference: "LDJ 2024", bullets: ["Incapacitado. Resistência a todo o dano.", "Imune a veneno e doença.", "Peso x10. Falha For/Des."] },
+    { title: "Envenenado", icon: "deathcab", subtitle: "Envenenado", description: "Você está envenenado", reference: "LDJ 2024", bullets: ["Desvantagem nas jogadas de ataque e testes de atributo."] },
+    { title: "Caído", icon: "crawl", subtitle: "Você caiu", description: "Você está deitado no chão", reference: "LDJ 2024", bullets: ["Opções de mover: rastejar ou levantar.", "Ataques têm Desvantagem.", "Ataques contra você têm Vantagem (se 1,5m/5ft de dist) ou Desvantagem (se mais longe)."] },
+    { title: "Impedido", icon: "imprisoned", subtitle: "Preso", description: "Você está preso", reference: "LDJ 2024", bullets: ["Deslocamento 0.", "Desvantagem em ataques. Ataques contra você têm Vantagem.", "Desvantagem em testes de Des."] },
+    { title: "Atordoado", icon: "internal-injury", subtitle: "Incapacitado temporário", description: "Atordoado e aturdido", reference: "LDJ 2024", bullets: ["Incapacitado, não pode se mover.", "Ataques contra você têm Vantagem. Falha For/Des."] },
+    { title: "Inconsciente", icon: "coma", subtitle: "Sem consciência", description: "Desmaiado e indefeso", reference: "LDJ 2024", bullets: ["Incapacitado, larga o que está segurando e cai Caído.", "Ataques contra você têm Vantagem.", "Acertos num raio de 1,5m (5ft) são Críticos. Falha For/Des."] },
+    { title: "Morrendo", icon: "dead-head", subtitle: "Zero Pontos de Vida", description: "Fazendo testes contra a morte", reference: "LDJ 2024", bullets: ["Faz testes de morte no início do turno.", "3 Sucessos = Estável. 3 Falhas = Morte.", "Rolar 20 cura 1 PV. 1 conta como 2 falhas."] }
+];
+
+var data_condition_es = [
+    { title: "Ciego", icon: "one-eyed", subtitle: "No puedes ver", description: "No puedes ver nada", reference: "PHB 2024", bullets: ["Fallas en pruebas que requieran vista.", "Tus ataques con Desventaja. Ataques contra ti con Ventaja."] },
+    { title: "Hechizado", icon: "smitten", subtitle: "Cautivado", description: "Has sido encantado", reference: "PHB 2024", bullets: ["No puedes atacar al encantador.", "El encantador tiene Ventaja en tiradas sociales contra ti."] },
+    { title: "Sordo", icon: "elf-ear", subtitle: "No puedes oír", description: "No puedes oír nada", reference: "PHB 2024", bullets: ["Fallas toda prueba que requiera audición."] },
+    { title: "Agotamiento", icon: "crawl", subtitle: "Penalizaciones por fatiga", description: "Exhausto (Niveles del 1 al 6)", reference: "PHB 2024", bullets: ["Niveles 1-5: Penalizador de -2 x Nivel en Pruebas de d20 y CD de Conjuros.", "Tu velocidad se reduce 5 pies (1,5m) x Nivel.", "Nivel 6: Mueres.", "El descanso largo reduce 1 nivel."] },
+    { title: "Asustado", icon: "sharp-smile", subtitle: "Aterrorizado", description: "Aterrorizado de una fuente", reference: "PHB 2024", bullets: ["Desventaja en pruebas y ataques mientras veas la fuente.", "No puedes acercarte a la fuente."] },
+    { title: "Agarrado", icon: "grab", subtitle: "Atrapado", description: "Alguien te sujeta", reference: "PHB 2024", bullets: ["Velocidad de 0.", "Desventaja al atacar a criaturas distintas al que te agarra.", "Termina si te sacan de su alcance o el agarre se incapacita."] },
+    { title: "Incapacitado", icon: "internal-injury", subtitle: "Sin acciones", description: "No puedes actuar", reference: "PHB 2024", bullets: ["No puedes realizar acciones o reacciones.", "Pierdes la concentración. Fallas salvaciones Fue/Des.", "No puedes hablar."] },
+    { title: "Invisible", icon: "invisible", subtitle: "No pueden verte", description: "No puedes ser visto", reference: "PHB 2024", bullets: ["Cuentas como Fuertemente oscurecido.", "Ventaja en tus ataques. Ataques contra ti con Desventaja."] },
+    { title: "Paralizado", icon: "internal-injury", subtitle: "Congelado físicamente", description: "No puedes moverte o actuar", reference: "PHB 2024", bullets: ["Incapacitado.", "Ataques contra ti con Ventaja.", "Impactos a 5 pies (1,5m) son críticos. Fallas Fue/Des."] },
+    { title: "Petrificado", icon: "stone-pile", subtitle: "Convertido en piedra", description: "Transformado en material sólido", reference: "PHB 2024", bullets: ["Incapacitado. Resistencia a todo el daño.", "Inmune a veneno/enfermedad. Peso x10. Fallas Fue/Des."] },
+    { title: "Envenenado", icon: "deathcab", subtitle: "Intoxicado", description: "Sufres el efecto de veneno", reference: "PHB 2024", bullets: ["Desventaja en tiradas de ataque y pruebas de característica."] },
+    { title: "Derribado", icon: "crawl", subtitle: "En el suelo", description: "Has caído al suelo", reference: "PHB 2024", bullets: ["Solo puedes arrastrarte o levantarte.", "Tus ataques con Desventaja.", "Ataques contra ti con Ventaja a 5 pies (1,5m) o Desventaja si es de más lejos."] },
+    { title: "Apresado", icon: "imprisoned", subtitle: "Atado firmemente", description: "Limitado para moverte", reference: "PHB 2024", bullets: ["Velocidad de 0.", "Desventaja en tus ataques y salvaciones Des.", "Ataques contra ti con Ventaja."] },
+    { title: "Aturdido", icon: "internal-injury", subtitle: "Incapacitado temporal", description: "Conmocionado", reference: "PHB 2024", bullets: ["Incapacitado, no te mueves.", "Ataques contra ti con Ventaja. Fallas Fue/Des."] },
+    { title: "Inconsciente", icon: "coma", subtitle: "Sin sentido", description: "Desmayado", reference: "PHB 2024", bullets: ["Incapacitado. Sueltas lo que tengas y quedas Derribado.", "Ataques contra ti con Ventaja.", "Impactos a 5 pies (1,5m) son críticos. Fallas Fue/Des."] },
+    { title: "Muriendo", icon: "dead-head", subtitle: "A las puertas de la muerte", description: "Cero Puntos de Golpe", reference: "PHB 2024", bullets: ["Haces tiradas de muerte cada turno.", "3 Éxitos = Estable. 3 Fallos = Muerte.", "Sacar un 20 cura 1 PG. Sacar 1 cuenta como 2 fallos."] }
+];
+
+if (typeof current_lang === 'undefined') {
+    var lang_override = localStorage.getItem('quickref_lang');
+    var nav_lang = navigator.language ? navigator.language.slice(0, 2) : 'en';
+    var current_lang = lang_override || nav_lang;
+}
+var data_condition = current_lang === 'pt' ? data_condition_pt : (current_lang === 'es' ? data_condition_es : data_condition_en);

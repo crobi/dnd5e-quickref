@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>D&D 5e quick reference</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/quickref.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/jquery/jquery.min.js" charset="utf-8"></script>
+    <style>
+        #lang-selector { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; }
+        #lang-selector button { font-family: 'Noto Sans', sans-serif; font-size: 12px; cursor: pointer; padding: 4px 8px; border: 1px solid #ccc; border-radius: 4px; background: #fff; margin-left: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        #lang-selector button:hover { background: #f0f0f0; }
+
+       
+        .icon-book-cover-open {
+            background-image: url('img/book-cover-open.png'); 
+            background-size: 100% 100%;
+        }
+        .icon-convince {
+            background-image: url('img/convince.png'); 
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body class="page-background">
+    <div id="lang-selector">
+        <button onclick="changeLang('en')">EN</button>
+        <button onclick="changeLang('pt')">PT-BR</button>
+        <button onclick="changeLang('es')">ES</button>
+    </div>
+    <div class="page fontsize" data-size="fullscreen">
+
+        <!-- Movement section -->
+        <div id="section-movement" class="section-container">
+            <div class="section-title">
+                <span data-i18n="movement">Movement</span> <span class="float-right" data-i18n="movement_limit">limited by movement speed</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize" data-i18n="movement_desc">
+                    You can move at any time during your turn (before, after, or during actions).
+                </div>
+                <div class="section-row" id="basic-movement">
+                </div>
+            </div>
+        </div>
+
+        <!-- Action section -->
+        <div id="section-action" class="section-container">
+            <div class="section-title">
+                <span data-i18n="action">Action</span> <span class="float-right" data-i18n="action_limit">1/turn</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize" data-i18n="action_desc">
+                    You can also interact with one object or feature of the
+                    environment for free.
+                </div>
+                <div class="section-row" id="basic-actions"></div>
+            </div>
+        </div>
+
+        <!-- Bonus action section -->
+        <div id="section-bonus-action" class="section-container">
+            <div class="section-title">
+                <span data-i18n="bonus_action">Bonus action</span> <span class="float-right" data-i18n="bonus_action_limit">max. 1/turn</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize" data-i18n="bonus_action_desc">
+                    You can take a bonus action only when a special ability, spell, or feature
+                    states that you can do something as a bonus action.
+                </div>
+                <div class="section-row" id="basic-bonus-actions"></div>
+            </div>
+        </div>
+
+        <!-- Reaction section -->
+        <div id="section-reaction" class="section-container">
+            <div class="section-title">
+                <span data-i18n="reaction">Reaction</span> <span class="float-right" data-i18n="reaction_limit">max. 1/round</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize" data-i18n="reaction_desc">
+                    A reaction is an instant response to a trigger of some kind, which
+                    can occur on your turn or on someone else's.
+                </div>
+                <div class="section-row" id="basic-reactions"></div>
+            </div>
+        </div>
+
+        <!-- Condition section -->
+        <div id="section-condition" class="section-container">
+            <div class="section-title">
+                <span data-i18n="condition">Condition</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize" data-i18n="condition_desc">
+                    Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect.
+                </div>
+                <div class="section-row" id="basic-conditions"></div>
+            </div>
+        </div>
+        
+        <!-- Environmental section -->
+        <div id="section-environment" class="section-container">
+            <div class="section-title">
+                <span data-i18n="environment">Environmental Effects</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize" data-i18n="environment_desc1">
+                    Effects that obscure vision can prove a significant hindrance to most adventuring tasks.
+                </div>
+                <div class="section-row" id="environment-obscurance"></div>
+                <div class="section-row section-subtitle text fontsize" data-i18n="environment_desc2">
+                    The presence or absence of light in an environment creates three categories of illumination.
+                </div>
+                <div class="section-row" id="environment-light"></div>
+                <div class="section-row section-subtitle text fontsize" data-i18n="environment_desc3">
+                    Some creatures have extraordinary senses that allow them to perceive their environment.
+                </div>
+                <div class="section-row" id="environment-vision"></div>
+                <div class="section-row section-subtitle text fontsize" data-i18n="environment_desc4">
+                    Obstacles can provide cover during combat, making a target more difficult to harm.
+                </div>
+                <div class="section-row" id="environment-cover"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-dialog modalsize">
+            <div class="section-container modal-container" id="modal-container">
+                <div class="section-title" id="modal-title">
+                    Modal title<span class="float-right">Action</span>
+                </div>
+                <div class="section-content">
+                    <div class="section-row section-subtitle text" id="modal-subtitle">
+                        Subtitle
+                    </div>
+                    <div class="section-row text">
+                        <div id="modal-bullets">
+                        </div>
+                    </div>
+                    <div class="section-row text" id="modal-reference">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data -->
+    <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_bonusaction.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/data_environment.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
+
+    <script>
+    const ui_i18n = {
+        en: { title: "D&D 5e Quick Reference", movement: "Movement", movement_limit: "limited by movement speed", movement_desc: "You can move at any time during your turn (before, after, or during actions).", action: "Action", action_limit: "1/turn", action_desc: "You can also interact with one object or feature of the environment for free.", bonus_action: "Bonus action", bonus_action_limit: "max. 1/turn", bonus_action_desc: "You can take a bonus action only when a special ability, spell, or feature states that you can do something as a bonus action.", reaction: "Reaction", reaction_limit: "max. 1/round", reaction_desc: "A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else's.", condition: "Condition", condition_desc: "Conditions alter your capabilities in a variety of ways, and can arise as a result of a spell, a class feature, a monster's attack, or other effect.", environment: "Environmental Effects", environment_desc1: "Effects that obscure vision can prove a significant hindrance to most adventuring tasks.", environment_desc2: "The presence or absence of light in an environment creates three categories of illumination.", environment_desc3: "Some creatures have extraordinary senses that allow them to perceive their environment.", environment_desc4: "Obstacles can provide cover during combat, making a target more difficult to harm." },
+        pt: { title: "Referência Rápida D&D 5e", movement: "Movimento", movement_limit: "limitado pelo deslocamento", movement_desc: "Você pode se mover a qualquer momento durante o seu turno (antes, depois ou durante as ações).", action: "Ação", action_limit: "1/turno", action_desc: "Você também pode interagir com um objeto ou característica do ambiente gratuitamente.", bonus_action: "Ação Bônus", bonus_action_limit: "máx. 1/turno", bonus_action_desc: "Você só pode realizar uma ação bônus quando uma habilidade, magia ou característica afirmar que você pode fazer algo como uma ação bônus.", reaction: "Reação", reaction_limit: "máx. 1/rodada", reaction_desc: "Uma reação é uma resposta instantânea a um gatilho de algum tipo, que pode ocorrer no seu turno ou no de outra pessoa.", condition: "Condição", condition_desc: "Condições alteram suas capacidades de várias maneiras e podem surgir como resultado de uma magia, característica de classe, ataque ou outro efeito.", environment: "Efeitos Ambientais", environment_desc1: "Efeitos que obscurecem a visão podem ser um obstáculo significativo para a maioria das tarefas.", environment_desc2: "A presença ou ausência de luz em um ambiente cria três categorias de iluminação.", environment_desc3: "Algumas criaturas têm sentidos extraordinários que lhes permitem perceber o ambiente.", environment_desc4: "Obstáculos podem fornecer cobertura durante o combate, tornando o alvo mais difícil de ferir." },
+        es: { title: "Referencia Rápida D&D 5e", movement: "Movimiento", movement_limit: "limitado por la velocidad", movement_desc: "Puedes moverte en cualquier momento durante tu turno (antes, después o durante las acciones).", action: "Acción", action_limit: "1/turno", action_desc: "También puedes interactuar con un objeto o característica del entorno de forma gratuita.", bonus_action: "Acción Adicional", bonus_action_limit: "máx. 1/turno", bonus_action_desc: "Solo puedes tomar una acción adicional cuando una habilidad especial, conjuro o rasgo indique que puedes hacer algo como acción adicional.", reaction: "Reacción", reaction_limit: "máx. 1/ronda", reaction_desc: "Una reacción es una respuesta instantánea a un desencadenante de algún tipo, que puede ocurrir en tu turno o en el de otra persona.", condition: "Condición", condition_desc: "Las condiciones alteran tus capacidades de diversas maneras, y pueden surgir como resultado de un conjuro, rasgo de clase, ataque de monstruo u otro efecto.", environment: "Efectos Ambientales", environment_desc1: "Los efectos que oscurecen la visión pueden ser un obstáculo significativo para la mayoría de las tareas.", environment_desc2: "La presencia o ausencia de luz crea tres categorías de iluminación.", environment_desc3: "Algunas criaturas tienen sentidos extraordinarios que les permiten percibir su entorno.", environment_desc4: "Los obstáculos pueden proporcionar cobertura durante el combate, dificultando dañar a un objetivo." }
+    };
+    function changeLang(lang) {
+        localStorage.setItem('quickref_lang', lang);
+        location.reload();
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+        const lang = localStorage.getItem('quickref_lang') || (navigator.language ? navigator.language.slice(0, 2) : 'en');
+        const dict = ui_i18n[lang] || ui_i18n['en'];
+        document.title = dict.title || "D&D 5e quick reference";
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (dict[key]) el.innerHTML = dict[key];
+        });
+    });
+    </script>
+</body>
+</html>
